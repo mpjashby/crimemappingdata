@@ -13,6 +13,14 @@ A data frame containing 8,696 rows and 5 columns:
 \item{location_type}{Type of place}
 \item{location_category}{More-detailed type of place}
 }
+
+A version of this dataset is also available as a stand-alone file at
+\url{https://mpjashby.github.io/crimemappingdata/aggravated_assaults.xlsx} but
+the contents of the stand-alone file differ from the contents of the
+package dataset. The stand-alone file is an Excel (\code{.xlsx}) file containing
+three sheets: one each containing data (in the same format as above) for
+Austin, TX (the data in the package dataset), Fort Worth, TX, and Seattle,
+WA.
 }
 \source{
 \code{crimedata} package \url{http://pkgs.lesscrime.info/crimedata/}
