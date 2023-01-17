@@ -11,5 +11,11 @@
 #'   \item{latitude}{Latitude}
 #' }
 #'
+#' This dataset is also available as a stand-alone file in two formats: in CSV
+#' format at
+#' <https://mpjashby.github.io/crimemappingdata/downtown_homicides.csv> and in
+#' GeoPackage format at
+#' <https://mpjashby.github.io/crimemappingdata/downtown_homicides.gpkg>.
+#'
 #' @source Atlanta Police Department
 "downtown_homicides"

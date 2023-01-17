@@ -16,5 +16,8 @@
 #'   \item{Y}{Y co-ordinate in the UTM zone 10 north CRS (EPSG:32610)}
 #' }
 #'
+#' This dataset is also available as a stand-alone file in gzipped CSV format at
+#' <https://mpjashby.github.io/crimemappingdata/vancouver_thefts.csv.gz>.
+#'
 #' @source Vancouver Police Department <https://geodash.vpd.ca/opendata/>
 "vancouver_thefts"

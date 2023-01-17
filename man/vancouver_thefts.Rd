@@ -18,6 +18,9 @@ A data frame with 21,918 rows and 10 columns:
 \item{X}{X co-ordinate in the UTM zone 10 north CRS (EPSG:32610)}
 \item{Y}{Y co-ordinate in the UTM zone 10 north CRS (EPSG:32610)}
 }
+
+This dataset is also available as a stand-alone file in gzipped CSV format at
+\url{https://mpjashby.github.io/crimemappingdata/vancouver_thefts.csv.gz}.
 }
 \source{
 Vancouver Police Department \url{https://geodash.vpd.ca/opendata/}

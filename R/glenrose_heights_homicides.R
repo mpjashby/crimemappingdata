@@ -11,5 +11,11 @@
 #'   \item{latitude}{Latitude}
 #' }
 #'
+#' This dataset is also available as a stand-alone file in two formats: in CSV
+#' format at
+#' <https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.csv>
+#' and in GeoPackage format at
+#' <https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.gpkg>
+#'
 #' @source Atlanta Police Department
 "glenrose_heights_homicides"

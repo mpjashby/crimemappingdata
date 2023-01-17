@@ -12,6 +12,12 @@ A data frame with four rows and four columns:
 \item{longitude}{Longitude}
 \item{latitude}{Latitude}
 }
+
+This dataset is also available as a stand-alone file in two formats: in CSV
+format at
+\url{https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.csv}
+and in GeoPackage format at
+\url{https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.gpkg}
 }
 \source{
 Atlanta Police Department
