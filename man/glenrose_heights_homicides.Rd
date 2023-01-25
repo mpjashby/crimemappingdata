@@ -18,6 +18,8 @@ format at
 \url{https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.csv}
 and in GeoPackage format at
 \url{https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.gpkg}
+
+Licence: public domain
 }
 \source{
 Atlanta Police Department

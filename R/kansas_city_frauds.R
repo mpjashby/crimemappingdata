@@ -15,5 +15,7 @@
 #' This dataset is also available as a stand-alone file in CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/kansas_city_frauds.csv>.
 #'
+#' License: public domain
+#'
 #' @source Kansas City Police Department
 "kansas_city_frauds"

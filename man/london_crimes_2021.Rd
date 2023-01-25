@@ -18,6 +18,8 @@ A data frame containing 1,076,832 rows and 7 columns:
 
 This dataset is also available as a stand-alone file in gzipped CSV format at
 \url{https://mpjashby.github.io/crimemappingdata/london_crimes_2021.csv.gz}.
+
+Licence: Open Government Licence \url{https://www.nationalarchives.gov.uk/doc/open-government-licence/}
 }
 \source{
 Home Office \url{https://data.police.uk/}

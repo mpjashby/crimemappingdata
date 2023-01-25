@@ -21,6 +21,8 @@ package dataset. The stand-alone file is an Excel (\code{.xlsx}) file containing
 three sheets: one each containing data (in the same format as above) for
 Austin, TX (the data in the package dataset), Fort Worth, TX, and Seattle,
 WA.
+
+Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/4.0/}
 }
 \source{
 \code{crimedata} package \url{http://pkgs.lesscrime.info/crimedata/}

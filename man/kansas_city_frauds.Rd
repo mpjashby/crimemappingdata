@@ -17,6 +17,8 @@ A data frame with 6 rows and 6 columns:
 
 This dataset is also available as a stand-alone file in CSV format at
 \url{https://mpjashby.github.io/crimemappingdata/kansas_city_frauds.csv}.
+
+License: public domain
 }
 \source{
 Kansas City Police Department

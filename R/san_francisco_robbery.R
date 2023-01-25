@@ -14,5 +14,7 @@
 #' This dataset is also available as a stand-alone file in CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/san_francisco_robbery.csv>.
 #'
+#' Licence: Open Data Commons Public Domain Dedication and License <https://opendatacommons.org/licenses/pddl/1.0/>
+#'
 #' @source San Francisco Police Department
 "san_francisco_robbery"

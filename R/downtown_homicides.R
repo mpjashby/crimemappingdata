@@ -17,5 +17,7 @@
 #' GeoPackage format at
 #' <https://mpjashby.github.io/crimemappingdata/downtown_homicides.gpkg>.
 #'
+#' Licence: public domain
+#'
 #' @source Atlanta Police Department
 "downtown_homicides"

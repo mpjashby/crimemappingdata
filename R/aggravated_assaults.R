@@ -19,5 +19,7 @@
 #' Austin, TX (the data in the package dataset), Fort Worth, TX, and Seattle,
 #' WA.
 #'
+#' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/4.0/>
+#'
 #' @source `crimedata` package <http://pkgs.lesscrime.info/crimedata/>
 "aggravated_assaults"

@@ -16,6 +16,8 @@ A data frame with 267 rows and five columns:
 
 This dataset is also available as a stand-alone file in CSV format at
 \url{https://mpjashby.github.io/crimemappingdata/bronx_shootings.csv}.
+
+Licence: NYC Open Data Law
 }
 \source{
 New York City Police Department

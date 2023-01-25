@@ -1,0 +1,76 @@
+code,district,headquarters,division,population,area,density_km2
+AG,Agra,Agra,Agra,4418797,4041,1093
+AL,Aligarh,Aligarh,Aligarh,3673889,3788,1007
+AH,Allahabad,Allahabad,Allahabad,5954391,5482,1086
+AN,Ambedkar Nagar,Akbarpur,Faizabad,2397888,2350,1020
+AM,Amethi,Gauriganj,Faizabad,2050133,2651,773
+JP,Amroha,Amroha,Moradabad,1840221,2249,818
+AU,Auraiya,Auraiya,Kanpur,1379545,2016,684
+AZ,Azamgarh,Azamgarh,Azamgarh,4613913,4054,1138
+BD,Budaun,Badaun,Bareilly,3127621,4234,2368
+BG,Baghpat,Baghpat,Meerut,1303048,5237,249
+BH,Bahraich,Bahraich,Devipatan,3487731,2981,1170
+BL,Ballia,Ballia,Azamgarh,3239774,3349,967
+BP,Balrampur,Balrampur,Devipatan,2148665,4408,487
+BN,Banda,Banda,Chitrakoot,1799410,4402,409
+BB,Barabanki,Barabanki,Faizabad,3260699,4120,791
+BR,Bareilly,Bareilly,Bareilly,4448359,2688,1655
+BS,Basti,Basti,Basti,2464464,4561,540
+BI,Bijnor,Bijnor,Moradabad,3682713,4262,864
+BU,Bulandshahr,Bulandshahr,Meerut,3499171,4441,776
+CD,Chandauli,Chandauli,Varanasi,1952756,2541,768
+CT,Chitrakoot,Chitrakoot,Chitrakoot,991730,3216,308
+DE,Deoria,Deoria,Gorakhpur,3100946,2540,1221
+ET,Etah,Etah,Aligarh,1774480,2431,730
+EW,Etawah,Etawah,Kanpur,1581810,2311,684
+FZ,Faizabad,Ayodhya,Faizabad,2470996,2341,1056
+FR,Farrukhabad,Fatehgarh,Kanpur,1885204,2181,864
+FT,Fatehpur,Fatehpur,Allahabad,2632733,4152,634
+FI,Firozabad,Firozabad,Agra,2498156,2407,1038
+GB,Gautam Buddha Nagar,Greater Noida,Meerut,1648115,720,2288
+GZ,Ghaziabad,Ghaziabad,Meerut,3343334,1179,2836
+GP,Ghazipur,Ghazipur,Varanasi,3620268,3377,1072
+GN,Gonda,Gonda,Devipatan,3433919,4003,858
+GR,Gorakhpur,Gorakhpur,Gorakhpur,4440895,3321,1337
+HM,Hamirpur,Hamirpur,Chitrakoot,1104285,4021,275
+HA,Hapur,Hapur,Meerut,1338311,649,2061
+HR,Hardoi,Hardoi,Lucknow,4092845,5986,684
+HT,Hathras,Hathras,Aligarh,1564708,1840,850
+JL,Jalaun,Orai,Jhansi,1689974,4565,370
+JU,Jaunpur,Jaunpur,Varanasi,4494204,4038,1113
+JH,Jhansi,Jhansi,Jhansi,1998603,5024,398
+KJ,Kannauj,Kannauj,Kanpur,1656616,2093,792
+KD,Kanpur Dehat,Akbarpur,Kanpur,1796184,3021,595
+KN,Kanpur Nagar,Kanpur,Kanpur,4581268,3155,1452
+KG,Kasganj,Kasganj,Aligarh,1436719,1955,735
+KS,Kaushambi,Manjhanpur,Allahabad,1599596,1779,899
+KU,Kushinagar,Padarauna,Gorakhpur,4021243,7680,524
+LK,Lakhimpur Kheri,Kheri,Lucknow,3564544,2905,1227
+LA,Lalitpur,Lalitpur,Jhansi,1221592,5039,242
+LU,Lucknow,Lucknow,Lucknow,4589838,2528,1816
+MG,Maharajganj,Maharajganj,Gorakhpur,2684703,2952,909
+MH,Mahoba,Mahoba,Chitrakoot,875958,3144,279
+MP,Mainpuri,Mainpuri,Agra,1868529,2760,677
+MT,Mathura,Mathura,Agra,2547184,3340,763
+MB,Mau,Mau,Azamgarh,2205968,1713,1288
+ME,Meerut,Meerut,Meerut,3443689,2559,1346
+MI,Mirzapur,Mirzapur,Mirzapur,2496970,4405,567
+MO,Moradabad,Moradabad,Moradabad,3126507,2233,1400
+MU,Muzaffarnagar,Muzaffarnagar,Saharanpur,2869934,2742,1047
+PI,Pilibhit,Pilibhit,Bareilly,2031007,3686,551
+PR,Pratapgarh,Pratapgarh,Allahabad,3209141,3717,863
+RB,Rae Bareli,Rae Bareli,Lucknow,2903507,3937,737
+RA,Rampur,Rampur,Moradabad,2335819,2367,987
+SA,Saharanpur,Saharanpur,Saharanpur,3466382,3689,940
+SK,Sant Kabir Nagar,Khalilabad,Basti,2199774,2390,920
+SR,Sant Ravi Das Nagar(Bhadohi),Gyanpur,Mirzapur,1715183,1646,1042
+SM,Sambhal,Sambhal,Moradabad,1578213,1015,1555
+SJ,Shahjahanpur,Shahjahanpur,Bareilly,3006538,4388,685
+SH,Shamli,Shamli,Saharanpur,1273578,1266,1006
+SV,Shrawasti,Shravasti,Devipatan,1117361,1640,681
+SN,Siddharth Nagar,Siddharthnagar,Basti,2559297,2895,884
+SI,Sitapur,Sitapur,Lucknow,4483992,5743,781
+SO,Sonbhadra,Robertsganj,Mirzapur,1862559,6905,270
+SU,Sultanpur,Sultanpur,Faizabad,2249036,2457,915
+UN,Unnao,Unnao,Lucknow,3108367,4558,682
+VA,Varanasi,Varanasi,Varanasi,3676841,1535,2395

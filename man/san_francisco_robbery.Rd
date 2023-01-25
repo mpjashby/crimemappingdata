@@ -16,6 +16,8 @@ A data frame containing 951 rows and 5 columns:
 
 This dataset is also available as a stand-alone file in CSV format at
 \url{https://mpjashby.github.io/crimemappingdata/san_francisco_robbery.csv}.
+
+Licence: Open Data Commons Public Domain Dedication and License \url{https://opendatacommons.org/licenses/pddl/1.0/}
 }
 \source{
 San Francisco Police Department

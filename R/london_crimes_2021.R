@@ -18,5 +18,7 @@
 #' This dataset is also available as a stand-alone file in gzipped CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/london_crimes_2021.csv.gz>.
 #'
+#' Licence: Open Government Licence <https://www.nationalarchives.gov.uk/doc/open-government-licence/>
+#'
 #' @source Home Office <https://data.police.uk/>
 "london_crimes_2021"

@@ -16,5 +16,7 @@
 #' This dataset is also available as a stand-alone file in CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/nyc_shootings.csv>.
 #'
+#' Licence: NYC Open Data Law
+#'
 #' @source New York City Police Department <https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8>
 "nyc_shootings"

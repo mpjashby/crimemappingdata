@@ -21,3 +21,8 @@ You can install the development version of crimemappingdata from
 # install.packages("remotes")
 remotes::install_github("mpjashby/crimemappingdata")
 ```
+
+## Using the data in teaching
+
+For advice on how to use the data in this package for teaching, see the
+vignette `vignette("teaching")`.

@@ -17,5 +17,7 @@
 #' and in GeoPackage format at
 #' <https://mpjashby.github.io/crimemappingdata/glenrose_heights_homicides.gpkg>
 #'
+#' Licence: public domain
+#'
 #' @source Atlanta Police Department
 "glenrose_heights_homicides"
