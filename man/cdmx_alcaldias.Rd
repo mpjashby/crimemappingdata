@@ -5,7 +5,17 @@
 \alias{cdmx_alcaldias}
 \title{Alcaldías (boroughs) of Mexico City}
 \format{
-An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 16 rows and 3 columns.
+Spatial dataset containing 16 rows and 3 columns:
+\describe{
+\item{municip}{Row number}
+\item{nomgeo}{Name}
+\item{geometry}{SF polygon geometry}
+}
+
+This dataset is also available as a stand-alone file in geopackage
+format at \url{https://mpjashby.github.io/crimemappingdata/cdmx_alcaldias.gpkg}.
+
+Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/4.0/}
 }
 \source{
 Government of Mexico City
@@ -15,18 +25,5 @@ cdmx_alcaldias
 }
 \description{
 Spatial dataset of the boundaries of the alcaldías (boroughs) of Mexico City.
-}
-\details{
-Spatial dataset containing 16 rows and 3 columns:
-\describe{
-\item{municip}{Row number}
-\item{nomgeo}{Name}
-\item{geometry}{SF polygon geometry}
-}
-
-This dataset is also available as a stand-alone file in geopackage format
-at \url{https://mpjashby.github.io/crimemappingdata/cdmx_alcaldias.gpkg}.
-
-Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/4.0/}
 }
 \keyword{datasets}

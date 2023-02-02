@@ -14,12 +14,14 @@ knitr::opts_chunk$set(
 ```
 
 
+
 # crimemappingdata
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 The crimemappingdata package contains a variety of datasets that are useful in learning crime mapping. These datasets are used in the [crimemapping package](https://github.com/mpjashby/crimemapping/) but are also available for use by anyone else in accordance with the licence shown in the documentation for each dataset.
+
 
 
 ## Installation
@@ -32,6 +34,37 @@ remotes::install_github("mpjashby/crimemappingdata")
 ```
 
 
+## Available datasets
+
+The following datasets are available, both as: 
+
+  * R data that can be called using the `data()` function, e.g. `data(aggravated_assaults)`, and
+  * stand-alone files that can be downloaded in the formats shown below.
+  
+See the manual page for each dataset (e.g. `?aggravated_assaults`) for the stand-alone file URL for each dataset. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using `readr::read_csv()` or `readxl::read_excel()`). 
+
+```{r, echo=FALSE}
+data_in_package <- as.data.frame(datasets.load::datasets(package = "crimemappingdata"))
+data_in_package$Dataset <- data_in_package$Item
+data_in_package$Description <- data_in_package$Title
+
+files <- data.frame(file = dir("inst/extdata"))
+files$Dataset <- regmatches(files$file, regexpr("[a-z\\_]+", files$file))
+files$Format <- paste0(
+  "`", 
+  regmatches(files$file, regexpr("\\..*$", files$file)), 
+  "`"
+)
+files$file <- NULL
+
+datasets_data <- merge(data_in_package, files, by = "Dataset")
+
+knitr::kable(datasets_data[, c("Dataset", "Description", "Format")])
+```
+
+Note that gzipped CSV files (with the file extension `.csv.gz`) can be opened using `readr::read_csv()` and functions from other packages, but not `base::read.csv()`.
+
+
 ## Using the data in teaching
 
-For advice on how to use the data in this package for teaching, see the vignette `vignette("teaching")`.
+For suggestions on how to use the data in this package for teaching, as well as details of each dataset, see the vignette `vignette("teaching")`.
