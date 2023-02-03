@@ -1,0 +1,378 @@
+---
+title: "Using crime data for teaching"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using crime data for teaching}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  comment = "#>"
+)
+
+
+```
+
+The datasets in this package can be used for teaching a variety of skills for crime mapping and other types of crime analysis. 
+
+
+## Using the datasets in this package
+
+All the datasets in this package come in two formats: first as a conventional R package dataset that can be loaded using the `data()` function from the base package, and secondly as a stand-alone file hosted on GitHub Pages. These stand-alone files are in a variety of different file formats to give students the opportunity to learn how to load files of different types. In most cases the contents of the two versions of the dataset are identical, but where they differ that is noted below.
+
+If you only want to teach students about manipulating existing data, you can get students to install the crimemappingdata package from GitHub and load the data using the `data()` function from the base package. However, loading data is an important part of any analytical workflow, and one students frequently trip up over. For that reason I suggest loading the datasets from the stand-alone file URL listed on the help page (included in the package itself and on the package website) associated with each dataset. This will be particularly useful for students for datasets that must be separately downloaded and/or unzipped before being loaded, since this gives students practice in interacting with the file system, creating temporary files, etc.
+
+
+## Spatial datasets: point-level data
+
+
+### `aggravated_assaults`
+
+```{r}
+data(aggravated_assaults, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(aggravated_assaults), big.mark = ",")` aggravated assaults in Austin, TX, in 2019.
+
+```{r}
+aggravated_assaults |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is different from the package version. The stand-alone version is an Excel file containing three sheets. Each sheet has aggravated-assault data for 2019 for a different city: Austin, TX; Fort Worth, TX; and Seattle, WA. Students can get the same data as is in the package version of the dataset by loading the `Austin` sheet from the Excel file using the [readxl package](https://readxl.tidyverse.org/).
+
+
+### `bronx_shootings` and `nyc_shootings`
+
+```{r}
+data(bronx_shootings, package = "crimemappingdata")
+data(nyc_shootings, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(nyc_shootings), big.mark = ",")` shootings in NYC in 2019 and separately of the `r format(nrow(bronx_shootings), big.mark = ",")` of those shootings that occurred in the Bronx.
+
+```{r}
+nyc_shootings |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of these datasets are CSV files.
+
+
+### `cdmx_car_jacking`
+
+```{r}
+data("cdmx_car_jacking", package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(cdmx_car_jacking), big.mark = ",")` car jacking offences in Mexico City in 2019.
+
+```{r}
+cdmx_car_jacking |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geopackage file.
+
+
+
+### `czechia_collisions` and `czechia_mcycle_thefts`
+
+```{r}
+data(czechia_collisions, package = "crimemappingdata")
+data(czechia_mcycle_thefts, package = "crimemappingdata")
+```
+
+Datasets of `r format(nrow(czechia_collisions), big.mark = ",")` traffic collisions related to alcohol or drugs and separately of `r format(nrow(czechia_mcycle_thefts), big.mark = ",")` thefts of two-wheeled motor vehicles in Czechia between 2020 and 2022.
+
+```{r}
+czechia_collisions |> 
+  head(10) |> 
+  knitr::kable(caption = "`czechia_collisions`")
+```
+
+```{r}
+czechia_mcycle_thefts |> 
+  head(10) |> 
+  knitr::kable(caption = "`czechia_mcycle_thefts`")
+```
+
+The stand-alone version of these datasets are geopackage files.
+
+
+
+### `downtown_homicides` and `glenrose_heights_homicides`
+
+```{r}
+data(downtown_homicides, package = "crimemappingdata")
+data(glenrose_heights_homicides, package = "crimemappingdata")
+```
+
+Two datasets of homicides in the Downtown and Glenrose Heights neighbourhoods of Atlanta, GA, in 2019. There are four rows in each dataset. The `label` column contains a pre-formatted label suitable for using in plotting the points on a map.
+
+```{r}
+downtown_homicides_table <- downtown_homicides
+downtown_homicides_table$label <- gsub(
+  "\n", 
+  "<br>", 
+  downtown_homicides_table$label
+)
+downtown_homicides_table |> 
+  head(10) |> 
+  knitr::kable(caption = "`downtown_homicides`")
+```
+
+```{r}
+glenrose_heights_homicides_table <- glenrose_heights_homicides
+glenrose_heights_homicides_table$label <- gsub(
+  "\n", 
+  "<br>", 
+  glenrose_heights_homicides_table$label
+)
+glenrose_heights_homicides_table |> 
+  head(10) |> 
+  knitr::kable(caption = "`glenrose_heights_homicides`")
+```
+
+The stand-alone versions of these datasets are available as both CSV and geopackage files.
+
+
+### `northumbria_asb`
+
+```{r}
+data(northumbria_asb, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(northumbria_asb), big.mark = ",")` anti-social behaviour incidents in Northumbria, England, in 2022.
+
+```{r}
+northumbria_asb |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a tab-separated values (`.tab`) file. The data in this file can be used together with the `northumbria_districts`, `northumbria_wards` and `northumbria_ward_pop` datasets to calculate area-level incidence rates.
+
+
+### `san_francisco_robbery`
+
+```{r}
+data(san_francisco_robbery, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(san_francisco_robbery), big.mark = ",")` personal robberies in San Francisco in 2019.
+
+```{r}
+san_francisco_robbery |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
+
+
+### `vancouver_thefts`
+
+```{r}
+data(vancouver_thefts, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(vancouver_thefts), big.mark = ",")` thefts in the City of Vancouver in 2020.
+
+```{r}
+vancouver_thefts |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a gzipped CSV file.
+
+
+
+## Spatial datasets: area-level data
+
+
+### `cdmx_alcaldias`
+
+```{r}
+data(cdmx_alcaldias, package = "crimemappingdata")
+```
+
+Simple features (SF) object containing the boundaries of the alcaldías (boroughs) of Mexico City.
+
+```{r}
+cdmx_alcaldias_head <- sf::st_drop_geometry(cdmx_alcaldias)
+cdmx_alcaldias_head$geometry <- "&lt;SF polygon&gt;"
+
+cdmx_alcaldias_head |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geopackage file.
+
+
+### `northumbria_districts` and `northumbria_wards`
+
+```{r}
+data(northumbria_districts, package = "crimemappingdata")
+data(northumbria_wards, package = "crimemappingdata")
+```
+
+Simple features (SF) objects containing the boundaries of local government wards and districts in Northumbria, England. Boundaries are for 2022.
+
+```{r}
+northumbria_districts_head <- sf::st_drop_geometry(northumbria_districts)
+northumbria_districts_head$geometry <- "&lt;SF polygon&gt;"
+
+northumbria_districts_head |> 
+  head(10) |> 
+  knitr::kable(caption = "`northumbria_districts`")
+```
+
+```{r}
+northumbria_wards_head <- sf::st_drop_geometry(northumbria_wards)
+northumbria_wards_head$geometry <- "&lt;SF polygon&gt;"
+
+northumbria_wards_head |> 
+  head(10) |> 
+  knitr::kable(caption = "`northumbria_wards`")
+```
+
+The stand-alone version of `northumbria_districts` is in geoJSON format and the stand-alone version of `northumbria_wards` is a geopackage file.
+
+
+### `qld_police_divisions`
+
+```{r}
+data(qld_police_divisions, package = "crimemappingdata")
+```
+
+Simple features (SF) object containing the boundaries of divisions of the Queensland Police Service as of 2022.
+
+```{r}
+qld_police_divisions_head <- sf::st_drop_geometry(qld_police_divisions)
+qld_police_divisions_head$geometry <- "&lt;SF polygon&gt;"
+
+qld_police_divisions_head |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geopackage file.
+
+
+### `qld_stalking`
+
+```{r}
+data(qld_stalking, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(qld_stalking), big.mark = ",")` annual counts of stalking offences recorded by the Queensland Police Service in police divisions from 2001 to 2022.
+
+```{r}
+qld_stalking |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is an Excel (`.xlsx`) file.
+
+
+### `uttar_pradesh_districts`
+
+```{r}
+data(uttar_pradesh_districts, package = "crimemappingdata")
+```
+
+Simple features (SF) object containing boundaries of administrative districts in Uttar Pradesh, India.
+
+```{r}
+uttar_pradesh_districts_head <- sf::st_drop_geometry(uttar_pradesh_districts)
+uttar_pradesh_districts_head$geometry <- "&lt;SF polygon&gt;"
+
+uttar_pradesh_districts_head |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geopackage file.
+
+
+### `uttar_pradesh_murders`
+
+```{r}
+data("uttar_pradesh_murders", package = "crimemappingdata")
+```
+
+Dataset of counts of murders recorded by police in the `r format(nrow(uttar_pradesh_murders), big.mark = ",")` administrative districts of the state of Uttar Pradesh, India, in 2014.
+
+```{r}
+uttar_pradesh_murders |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
+
+
+
+## Non-spatial datasets
+
+
+### `northumbria_ward_pop`
+
+```{r}
+data(northumbria_ward_pop, package = "crimemappingdata")
+```
+
+Dataset of usual resident population in 2020 in each local government ward in Northumbria, England. This can be used together with the `northumbria_asb` and `northumbria_wards` datasets for teaching non-spatial joining and calculation of area crime rates.
+
+```{r}
+northumbria_ward_pop |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is an Excel (`.xlsx`) file.
+
+
+### `qld_population`
+
+```{r}
+data(qld_population, package = "crimemappingdata")
+```
+
+Dataset of usual resident population in 2016 in each Queensland Police Service division area. This can be used together with the `qld_police_divisions` and `qld_stalking` datasets, especially for teaching non-spatial joining and calculation of area crime rates.
+
+```{r}
+qld_population |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is gzipped CSV file.
+
+
+### `uttar_pradesh_population`
+
+```{r}
+data("uttar_pradesh_population", package = "crimemappingdata")
+```
+
+Dataset of usual resident population in 2011 in each administrative district in Uttar Pradesh. This can be used together with the `uttar_pradesh_districts` and `uttar_pradesh_murders` datasets, especially for teaching non-spatial joining and calculation of area crime rates.
+
+```{r}
+uttar_pradesh_population |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
