@@ -41,7 +41,7 @@ The following datasets are available, both as:
   * R data that can be called using the `data()` function, e.g. `data(aggravated_assaults)`, and
   * stand-alone files that can be downloaded in the formats shown below.
   
-See the manual page for each dataset (e.g. `?aggravated_assaults`) for the stand-alone file URL for each dataset. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using `readr::read_csv()` or `readxl::read_excel()`). 
+See the manual page for each dataset (e.g. `?aggravated_assaults`) for the corresponding stand-alone file URL. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using `readr::read_csv()` or `readxl::read_excel()`). 
 
 ```{r, echo=FALSE}
 data_in_package <- as.data.frame(datasets.load::datasets(package = "crimemappingdata"))
