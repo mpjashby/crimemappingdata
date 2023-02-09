@@ -47,13 +47,19 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | czechia_mcycle_thefts      | Motorcycle thefts in Czechia                      | `.gpkg`    |
 | downtown_homicides         | Homicides in downtown Atlanta in 2019             | `.csv`     |
 | downtown_homicides         | Homicides in downtown Atlanta in 2019             | `.gpkg`    |
-| glenrose_heights_homicides | Homicides in Glenrose Heights in 2019             | `.csv`     |
 | glenrose_heights_homicides | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
+| glenrose_heights_homicides | Homicides in Glenrose Heights in 2019             | `.csv`     |
 | kansas_city_frauds         | Fraud offences in Kansas City in 2015             | `.csv.gz`  |
+| medellin_homicides         | Medellin homicides                                | `.csv`     |
+| medellin_metro_lines       | Metro and cable-car lines in Medellin             | `.zip`     |
+| medellin_metro_stns        | Metro and cable-car stations in Medellin          | `.csv`     |
 | northumbria_asb            | Anti-social behaviour in Northumbria              | `.tab`     |
 | northumbria_districts      | Local authority districts of Northumbria          | `.geojson` |
 | northumbria_ward_pop       | Northumbria ward population                       | `.xlsx`    |
 | northumbria_wards          | Local government wards of Northumbria             | `.gpkg`    |
+| nottingham_burglary        | Burglaries in Nottingham                          | `.csv.gz`  |
+| nottingham_robbery         | Robberies in Nottingham                           | `.csv.gz`  |
+| nottingham_wards           | Local government wards of Nottingham              | `.gpkg`    |
 | nyc_shootings              | Shootings in New York City in 2019                | `.csv`     |
 | qld_police_divisions       | Queensland Police Service division boundaries     | `.gpkg`    |
 | qld_population             | Population of Queensland Police Service divisions | `.csv.gz`  |

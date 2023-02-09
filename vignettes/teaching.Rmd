@@ -144,6 +144,30 @@ glenrose_heights_homicides_table |>
 The stand-alone versions of these datasets are available as both CSV and geopackage files.
 
 
+### `nottingham_burglary` and `nottingham_robbery`
+
+```{r}
+data(nottingham_burglary, package = "crimemappingdata")
+data(nottingham_robbery, package = "crimemappingdata")
+```
+
+Datasets of `r format(nrow(nottingham_burglary), big.mark = ",")` burglaries and `r format(nrow(nottingham_robbery), big.mark = ",")` robberies in Nottingham, England, in 2022.
+
+```{r}
+nottingham_burglary |> 
+  head(10) |> 
+  knitr::kable(caption = "`nottingham_burglary`")
+```
+
+```{r}
+nottingham_robbery |> 
+  head(10) |> 
+  knitr::kable(caption = "`nottingham_robbery`")
+```
+
+The stand-alone versions of these datasets are gzipped CSV files. The data in these files can be used together with the `nottingham_wards` dataset teach spatial clipping, counting incidents in areas and related topics.
+
+
 ### `northumbria_asb`
 
 ```{r}
@@ -247,6 +271,26 @@ northumbria_wards_head |>
 ```
 
 The stand-alone version of `northumbria_districts` is in geoJSON format and the stand-alone version of `northumbria_wards` is a geopackage file.
+
+
+### `nottingham_wards`
+
+```{r}
+data(nottingham_wards, package = "crimemappingdata")
+```
+
+Simple features (SF) objects containing the boundaries of local government wards and districts in Nottingham, England. Boundaries are for 2022.
+
+```{r}
+nottingham_wards_head <- sf::st_drop_geometry(nottingham_wards)
+nottingham_wards_head$geometry <- "&lt;SF polygon&gt;"
+
+nottingham_wards_head |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this file is in geopackage format. The data in these files can be used together with the `nottingham_wards` dataset teach spatial clipping, counting incidents in areas and related topics.
 
 
 ### `qld_police_divisions`
