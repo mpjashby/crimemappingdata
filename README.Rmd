@@ -4,13 +4,15 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+
+
 ```
 
 
@@ -44,17 +46,29 @@ The following datasets are available, both as:
 See the manual page for each dataset (e.g. `?aggravated_assaults`) for the corresponding stand-alone file URL. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using `readr::read_csv()` or `readxl::read_excel()`). 
 
 ```{r, echo=FALSE}
+# Extract data frame of datasets
 data_in_package <- as.data.frame(datasets.load::datasets(package = "crimemappingdata"))
-data_in_package$Dataset <- data_in_package$Item
+data_in_package$Dataset <- paste0("`", data_in_package$Item, "`")
 data_in_package$Description <- data_in_package$Title
 
+# Get vector of data files
 files <- data.frame(file = dir("inst/extdata"))
-files$Dataset <- regmatches(files$file, regexpr("[a-z\\_]+", files$file))
+
+# Extract name of datasets without file extensions
+files$Dataset <- paste0(
+  "`", 
+  regmatches(files$file, regexpr("[a-z\\_]+", files$file)),
+  "`"
+)
+
+# Extract data file extensions
 files$Format <- paste0(
   "`", 
   regmatches(files$file, regexpr("\\..*$", files$file)), 
   "`"
 )
+
+# Remove full file name
 files$file <- NULL
 
 datasets_data <- merge(data_in_package, files, by = "Dataset")
@@ -68,3 +82,8 @@ Note that gzipped CSV files (with the file extension `.csv.gz`) can be opened us
 ## Using the data in teaching
 
 For suggestions on how to use the data in this package for teaching, as well as details of each dataset, see the vignette `vignette("teaching")`.
+
+
+## Data licences
+
+This package is licensed under the MIT Licence, but the individual datasets have been licensed by the data provider using a variety of different open-data licences. Check the manual page for each dataset for details of the relevant licence. Users are responsible for using the data in accordance with the applicable licence for a dataset.
