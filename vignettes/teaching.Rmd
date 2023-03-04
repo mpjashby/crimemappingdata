@@ -243,6 +243,40 @@ cdmx_alcaldias_head |>
 The stand-alone version of this dataset is a geopackage file.
 
 
+### `malaysia_violence_counts`
+
+```{r}
+data(malaysia_violence_counts, package = "crimemappingdata")
+```
+
+Dataset of annual counts of five types of violent crime in states of Malaysia from 2006 to 2017.
+
+```{r}
+malaysia_violence_counts |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a `.rds` file.
+
+
+### `northants_burglary_counts`
+
+```{r}
+data(northants_burglary_counts, package = "crimemappingdata")
+```
+
+Dataset of counts of burglaries in `r format(nrow(northants_burglary_counts), big.mark = ",")` lower-layer super output areas in Northamptonshire, England, in 2020.
+
+```{r}
+northants_burglary_counts |> 
+  head(10) |> 
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a `.rds` file.
+
+
 ### `northumbria_districts` and `northumbria_wards`
 
 ```{r}

@@ -47,13 +47,15 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | `czechia_mcycle_thefts`      | Motorcycle thefts in Czechia                      | `.gpkg`    |
 | `downtown_homicides`         | Homicides in downtown Atlanta in 2019             | `.csv`     |
 | `downtown_homicides`         | Homicides in downtown Atlanta in 2019             | `.gpkg`    |
-| `glenrose_heights_homicides` | Homicides in Glenrose Heights in 2019             | `.csv`     |
 | `glenrose_heights_homicides` | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
+| `glenrose_heights_homicides` | Homicides in Glenrose Heights in 2019             | `.csv`     |
 | `hungerford_shootings`       | Shootings in the Hungerford Massacre              | `.csv`     |
 | `kansas_city_frauds`         | Fraud offences in Kansas City in 2015             | `.csv.gz`  |
+| `malaysia_violence_counts`   | Violent crime counts in Malaysia, 2006 to 2017    | `.rds`     |
 | `medellin_homicides`         | Medellin homicides                                | `.csv`     |
 | `medellin_metro_lines`       | Metro and cable-car lines in Medellin             | `.zip`     |
 | `medellin_metro_stns`        | Metro and cable-car stations in Medellin          | `.csv`     |
+| `northants_burglary_counts`  | Counts of burglary in Northamptonshire in 2020    | `.rds`     |
 | `northumbria_asb`            | Anti-social behaviour in Northumbria              | `.tab`     |
 | `northumbria_districts`      | Local authority districts of Northumbria          | `.geojson` |
 | `northumbria_ward_pop`       | Northumbria ward population                       | `.xlsx`    |
