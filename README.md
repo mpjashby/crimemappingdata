@@ -45,11 +45,12 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | `cdmx_car_jacking`           | Car jackings in Mexico City                       | `.gpkg`    |
 | `czechia_collisions`         | Drink/drug-related traffic collisions in Czechia  | `.gpkg`    |
 | `czechia_mcycle_thefts`      | Motorcycle thefts in Czechia                      | `.gpkg`    |
-| `downtown_homicides`         | Homicides in downtown Atlanta in 2019             | `.csv`     |
 | `downtown_homicides`         | Homicides in downtown Atlanta in 2019             | `.gpkg`    |
-| `glenrose_heights_homicides` | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
+| `downtown_homicides`         | Homicides in downtown Atlanta in 2019             | `.csv`     |
 | `glenrose_heights_homicides` | Homicides in Glenrose Heights in 2019             | `.csv`     |
+| `glenrose_heights_homicides` | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
 | `hungerford_shootings`       | Shootings in the Hungerford Massacre              | `.csv`     |
+| `japan_violence_counts`      | Counts of violent crime in Japan, 2012            | `.rds`     |
 | `kansas_city_frauds`         | Fraud offences in Kansas City in 2015             | `.csv.gz`  |
 | `malaysia_violence_counts`   | Violent crime counts in Malaysia, 2006 to 2017    | `.rds`     |
 | `medellin_homicides`         | Medellin homicides                                | `.csv`     |

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 ```
 
-The datasets in this package can be used for teaching a variety of skills for crime mapping and other types of crime analysis. 
+The datasets in this package can be used for teaching a variety of skills for crime mapping and other types of crime analysis.
 
 
 ## Using the datasets in this package
@@ -39,8 +39,8 @@ data(aggravated_assaults, package = "crimemappingdata")
 Dataset of `r format(nrow(aggravated_assaults), big.mark = ",")` aggravated assaults in Austin, TX, in 2019.
 
 ```{r}
-aggravated_assaults |> 
-  head(10) |> 
+aggravated_assaults |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -57,8 +57,8 @@ data(nyc_shootings, package = "crimemappingdata")
 Dataset of `r format(nrow(nyc_shootings), big.mark = ",")` shootings in NYC in 2019 and separately of the `r format(nrow(bronx_shootings), big.mark = ",")` of those shootings that occurred in the Bronx.
 
 ```{r}
-nyc_shootings |> 
-  head(10) |> 
+nyc_shootings |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -74,8 +74,8 @@ data("cdmx_car_jacking", package = "crimemappingdata")
 Dataset of `r format(nrow(cdmx_car_jacking), big.mark = ",")` car jacking offences in Mexico City in 2019.
 
 ```{r}
-cdmx_car_jacking |> 
-  head(10) |> 
+cdmx_car_jacking |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -93,14 +93,14 @@ data(czechia_mcycle_thefts, package = "crimemappingdata")
 Datasets of `r format(nrow(czechia_collisions), big.mark = ",")` traffic collisions related to alcohol or drugs and separately of `r format(nrow(czechia_mcycle_thefts), big.mark = ",")` thefts of two-wheeled motor vehicles in Czechia between 2020 and 2022.
 
 ```{r}
-czechia_collisions |> 
-  head(10) |> 
+czechia_collisions |>
+  head(10) |>
   knitr::kable(caption = "`czechia_collisions`")
 ```
 
 ```{r}
-czechia_mcycle_thefts |> 
-  head(10) |> 
+czechia_mcycle_thefts |>
+  head(10) |>
   knitr::kable(caption = "`czechia_mcycle_thefts`")
 ```
 
@@ -120,24 +120,24 @@ Two datasets of homicides in the Downtown and Glenrose Heights neighbourhoods of
 ```{r}
 downtown_homicides_table <- downtown_homicides
 downtown_homicides_table$label <- gsub(
-  "\n", 
-  "<br>", 
+  "\n",
+  "<br>",
   downtown_homicides_table$label
 )
-downtown_homicides_table |> 
-  head(10) |> 
+downtown_homicides_table |>
+  head(10) |>
   knitr::kable(caption = "`downtown_homicides`")
 ```
 
 ```{r}
 glenrose_heights_homicides_table <- glenrose_heights_homicides
 glenrose_heights_homicides_table$label <- gsub(
-  "\n", 
-  "<br>", 
+  "\n",
+  "<br>",
   glenrose_heights_homicides_table$label
 )
-glenrose_heights_homicides_table |> 
-  head(10) |> 
+glenrose_heights_homicides_table |>
+  head(10) |>
   knitr::kable(caption = "`glenrose_heights_homicides`")
 ```
 
@@ -154,14 +154,14 @@ data(nottingham_robbery, package = "crimemappingdata")
 Datasets of `r format(nrow(nottingham_burglary), big.mark = ",")` burglaries and `r format(nrow(nottingham_robbery), big.mark = ",")` robberies in Nottingham, England, in 2022.
 
 ```{r}
-nottingham_burglary |> 
-  head(10) |> 
+nottingham_burglary |>
+  head(10) |>
   knitr::kable(caption = "`nottingham_burglary`")
 ```
 
 ```{r}
-nottingham_robbery |> 
-  head(10) |> 
+nottingham_robbery |>
+  head(10) |>
   knitr::kable(caption = "`nottingham_robbery`")
 ```
 
@@ -177,8 +177,8 @@ data(northumbria_asb, package = "crimemappingdata")
 Dataset of `r format(nrow(northumbria_asb), big.mark = ",")` anti-social behaviour incidents in Northumbria, England, in 2022.
 
 ```{r}
-northumbria_asb |> 
-  head(10) |> 
+northumbria_asb |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -194,8 +194,8 @@ data(san_francisco_robbery, package = "crimemappingdata")
 Dataset of `r format(nrow(san_francisco_robbery), big.mark = ",")` personal robberies in San Francisco in 2019.
 
 ```{r}
-san_francisco_robbery |> 
-  head(10) |> 
+san_francisco_robbery |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -211,8 +211,8 @@ data(vancouver_thefts, package = "crimemappingdata")
 Dataset of `r format(nrow(vancouver_thefts), big.mark = ",")` thefts in the City of Vancouver in 2020.
 
 ```{r}
-vancouver_thefts |> 
-  head(10) |> 
+vancouver_thefts |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -235,12 +235,33 @@ Simple features (SF) object containing the boundaries of the alcaldías (borough
 cdmx_alcaldias_head <- sf::st_drop_geometry(cdmx_alcaldias)
 cdmx_alcaldias_head$geometry <- "&lt;SF polygon&gt;"
 
-cdmx_alcaldias_head |> 
-  head(10) |> 
+cdmx_alcaldias_head |>
+  head(10) |>
   knitr::kable()
 ```
 
 The stand-alone version of this dataset is a geopackage file.
+
+
+
+### `japan_violence_counts`
+
+```{r}
+data(japan_violence_counts, package = "crimemappingdata")
+```
+
+Dataset of annual counts of different types of violent crime in prefectures of Japan in 2012, together with population data and GDP per capita data.
+
+```{r}
+japan_violence_counts |>
+  head(10) |>
+  knitr::kable()
+```
+
+The format of this data is designed to be challenging for students, who will need to reformat the data and wrangle it to create population counts. This is designed to reflect the formats of data that are often provided by statistical agencies.
+
+The stand-alone version of this dataset is a `.rds` file.
+
 
 
 ### `malaysia_violence_counts`
@@ -252,8 +273,8 @@ data(malaysia_violence_counts, package = "crimemappingdata")
 Dataset of annual counts of five types of violent crime in states of Malaysia from 2006 to 2017.
 
 ```{r}
-malaysia_violence_counts |> 
-  head(10) |> 
+malaysia_violence_counts |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -269,8 +290,8 @@ data(northants_burglary_counts, package = "crimemappingdata")
 Dataset of counts of burglaries in `r format(nrow(northants_burglary_counts), big.mark = ",")` lower-layer super output areas in Northamptonshire, England, in 2020.
 
 ```{r}
-northants_burglary_counts |> 
-  head(10) |> 
+northants_burglary_counts |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -290,8 +311,8 @@ Simple features (SF) objects containing the boundaries of local government wards
 northumbria_districts_head <- sf::st_drop_geometry(northumbria_districts)
 northumbria_districts_head$geometry <- "&lt;SF polygon&gt;"
 
-northumbria_districts_head |> 
-  head(10) |> 
+northumbria_districts_head |>
+  head(10) |>
   knitr::kable(caption = "`northumbria_districts`")
 ```
 
@@ -299,8 +320,8 @@ northumbria_districts_head |>
 northumbria_wards_head <- sf::st_drop_geometry(northumbria_wards)
 northumbria_wards_head$geometry <- "&lt;SF polygon&gt;"
 
-northumbria_wards_head |> 
-  head(10) |> 
+northumbria_wards_head |>
+  head(10) |>
   knitr::kable(caption = "`northumbria_wards`")
 ```
 
@@ -319,8 +340,8 @@ Simple features (SF) objects containing the boundaries of local government wards
 nottingham_wards_head <- sf::st_drop_geometry(nottingham_wards)
 nottingham_wards_head$geometry <- "&lt;SF polygon&gt;"
 
-nottingham_wards_head |> 
-  head(10) |> 
+nottingham_wards_head |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -339,8 +360,8 @@ Simple features (SF) object containing the boundaries of divisions of the Queens
 qld_police_divisions_head <- sf::st_drop_geometry(qld_police_divisions)
 qld_police_divisions_head$geometry <- "&lt;SF polygon&gt;"
 
-qld_police_divisions_head |> 
-  head(10) |> 
+qld_police_divisions_head |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -356,8 +377,8 @@ data(qld_stalking, package = "crimemappingdata")
 Dataset of `r format(nrow(qld_stalking), big.mark = ",")` annual counts of stalking offences recorded by the Queensland Police Service in police divisions from 2001 to 2022.
 
 ```{r}
-qld_stalking |> 
-  head(10) |> 
+qld_stalking |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -376,8 +397,8 @@ Simple features (SF) object containing boundaries of administrative districts in
 uttar_pradesh_districts_head <- sf::st_drop_geometry(uttar_pradesh_districts)
 uttar_pradesh_districts_head$geometry <- "&lt;SF polygon&gt;"
 
-uttar_pradesh_districts_head |> 
-  head(10) |> 
+uttar_pradesh_districts_head |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -393,8 +414,8 @@ data("uttar_pradesh_murders", package = "crimemappingdata")
 Dataset of counts of murders recorded by police in the `r format(nrow(uttar_pradesh_murders), big.mark = ",")` administrative districts of the state of Uttar Pradesh, India, in 2014.
 
 ```{r}
-uttar_pradesh_murders |> 
-  head(10) |> 
+uttar_pradesh_murders |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -414,8 +435,8 @@ data(northumbria_ward_pop, package = "crimemappingdata")
 Dataset of usual resident population in 2020 in each local government ward in Northumbria, England. This can be used together with the `northumbria_asb` and `northumbria_wards` datasets for teaching non-spatial joining and calculation of area crime rates.
 
 ```{r}
-northumbria_ward_pop |> 
-  head(10) |> 
+northumbria_ward_pop |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -431,8 +452,8 @@ data(qld_population, package = "crimemappingdata")
 Dataset of usual resident population in 2016 in each Queensland Police Service division area. This can be used together with the `qld_police_divisions` and `qld_stalking` datasets, especially for teaching non-spatial joining and calculation of area crime rates.
 
 ```{r}
-qld_population |> 
-  head(10) |> 
+qld_population |>
+  head(10) |>
   knitr::kable()
 ```
 
@@ -448,8 +469,8 @@ data("uttar_pradesh_population", package = "crimemappingdata")
 Dataset of usual resident population in 2011 in each administrative district in Uttar Pradesh. This can be used together with the `uttar_pradesh_districts` and `uttar_pradesh_murders` datasets, especially for teaching non-spatial joining and calculation of area crime rates.
 
 ```{r}
-uttar_pradesh_population |> 
-  head(10) |> 
+uttar_pradesh_population |>
+  head(10) |>
   knitr::kable()
 ```
 
