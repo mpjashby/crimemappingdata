@@ -60,7 +60,10 @@ pop <- read_html("https://en.wikipedia.org/wiki/Prefectures_of_Japan") |>
       prefecture,
       "Hyōgo" = "Hyogo",
       "Kōchi" = "Kochi",
-      "Ōita" = "Oita"
+      "Kyōto" = "Kyoto",
+      "Ōita" = "Oita",
+      "Ōsaka" = "Osaka",
+      "Tōkyō" = "Tokyo"
     ),
     population = parse_number(population)
   )
