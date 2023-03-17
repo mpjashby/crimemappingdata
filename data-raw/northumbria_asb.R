@@ -11,6 +11,12 @@ library(tidyverse)
 
 # Local authority boundaries ---------------------------------------------------
 
+# Remove existing file, if present
+# This is needed because otherwise the rows will be appended
+if (file.exists("inst/extdata/northumbria_districts.geojson")) {
+  file.remove("inst/extdata/northumbria_districts.geojson")
+}
+
 # Source: https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2022-boundaries-uk-bfc/explore?location=55.189426%2C-3.316939%2C7.69
 northumbria_districts <- read_sf("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_December_2022_Boundaries_UK_BGC/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json") |>
   clean_names() |>
@@ -25,8 +31,7 @@ northumbria_districts <- read_sf("https://services1.arcgis.com/ESMARspQHYMw9BZ9/
       "Northumberland"
     )
   ) |>
-  write_sf("inst/extdata/northumbria_districts.geojson") |>
-  glimpse()
+  write_sf("inst/extdata/northumbria_districts.geojson")
 
 
 
