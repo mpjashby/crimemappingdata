@@ -5,19 +5,6 @@
 \alias{uttar_pradesh_population}
 \title{Population of districts in Uttar Pradesh}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 75 rows and 7 columns.
-}
-\source{
-Registrar General and Census Commissioner of India
-}
-\usage{
-uttar_pradesh_population
-}
-\description{
-Dataset of resident population of each administrative district in Uttar
-Pradesh, India, in 2011.
-}
-\details{
 Data frame containing 75 rows and 7 columns:
 \describe{
 \item{code}{Abbreviation code}
@@ -33,5 +20,15 @@ This dataset is also available as a stand-alone file in CSV format
 at \url{https://mpjashby.github.io/crimemappingdata/uttar_pradesh_population.csv}.
 
 Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/3.0/}
+}
+\source{
+Registrar General and Census Commissioner of India
+}
+\usage{
+uttar_pradesh_population
+}
+\description{
+Dataset of resident population of each administrative district in Uttar
+Pradesh, India, in 2011.
 }
 \keyword{datasets}

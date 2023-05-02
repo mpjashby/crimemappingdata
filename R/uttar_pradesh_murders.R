@@ -3,7 +3,7 @@
 #' Dataset containing counts of murders in each district in the Indian state of
 #' Uttar Pradesh in 2014.
 #'
-#' Data frame containing 75 rows and 2 columns:
+#' @format Data frame containing 75 rows and 2 columns:
 #' \describe{
 #'   \item{district}{District name}
 #'   \item{murder}{Count of murders}

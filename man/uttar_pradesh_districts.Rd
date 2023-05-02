@@ -5,20 +5,6 @@
 \alias{uttar_pradesh_districts}
 \title{Districts of Uttar Pradesh}
 \format{
-An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 75 rows and 3 columns.
-}
-\source{
-Hindustan Times
-\url{https://github.com/HindustanTimesLabs/shapefiles}
-}
-\usage{
-uttar_pradesh_districts
-}
-\description{
-Spatial dataset of the boundaries of administrative districts in the Indian
-state of uttar Pradesh.
-}
-\details{
 Simple features (SF) object containing 75 rows and 3 columns:
 \describe{
 \item{state}{State name}
@@ -30,5 +16,16 @@ This dataset is also available as a stand-alone file in geopackage format at
 \url{https://mpjashby.github.io/crimemappingdata/uttar_pradesh_districts.gpkg}.
 
 Licence: MIT
+}
+\source{
+Hindustan Times
+\url{https://github.com/HindustanTimesLabs/shapefiles}
+}
+\usage{
+uttar_pradesh_districts
+}
+\description{
+Spatial dataset of the boundaries of administrative districts in the Indian
+state of uttar Pradesh.
 }
 \keyword{datasets}

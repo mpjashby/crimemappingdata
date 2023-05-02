@@ -5,18 +5,6 @@
 \alias{cdmx_car_jacking}
 \title{Car jackings in Mexico City}
 \format{
-An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 2811 rows and 4 columns.
-}
-\source{
-Mexico City Attorney General’s Office
-}
-\usage{
-cdmx_car_jacking
-}
-\description{
-Dataset of car jackings (\emph{"robo de vehiculo de servicio particular con violencia"}) in Mexico City in 2019.
-}
-\details{
 Simple features (SF) object containing 2,811 rows and 4 columns:
 \describe{
 \item{fecha_hechos}{Date and time of the offence}
@@ -29,5 +17,14 @@ This dataset is also available as a stand-alone file in geopackage format
 at \url{https://mpjashby.github.io/crimemappingdata/cdmx_car_jacking.gpkg}.
 
 Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/4.0/}
+}
+\source{
+Mexico City Attorney General’s Office
+}
+\usage{
+cdmx_car_jacking
+}
+\description{
+Dataset of car jackings (\emph{"robo de vehiculo de servicio particular con violencia"}) in Mexico City in 2019.
 }
 \keyword{datasets}

@@ -3,7 +3,7 @@
 #' Spatial dataset of the boundaries of administrative districts in the Indian
 #' state of uttar Pradesh.
 #'
-#' Simple features (SF) object containing 75 rows and 3 columns:
+#' @format Simple features (SF) object containing 75 rows and 3 columns:
 #' \describe{
 #'   \item{state}{State name}
 #'   \item{district_name}{District name}

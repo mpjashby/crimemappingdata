@@ -3,7 +3,7 @@
 #' Dataset of resident population of each administrative district in Uttar
 #' Pradesh, India, in 2011.
 #'
-#' Data frame containing 75 rows and 7 columns:
+#' @format Data frame containing 75 rows and 7 columns:
 #' \describe{
 #'   \item{code}{Abbreviation code}
 #'   \item{district}{District name}

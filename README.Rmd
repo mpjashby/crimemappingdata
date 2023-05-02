@@ -11,8 +11,6 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
-
-
 ```
 
 
@@ -48,17 +46,21 @@ See the manual page for each dataset (e.g. `?aggravated_assaults`) for the corre
 ```{r, echo=FALSE}
 # Extract data frame of datasets
 data_in_package <- as.data.frame(datasets.load::datasets(package = "crimemappingdata"))
-data_in_package$Dataset <- paste0("`", data_in_package$Item, "`")
 data_in_package$Description <- data_in_package$Title
 
 # Get vector of data files
 files <- data.frame(file = dir("inst/extdata"))
 
 # Extract name of datasets without file extensions
+files$Item <- regmatches(files$file, regexpr("[a-z\\_]+", files$file))
+
+# Format linked name of dataset
 files$Dataset <- paste0(
-  "`", 
+  "[`", 
   regmatches(files$file, regexpr("[a-z\\_]+", files$file)),
-  "`"
+  "`](https://pkgs.lesscrime.info/crimemappingdata/reference/",
+  regmatches(files$file, regexpr("[a-z\\_]+", files$file)),
+  ".html)"
 )
 
 # Extract data file extensions
@@ -68,15 +70,15 @@ files$Format <- paste0(
   "`"
 )
 
-# Remove full file name
-files$file <- NULL
-
-datasets_data <- merge(data_in_package, files, by = "Dataset")
+# Merge datasets
+datasets_data <- merge(data_in_package, files, by = "Item")
 
 knitr::kable(datasets_data[, c("Dataset", "Description", "Format")])
 ```
 
 Note that gzipped CSV files (with the file extension `.csv.gz`) can be opened using `readr::read_csv()` and functions from other packages, but not `base::read.csv()`.
+
+You can find more details about each dataset in the vignette `vignette("dataset_summary")`.
 
 
 ## Using the data in teaching

@@ -1,0 +1,55 @@
+url: ~
+template:
+  bootstrap: 5
+reference:
+- title: "Point-level crime data"
+  desc: >
+    Datasets in which each row represents information about a single crime or
+    incident, including information about the crime/incident location.
+  contents:
+  - aggravated_assaults
+  - bronx_shootings
+  - cdmx_car_jacking
+  - chicago_aggravated_assaults
+  - czechia_collisions
+  - czechia_mcycle_thefts
+  - downtown_homicides
+  - glenrose_heights_homicides
+  - hungerford_shootings
+  - london_crimes
+  - medellin_homicides
+  - northumbria_asb
+  - nottingham_burglary
+  - nottingham_robbery
+  - nyc_shootings
+  - san_francisco_robbery
+  - vancouver_thefts
+- title: "Area-level crime data"
+  desc: >
+    Datasets in which each row represents the count of crimes or incidents in an
+    area, often for use together with a supporting dataset of area boundaries.
+  contents:
+  - japan_violence_counts
+  - malaysia_violence_counts
+  - northants_burglary_counts
+  - qld_stalking
+  - uttar_pradesh_murders
+- title: "Supporting data"
+  desc: >
+    Datasets to support the use of one or more of the crime datasets, often to
+    enable teaching of specific techniques. Suggestions for combinations of
+    crime and supporting datasets are included in the relevant pages below.
+  contents:
+  - cdmx_alcaldias
+  - chicago_police_districts
+  - medellin_metro_lines
+  - medellin_metro_stns
+  - northumbria_districts
+  - northumbria_wards
+  - northumbria_ward_pop
+  - nottingham_wards
+  - nyc_precincts
+  - qld_police_divisions
+  - qld_population
+  - uttar_pradesh_districts
+  - uttar_pradesh_population

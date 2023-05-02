@@ -5,7 +5,16 @@
 \alias{qld_police_divisions}
 \title{Queensland Police Service division boundaries}
 \format{
-An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 331 rows and 2 columns.
+Simple features (SF) object containing 331 rows and 2 columns:
+\describe{
+\item{division}{Police division name}
+\item{geometry}{SF polygons of the outline of each division}
+}
+
+This dataset is also available as a stand-alone file in geopackage format
+at \url{https://mpjashby.github.io/crimemappingdata/qld_police_divisions.gpkg}.
+
+Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/3.0/au/}
 }
 \source{
 Queensland Government
@@ -17,17 +26,5 @@ qld_police_divisions
 \description{
 Dataset of the boundaries of each division of the Queensland Police Service,
 2022.
-}
-\details{
-Simple features (SF) object containing 331 rows and 2 columns:
-\describe{
-\item{division}{Police division name}
-\item{geometry}{SF polygons of the outline of each division}
-}
-
-This dataset is also available as a stand-alone file in geopackage format
-at \url{https://mpjashby.github.io/crimemappingdata/qld_police_divisions.gpkg}.
-
-Licence: Creative Commons Attribution \url{https://creativecommons.org/licenses/by/3.0/au/}
 }
 \keyword{datasets}

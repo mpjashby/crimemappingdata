@@ -3,7 +3,7 @@
 #' Dataset of resident population of each Queensland Police Service division,
 #' 2016.
 #'
-#' Data frame containing 334 rows and 2 columns:
+#' @format Data frame containing 334 rows and 2 columns:
 #' \describe{
 #'   \item{police_division}{Police division name}
 #'   \item{population}{Number of usual residents}

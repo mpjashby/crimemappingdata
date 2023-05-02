@@ -50,4 +50,4 @@ cdmx_alcaldias <- str_glue("{tempdir()}/alcaldías_cdmx/alcaldias_cdmx.shp") |>
 
 
 # Write Rda files ----
-usethis::use_data(cdmx_car_jacking, cdmx_alcaldias, overwrite = TRUE)
+# usethis::use_data(cdmx_car_jacking, cdmx_alcaldias, overwrite = TRUE)

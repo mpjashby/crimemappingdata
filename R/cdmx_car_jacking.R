@@ -2,7 +2,7 @@
 #'
 #' Dataset of car jackings (\emph{"robo de vehiculo de servicio particular con violencia"}) in Mexico City in 2019.
 #'
-#' Simple features (SF) object containing 2,811 rows and 4 columns:
+#' @format Simple features (SF) object containing 2,811 rows and 4 columns:
 #' \describe{
 #'   \item{fecha_hechos}{Date and time of the offence}
 #'   \item{longitud}{Longitude}

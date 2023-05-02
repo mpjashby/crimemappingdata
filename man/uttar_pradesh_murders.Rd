@@ -5,7 +5,16 @@
 \alias{uttar_pradesh_murders}
 \title{Murders in Uttar Pradesh}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 75 rows and 2 columns.
+Data frame containing 75 rows and 2 columns:
+\describe{
+\item{district}{District name}
+\item{murder}{Count of murders}
+}
+
+This dataset is also available as a stand-alone file in CSV format at
+\url{https://mpjashby.github.io/crimemappingdata/uttar_pradesh_murders.csv}.
+
+Licence: Government Open Data License \url{https://data.gov.in/government-open-data-license-india}
 }
 \source{
 Government of India
@@ -17,17 +26,5 @@ uttar_pradesh_murders
 \description{
 Dataset containing counts of murders in each district in the Indian state of
 Uttar Pradesh in 2014.
-}
-\details{
-Data frame containing 75 rows and 2 columns:
-\describe{
-\item{district}{District name}
-\item{murder}{Count of murders}
-}
-
-This dataset is also available as a stand-alone file in CSV format at
-\url{https://mpjashby.github.io/crimemappingdata/uttar_pradesh_murders.csv}.
-
-Licence: Government Open Data License \url{https://data.gov.in/government-open-data-license-india}
 }
 \keyword{datasets}

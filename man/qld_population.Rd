@@ -5,7 +5,14 @@
 \alias{qld_population}
 \title{Population of Queensland Police Service divisions}
 \format{
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 334 rows and 2 columns.
+Data frame containing 334 rows and 2 columns:
+\describe{
+\item{police_division}{Police division name}
+\item{population}{Number of usual residents}
+}
+
+This dataset is also available as a stand-alone file in gzipped CSV format
+at \url{https://mpjashby.github.io/crimemappingdata/qld_population.csv.gz}.
 }
 \source{
 Queensland Government
@@ -16,15 +23,5 @@ qld_population
 \description{
 Dataset of resident population of each Queensland Police Service division,
 2016.
-}
-\details{
-Data frame containing 334 rows and 2 columns:
-\describe{
-\item{police_division}{Police division name}
-\item{population}{Number of usual residents}
-}
-
-This dataset is also available as a stand-alone file in gzipped CSV format
-at \url{https://mpjashby.github.io/crimemappingdata/qld_population.csv.gz}.
 }
 \keyword{datasets}
