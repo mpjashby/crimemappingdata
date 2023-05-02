@@ -14,9 +14,10 @@ Depends:
     R (>= 2.10)
 LazyData: true
 LazyDataCompression: gzip
+Imports: 
+    sf
 Suggests: 
     datasets.load,
     knitr,
-    rmarkdown,
-    sf
+    rmarkdown
 VignetteBuilder: knitr
