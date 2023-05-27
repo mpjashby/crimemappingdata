@@ -16,7 +16,7 @@ Data frame with 148,636 rows and 5 columns:
 
 This dataset is also available as a stand-alone file in comma-separated
 values (CSV) format at
-\url{https://mpjashby.github.io/crimemappingdata/chicago_aggravated_assaults.csv}
+\url{https://mpjashby.github.io/crimemappingdata/chicago_aggravated_assaults.csv.gz}
 
 Licence: \url{https://www.chicago.gov/city/en/narr/foia/data_disclaimer.html}
 

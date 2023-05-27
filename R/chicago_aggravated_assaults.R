@@ -14,7 +14,7 @@
 #'
 #' This dataset is also available as a stand-alone file in comma-separated
 #' values (CSV) format at
-#' <https://mpjashby.github.io/crimemappingdata/chicago_aggravated_assaults.csv>
+#' <https://mpjashby.github.io/crimemappingdata/chicago_aggravated_assaults.csv.gz>
 #'
 #' Licence: <https://www.chicago.gov/city/en/narr/foia/data_disclaimer.html>
 #'
