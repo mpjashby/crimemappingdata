@@ -1,4 +1,9 @@
-# crimemapping 0.1.1
+# crimemappingdata 0.2.0
+
+* Added new `nyc_homicides` dataset.
+
+
+# crimemappingdata 0.1.1
 
 * Fixed broken URL in `chicago_aggravated_assaults` dataset.
 
