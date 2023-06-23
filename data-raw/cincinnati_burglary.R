@@ -13,6 +13,12 @@ cincinnati_burglary <- read_csv("https://data.cincinnati-oh.gov/api/views/k59e-2
     between(as_date(date_to), ym("2016-01"), ymd("2018-12-31")),
     str_detect(offense, "BURGLARY")
   ) |>
-  select(incident_no, date = date_to, offense, longitude_x, latitude_x) |>
+  select(
+    incident_no,
+    offense_date = date_to,
+    offense,
+    longitude = longitude_x,
+    latitude = latitude_x
+  ) |>
   write_csv("inst/extdata/cincinnati_burglary.csv.gz") |>
   glimpse()

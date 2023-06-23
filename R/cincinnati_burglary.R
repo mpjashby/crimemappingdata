@@ -6,10 +6,10 @@
 #' @format Data frame with 8,723 and 5 columns:
 #' \describe{
 #'   \item{incident_no}{Unique identifier}
-#'   \item{date}{Date on which offence was discovered by victim}
+#'   \item{offense_date}{Date on which offence was discovered by victim}
 #'   \item{offense}{Offence type}
-#'   \item{longitude_x}{Longitude}
-#'   \item{latitude_x}{Latitude}
+#'   \item{longitude}{Longitude}
+#'   \item{latitude}{Latitude}
 #' }
 #'
 #' This dataset is also available as a stand-alone file in comma-separated
