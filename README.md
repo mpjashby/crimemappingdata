@@ -45,12 +45,13 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`cdmx_car_jacking`](https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_car_jacking.html)                       | Car jackings in Mexico City                       | `.gpkg`    |
 | [`chicago_aggravated_assaults`](https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_aggravated_assaults.html) | Aggravated assaults in Chicago, 2010 to 2019      | `.csv.gz`  |
 | [`chicago_police_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_police_districts.html)       | Chicago Police Department Districts               | `.kml`     |
+| [`cincinnati_burglary`](https://pkgs.lesscrime.info/crimemappingdata/reference/cincinnati_burglary.html)                 | Burglaries in Cincinnati, 2016 to 2018            | `.csv.gz`  |
 | [`czechia_collisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_collisions.html)                   | Drink/drug-related traffic collisions in Czechia  | `.gpkg`    |
 | [`czechia_mcycle_thefts`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.html)             | Motorcycle thefts in Czechia                      | `.gpkg`    |
-| [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html)                   | Homicides in downtown Atlanta in 2019             | `.csv`     |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html)                   | Homicides in downtown Atlanta in 2019             | `.gpkg`    |
-| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html)   | Homicides in Glenrose Heights in 2019             | `.csv`     |
+| [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html)                   | Homicides in downtown Atlanta in 2019             | `.csv`     |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html)   | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
+| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html)   | Homicides in Glenrose Heights in 2019             | `.csv`     |
 | [`hungerford_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html)               | Shootings in the Hungerford Massacre              | `.csv`     |
 | [`japan_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.html)             | Counts of violent crime in Japan, 2012            | `.rds`     |
 | [`london_crimes`](https://pkgs.lesscrime.info/crimemappingdata/reference/london_crimes.html)                             | Crimes in London                                  | `.zip`     |
@@ -66,6 +67,7 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`nottingham_burglary`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_burglary.html)                 | Burglaries in Nottingham                          | `.csv.gz`  |
 | [`nottingham_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_robbery.html)                   | Robberies in Nottingham                           | `.csv.gz`  |
 | [`nottingham_wards`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_wards.html)                       | Local government wards of Nottingham              | `.gpkg`    |
+| [`nyc_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_homicides.html)                             | Homicides in New York City, 2016 to 2018          | `.csv`     |
 | [`nyc_precincts`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_precincts.html)                             | New York City Police precinct boundaries          | `.gpkg`    |
 | [`nyc_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_shootings.html)                             | Shootings in New York City in 2019                | `.csv`     |
 | [`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.html)               | Queensland Police Service division boundaries     | `.gpkg`    |
