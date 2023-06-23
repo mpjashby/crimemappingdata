@@ -1,3 +1,8 @@
+# crimemappingdata 0.2.1
+
+* Added new `cincinnati_burglary` dataset.
+
+
 # crimemappingdata 0.2.0
 
 * Added new `nyc_homicides` dataset.

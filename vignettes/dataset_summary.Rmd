@@ -96,6 +96,24 @@ The stand-alone version of this dataset is a gzipped CSV file.
 
 
 
+### `cincinnati_burglary`
+
+```{r}
+data(cincinnati_burglary, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(cincinnati_burglary), big.mark = ",")` burglaries in Cincinnati, Ohio, between 2016 and 2018.
+
+```{r}
+cincinnati_burglary |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a gzipped CSV file.
+
+
+
 ### `czechia_collisions` and `czechia_mcycle_thefts`
 
 ```{r}
