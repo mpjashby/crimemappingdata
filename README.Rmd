@@ -78,7 +78,7 @@ knitr::kable(datasets_data[, c("Dataset", "Description", "Format")])
 
 Note that gzipped CSV files (with the file extension `.csv.gz`) can be opened using `readr::read_csv()` and functions from other packages, but not `base::read.csv()`.
 
-You can find more details about each dataset in the vignette `vignette("dataset_summary")`.
+You can find more details about each dataset in the vignette `vignette("dataset_summary")`. 
 
 
 ## Using the data in teaching

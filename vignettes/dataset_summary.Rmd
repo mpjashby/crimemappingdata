@@ -192,6 +192,30 @@ hungerford_shootings |>
 The stand-alone version of this dataset is a CSV file.
 
 
+### `lancashire_asb` and `northumbria_asb`
+
+```{r}
+data(lancashire_asb, package = "crimemappingdata")
+data(northumbria_asb, package = "crimemappingdata")
+```
+
+Datasets of `r format(nrow(lancashire_asb), big.mark = ",")` anti-social behaviour incidents in Lancashire and `r format(nrow(northumbria_asb), big.mark = ",")` incidents in Northumbria, England, in 2022.
+
+```{r}
+lancashire_asb |>
+  head(10) |>
+  knitr::kable(caption = "`lancashire_asb`")
+```
+
+```{r}
+northumbria_asb |>
+  head(10) |>
+  knitr::kable(caption = "`northumbria_asb`")
+```
+
+The stand-alone version of these datasets are tab-separated values (`.tab`) files. The data in these file can be used together with the `lancashire_districts`/`northumbria_districts`, `lancashire_wards`/`northumbria_wards` and `lancashire_ward_pop`/`northumbria_ward_pop` datasets to calculate area-level incidence rates.
+
+
 ### `london_crimes`
 
 ```{r}
@@ -226,23 +250,6 @@ medellin_homicides |>
 The stand-alone version of this dataset is a CSV file. Note that the CSV file uses semi colons as column delimiters and commas as decimal separators in numbers, in accordance with Colombian practice. This file can be read with functions such as [readr::read_csv2()].
 
 This dataset can be used together with the `medellin_metro_lines` and `medellin_metro_stns` datasets to teach topics such as finding or counting crimes within a certain distance of a facility (e.g. a metro station).
-
-
-### `northumbria_asb`
-
-```{r}
-data(northumbria_asb, package = "crimemappingdata")
-```
-
-Dataset of `r format(nrow(northumbria_asb), big.mark = ",")` anti-social behaviour incidents in Northumbria, England, in 2022.
-
-```{r}
-northumbria_asb |>
-  head(10) |>
-  knitr::kable()
-```
-
-The stand-alone version of this dataset is a tab-separated values (`.tab`) file. The data in this file can be used together with the `northumbria_districts`, `northumbria_wards` and `northumbria_ward_pop` datasets to calculate area-level incidence rates.
 
 
 ### `nottingham_burglary` and `nottingham_robbery`
@@ -326,23 +333,30 @@ The stand-alone version of this dataset is a gzipped CSV file.
 ## Area-level crime data
 
 
-### `japan_violence_counts`
+### `germany_violence_counts` and `japan_violence_counts`
 
 ```{r}
+data(germany_violence_counts, package = "crimemappingdata")
 data(japan_violence_counts, package = "crimemappingdata")
 ```
 
-Dataset of annual counts of different types of violent crime in prefectures of Japan in 2012, together with population data and GDP per capita data.
+Datasets of annual counts of different types of violent crime in states of Germany in 2019 and prefectures of Japan in 2012, together with population data and GDP per capita data.
+
+```{r}
+germany_violence_counts |>
+  head(10) |>
+  knitr::kable(caption = "`germany_violence_counts`")
+```
 
 ```{r}
 japan_violence_counts |>
   head(10) |>
-  knitr::kable()
+  knitr::kable(caption = "`japan_violence_counts`")
 ```
 
-The format of this data is designed to be challenging for students, who will need to reformat the data and wrangle it to create population counts. This is designed to reflect the formats of data that are often provided by statistical agencies.
+The format of these datasets is designed to be challenging for students, who will need to reformat the data and wrangle it to create population counts. This is designed to reflect the formats of data that are often provided by statistical agencies.
 
-The stand-alone version of this dataset is a `.rds` file.
+The stand-alone versions of these datasets are `.rds` files.
 
 
 
@@ -458,6 +472,80 @@ chicago_police_districts_head |>
 The stand-alone version of this dataset is a geopackage file.
 
 
+### `lancashire_districts`, `lancashire_wards`, `northumbria_districts` and `northumbria_wards`
+
+```{r}
+data(lancashire_districts, package = "crimemappingdata")
+data(lancashire_wards, package = "crimemappingdata")
+data(northumbria_districts, package = "crimemappingdata")
+data(northumbria_wards, package = "crimemappingdata")
+```
+
+Simple features (SF) objects containing the boundaries of local government wards and districts in Lancashire and Northumbria, England. Boundaries are for 2022.
+
+```{r}
+lancashire_districts_head <- sf::st_drop_geometry(lancashire_districts)
+lancashire_districts_head$geometry <- "&lt;SF polygon&gt;"
+
+lancashire_districts_head |>
+  head(10) |>
+  knitr::kable(caption = "`lancashire_districts`")
+```
+
+```{r}
+lancashire_wards_head <- sf::st_drop_geometry(lancashire_wards)
+lancashire_wards_head$geometry <- "&lt;SF polygon&gt;"
+
+lancashire_wards_head |>
+  head(10) |>
+  knitr::kable(caption = "`lancashire_wards`")
+```
+
+```{r}
+northumbria_districts_head <- sf::st_drop_geometry(northumbria_districts)
+northumbria_districts_head$geometry <- "&lt;SF polygon&gt;"
+
+northumbria_districts_head |>
+  head(10) |>
+  knitr::kable(caption = "`northumbria_districts`")
+```
+
+```{r}
+northumbria_wards_head <- sf::st_drop_geometry(northumbria_wards)
+northumbria_wards_head$geometry <- "&lt;SF polygon&gt;"
+
+northumbria_wards_head |>
+  head(10) |>
+  knitr::kable(caption = "`northumbria_wards`")
+```
+
+The stand-alone versions of `lancashire_districts`/`northumbria_districts` are in geoJSON format and the stand-alone versions of `lancashire_wards`/`northumbria_wards` are geopackage files.
+
+
+### `lancashire_ward_pop` and `northumbria_ward_pop`
+
+```{r}
+data(lancashire_ward_pop, package = "crimemappingdata")
+data(northumbria_ward_pop, package = "crimemappingdata")
+```
+
+Datasets of usual resident population in 2020 in each local government ward in Lancashire and Northumbria, England. These can be used together with the `lancashire_asb`/`northumbria_asb` and `lancashire_wards`/`northumbria_wards` datasets for teaching non-spatial joining and calculation of area crime rates.
+
+```{r}
+lancashire_ward_pop |>
+  head(10) |>
+  knitr::kable(caption = "`lancashire_ward_pop`")
+```
+
+```{r}
+northumbria_ward_pop |>
+  head(10) |>
+  knitr::kable(caption = "`northumbria_ward_pop`")
+```
+
+The stand-alone versions of these dataset are Excel (`.xlsx`) files.
+
+
 ### `medellin_metro_lines` and `medellin_metro_stns`
 
 ```{r}
@@ -485,53 +573,6 @@ medellin_metro_stns |>
 The stand-alone version of the `medellin_metro_lines` dataset is a zipped shapefile. The `medellin_metro_stn` dataset is a CSV file. 
 
 These datasets can be used together with the `medellin_homicides` dataset to teach topics such as finding or counting crimes within a certain distance of a facility (e.g. a metro station).
-
-
-### `northumbria_districts` and `northumbria_wards`
-
-```{r}
-data(northumbria_districts, package = "crimemappingdata")
-data(northumbria_wards, package = "crimemappingdata")
-```
-
-Simple features (SF) objects containing the boundaries of local government wards and districts in Northumbria, England. Boundaries are for 2022.
-
-```{r}
-northumbria_districts_head <- sf::st_drop_geometry(northumbria_districts)
-northumbria_districts_head$geometry <- "&lt;SF polygon&gt;"
-
-northumbria_districts_head |>
-  head(10) |>
-  knitr::kable(caption = "`northumbria_districts`")
-```
-
-```{r}
-northumbria_wards_head <- sf::st_drop_geometry(northumbria_wards)
-northumbria_wards_head$geometry <- "&lt;SF polygon&gt;"
-
-northumbria_wards_head |>
-  head(10) |>
-  knitr::kable(caption = "`northumbria_wards`")
-```
-
-The stand-alone version of `northumbria_districts` is in geoJSON format and the stand-alone version of `northumbria_wards` is a geopackage file.
-
-
-### `northumbria_ward_pop`
-
-```{r}
-data(northumbria_ward_pop, package = "crimemappingdata")
-```
-
-Dataset of usual resident population in 2020 in each local government ward in Northumbria, England. This can be used together with the `northumbria_asb` and `northumbria_wards` datasets for teaching non-spatial joining and calculation of area crime rates.
-
-```{r}
-northumbria_ward_pop |>
-  head(10) |>
-  knitr::kable()
-```
-
-The stand-alone version of this dataset is an Excel (`.xlsx`) file.
 
 
 ### `nottingham_wards`

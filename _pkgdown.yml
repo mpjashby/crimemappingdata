@@ -17,6 +17,7 @@ reference:
   - downtown_homicides
   - glenrose_heights_homicides
   - hungerford_shootings
+  - lancashire_asb
   - london_crimes
   - medellin_homicides
   - northumbria_asb
@@ -31,6 +32,7 @@ reference:
     Datasets in which each row represents the count of crimes or incidents in an
     area, often for use together with a supporting dataset of area boundaries.
   contents:
+  - germany_violence_counts
   - japan_violence_counts
   - malaysia_violence_counts
   - northants_burglary_counts
@@ -44,6 +46,9 @@ reference:
   contents:
   - cdmx_alcaldias
   - chicago_police_districts
+  - lancashire_districts
+  - lancashire_wards
+  - lancashire_ward_pop
   - medellin_metro_lines
   - medellin_metro_stns
   - northumbria_districts

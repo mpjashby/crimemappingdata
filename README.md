@@ -50,10 +50,14 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`czechia_mcycle_thefts`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.html)             | Motorcycle thefts in Czechia                      | `.gpkg`    |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html)                   | Homicides in downtown Atlanta in 2019             | `.gpkg`    |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html)                   | Homicides in downtown Atlanta in 2019             | `.csv`     |
-| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html)   | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html)   | Homicides in Glenrose Heights in 2019             | `.csv`     |
+| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html)   | Homicides in Glenrose Heights in 2019             | `.gpkg`    |
 | [`hungerford_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html)               | Shootings in the Hungerford Massacre              | `.csv`     |
 | [`japan_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.html)             | Counts of violent crime in Japan, 2012            | `.rds`     |
+| [`lancashire_asb`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_asb.html)                           | Anti-social behaviour in Lancashire               | `.tab`     |
+| [`lancashire_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_districts.html)               | Local authority districts of Lancashire           | `.geojson` |
+| [`lancashire_ward_pop`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_ward_pop.html)                 | Lancashire ward population                        | `.xlsx`    |
+| [`lancashire_wards`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_wards.html)                       | Local government wards of Lancashire              | `.gpkg`    |
 | [`london_crimes`](https://pkgs.lesscrime.info/crimemappingdata/reference/london_crimes.html)                             | Crimes in London                                  | `.zip`     |
 | [`malaysia_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/malaysia_violence_counts.html)       | Violent crime counts in Malaysia, 2006 to 2017    | `.rds`     |
 | [`medellin_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_homicides.html)                   | Medellin homicides                                | `.csv`     |

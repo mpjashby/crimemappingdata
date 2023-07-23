@@ -58,6 +58,9 @@
     <loc>/reference/downtown_homicides.html</loc>
   </url>
   <url>
+    <loc>/reference/germany_violence_counts.html</loc>
+  </url>
+  <url>
     <loc>/reference/glenrose_heights_homicides.html</loc>
   </url>
   <url>
@@ -71,6 +74,18 @@
   </url>
   <url>
     <loc>/reference/kansas_city_frauds.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lancashire_asb.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lancashire_districts.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lancashire_ward_pop.html</loc>
+  </url>
+  <url>
+    <loc>/reference/lancashire_wards.html</loc>
   </url>
   <url>
     <loc>/reference/london_crimes.html</loc>
