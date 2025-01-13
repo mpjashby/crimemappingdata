@@ -216,6 +216,23 @@ northumbria_asb |>
 The stand-alone version of these datasets are tab-separated values (`.tab`) files. The data in these file can be used together with the `lancashire_districts`/`northumbria_districts`, `lancashire_wards`/`northumbria_wards` and `lancashire_ward_pop`/`northumbria_ward_pop` datasets to calculate area-level incidence rates.
 
 
+### `london_attacks`
+
+```{r}
+data(london_attacks, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(london_attacks), big.mark = ",")` fatal terrorist attacks in London from 2010 to 2018.
+
+```{r}
+london_attacks |>
+  head() |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
+
+
 ### `london_crimes`
 
 ```{r}

@@ -1,3 +1,7 @@
+# crimemappingdata 0.3.1
+
+* Added new `london_attacks` dataset.
+
 # crimemappingdata 0.3.0
 
 * Added new `germany_violence_counts` dataset.
