@@ -13,7 +13,7 @@
 #' }
 #'
 #' A version of this dataset is also available as a stand-alone file at
-#' <https://mpjashby.github.io/crimemappingdata/tempe_opioid_attacks.csv>.
+#' <https://mpjashby.github.io/crimemappingdata/tempe_opioid_calls.csv>.
 #'
 #' Licence: Creative Commons Attribution (CC-BY)
 #'
