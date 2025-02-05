@@ -19,6 +19,9 @@ A data frame containing 6,214 rows and 7 columns:
 A version of this dataset is also available as a stand-alone file at
 \url{https://mpjashby.github.io/crimemappingdata/sao_paulo_homicides.xlsx}.
 
+The original dataset has been cleaned to remove homicides with missing
+co-ordinates.
+
 Licence: public domain
 }
 \source{
