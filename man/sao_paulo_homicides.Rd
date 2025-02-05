@@ -22,7 +22,7 @@ A version of this dataset is also available as a stand-alone file at
 Licence: public domain
 }
 \source{
-Compiled by package author
+State of Sao Paulo Public Security Secretariat
 }
 \usage{
 sao_paulo_homicides

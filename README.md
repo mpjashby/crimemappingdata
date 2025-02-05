@@ -48,8 +48,8 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`cincinnati_burglary`](https://pkgs.lesscrime.info/crimemappingdata/reference/cincinnati_burglary.html) | Burglaries in Cincinnati, 2016 to 2018 | `.csv.gz` |
 | [`czechia_collisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_collisions.html) | Drink/drug-related traffic collisions in Czechia | `.gpkg` |
 | [`czechia_mcycle_thefts`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.html) | Motorcycle thefts in Czechia | `.gpkg` |
-| [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.csv` |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.gpkg` |
+| [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.csv` |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.gpkg` |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.csv` |
 | [`hungerford_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html) | Shootings in the Hungerford Massacre | `.csv` |
@@ -81,6 +81,7 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`san_francisco_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/san_francisco_robbery.html) | Personal robberies in San Francisco in 2019 | `.csv` |
 | [`sao_paulo_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_homicides.html) | Homicides in the region of Sao Paulo | `.xlsx` |
 | [`sao_paulo_muni`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.html) | Sao Paolo municipality boundaries | `.geojson` |
+| [`tempe_opioid_calls`](https://pkgs.lesscrime.info/crimemappingdata/reference/tempe_opioid_calls.html) | Calls to opioid overdoses in Tempe, Arizona | `.csv` |
 | [`uttar_pradesh_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.html) | Districts of Uttar Pradesh | `.gpkg` |
 | [`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.html) | Murders in Uttar Pradesh | `.csv` |
 | [`uttar_pradesh_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_population.html) | Population of districts in Uttar Pradesh | `.csv` |

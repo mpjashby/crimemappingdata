@@ -14,5 +14,5 @@
 #'
 #' Licence: public domain
 #'
-#' @source Compiled by package author
+#' @source Institute for Applied Economic Research
 "sao_paulo_muni"

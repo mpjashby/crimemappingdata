@@ -346,6 +346,23 @@ sao_paulo_homicides |>
 The stand-alone version of this dataset is an Excel (`.xlsx`) file.
 
 
+### `tempe_opioid_calls`
+
+```{r}
+data("tempe_opioid_calls", package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(tempe_opioid_calls), big.mark = ",")` calls to emergency services related to opioid overdoses in Tempe, Arizona, from 2017 to 2024.
+
+```{r}
+tempe_opioid_calls |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
+
+
 ### `vancouver_thefts`
 
 ```{r}

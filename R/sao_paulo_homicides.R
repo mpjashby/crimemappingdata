@@ -19,5 +19,5 @@
 #'
 #' Licence: public domain
 #'
-#' @source Compiled by package author
+#' @source State of Sao Paulo Public Security Secretariat
 "sao_paulo_homicides"
