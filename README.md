@@ -79,6 +79,8 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`qld_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.html) | Population of Queensland Police Service divisions | `.csv.gz` |
 | [`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.html) | Stalking in Queensland from 2001 to 2022 | `.xlsx` |
 | [`san_francisco_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/san_francisco_robbery.html) | Personal robberies in San Francisco in 2019 | `.csv` |
+| [`sao_paulo_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_homicides.html) | Homicides in the region of Sao Paulo | `.xlsx` |
+| [`sao_paulo_muni`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.html) | Sao Paolo municipality boundaries | `.geojson` |
 | [`uttar_pradesh_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.html) | Districts of Uttar Pradesh | `.gpkg` |
 | [`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.html) | Murders in Uttar Pradesh | `.csv` |
 | [`uttar_pradesh_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_population.html) | Population of districts in Uttar Pradesh | `.csv` |

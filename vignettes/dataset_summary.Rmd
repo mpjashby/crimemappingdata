@@ -329,6 +329,23 @@ san_francisco_robbery |>
 The stand-alone version of this dataset is a CSV file.
 
 
+### `sao_paulo_homicides`
+
+```{r}
+data("sao_paulo_homicides", package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(sao_paulo_homicides), big.mark = ",")` homicides recorded by police in the immediate region of Sao Paulo, Brazil, between 2017 and 2022.
+
+```{r}
+sao_paulo_homicides |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is an Excel (`.xlsx`) file.
+
+
 ### `vancouver_thefts`
 
 ```{r}
@@ -669,6 +686,26 @@ qld_population |>
 ```
 
 The stand-alone version of this dataset is gzipped CSV file.
+
+
+### `sao_paulo_muni`
+
+```{r}
+data(sao_paulo_muni, package = "crimemappingdata")
+```
+
+Simple features (SF) object containing boundaries of municipality boundaries in the immediate region of Sao Paulo, Brazil, 2010.
+
+```{r}
+sao_paulo_muni_head <- sf::st_drop_geometry(sao_paulo_muni)
+sao_paulo_muni_head$geometry <- "&lt;SF polygon&gt;"
+
+sao_paulo_muni_head |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geoJSON file.
 
 
 ### `uttar_pradesh_districts`
