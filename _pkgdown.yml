@@ -27,6 +27,8 @@ reference:
   - nyc_homicides
   - nyc_shootings
   - san_francisco_robbery
+  - sao_paulo_homicides
+  - tempe_opioid_calls
   - vancouver_thefts
 - title: "Area-level crime data"
   desc: >
@@ -59,5 +61,6 @@ reference:
   - nyc_precincts
   - qld_police_divisions
   - qld_population
+  - sao_paulo_muni
   - uttar_pradesh_districts
   - uttar_pradesh_population
