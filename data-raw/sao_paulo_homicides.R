@@ -35,8 +35,12 @@ sao_paulo_homicides <- temp_file |>
   st_intersection(ir) |>
   st_drop_geometry() |>
   select(year, date, municipality, location_type, victim_sex, longitude, latitude) |>
-  arrange(date) |>
-  write_csv(here::here("inst/extdata/sao_paulo_homicides.xlsx"))
+  arrange(date)
+
+writexl::write_xlsx(
+  sao_paulo_homicides,
+  here::here("inst/extdata/sao_paulo_homicides.xlsx")
+)
 
 # Save RData version
 usethis::use_data(sao_paulo_homicides, overwrite = TRUE)
