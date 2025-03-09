@@ -523,6 +523,26 @@ chicago_police_districts_head |>
 The stand-alone version of this dataset is a geopackage file.
 
 
+### `japan_prefectures`
+
+```{r}
+data(japan_prefectures, package = "crimemappingdata")
+```
+
+Simple Features (SF) object containing the boundaries of the prefectures of Japan.
+
+```{r}
+japan_prefectures_head <- sf::st_drop_geometry(japan_prefectures)
+japan_prefectures_head$geometry <- "&lt;SF polygon&gt;"
+
+japan_prefectures_head |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geopackage file.
+
+
 ### `lancashire_districts`, `lancashire_wards`, `northumbria_districts` and `northumbria_wards`
 
 ```{r}

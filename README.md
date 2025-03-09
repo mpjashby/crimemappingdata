@@ -53,6 +53,7 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.gpkg` |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.csv` |
 | [`hungerford_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html) | Shootings in the Hungerford Massacre | `.csv` |
+| [`japan_prefectures`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_prefectures.html) | Japanese prefecture boundaries, 2019 | `.gpkg` |
 | [`japan_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.html) | Counts of violent crime in Japan, 2012 | `.rds` |
 | [`lancashire_asb`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_asb.html) | Anti-social behaviour in Lancashire | `.tab` |
 | [`lancashire_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_districts.html) | Local authority districts of Lancashire | `.geojson` |

@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   dataset_summary: dataset_summary.html
   teaching: teaching.html
-last_built: 2025-02-06T10:14Z
+last_built: 2025-03-09T14:44Z
 urls:
   reference: https://pkgs.lesscrime.info/crimemappingdata/reference
   article: https://pkgs.lesscrime.info/crimemappingdata/articles

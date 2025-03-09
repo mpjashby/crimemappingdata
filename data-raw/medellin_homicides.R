@@ -18,10 +18,10 @@ medellin_homicides <- read_delim("http://medata.gov.co/node/25803/download", del
 # Metro lines ------------------------------------------------------------------
 
 # Source: https://datosabiertos-metrodemedellin.opendata.arcgis.com/datasets/7359b376cd984cf1828bf296fc446112_1/about
-medellin_metro_lines <- read_sf("https://utility.arcgis.com/usrsvcs/servers/7359b376cd984cf1828bf296fc446112/rest/services/OpenData/Movilidad/MapServer/1/query?outFields=*&where=1%3D1&f=geojson") |>
+medellin_metro_lines <- read_sf("https://utility.arcgis.com/usrsvcs/servers/9c5e697b415945068faea082497cc5b4/rest/services/Hosted/ServiciosOpenData_gdb/FeatureServer/3/query?outFields=*&where=1%3D1&f=geojson") |>
   clean_names() |>
-  filter(sistema %in% c("Metro", "Cable")) |>
-  select(-objectid, -st_length_shape) |>
+  filter(sistema %in% c("M", "C")) |>
+  select(-objectid, -shape_length) |>
   write_sf(str_glue("{tempdir()}/medellin_metro_lines.shp")) |>
   glimpse()
 
