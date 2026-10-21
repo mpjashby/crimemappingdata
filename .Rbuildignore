@@ -10,3 +10,8 @@
 ^doc$
 ^Meta$
 ^rosm.cache$
+
+# Temporarily exclude the unfinished Latvia violence dataset.
+^data-raw/latvia_violence\.R$
+^(data|R|man|inst/extdata)/latvia_violence.*$
+^outputs/latvia-2025-english$

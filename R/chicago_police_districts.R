@@ -23,5 +23,9 @@
 #' It is understood that the data provided at this site is being used at one’s
 #' own risk.
 #'
+#' @section Map:
+#' \if{html}{\figure{chicago_police_districts-map.png}{options: width="400" alt="Map of chicago Police Department Districts"}}
+#' \if{latex}{\figure{chicago_police_districts-map.png}{options: width=4in}}
+#'
 #' @source City of Chicago
 "chicago_police_districts"

@@ -17,5 +17,9 @@
 #' <https://mpjashby.github.io/crimemappingdata/cincinnati_burglary.csv.gz>
 #'
 #' Licence: Public domain
+#' @section Map:
+#' \if{html}{\figure{cincinnati_burglary-map.png}{options: width="400" alt="Map of burglaries in Cincinnati, 2016 to 2018"}}
+#' \if{latex}{\figure{cincinnati_burglary-map.png}{options: width=4in}}
+#'
 #' @source City of Cincinnati
 "cincinnati_burglary"

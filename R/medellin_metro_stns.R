@@ -16,5 +16,9 @@
 #' This dataset is also available as a stand-alone file in CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/medellin_metro_stns.csv>.
 #'
+#' @section Map:
+#' \if{html}{\figure{medellin_metro_stns-map.png}{options: width="400" alt="Metro and cable-car stations in Medellin"}}
+#' \if{latex}{\figure{medellin_metro_stns-map.png}{options: width=4in}}
+#'
 #' @source Metro de Medellin
 "medellin_metro_stns"

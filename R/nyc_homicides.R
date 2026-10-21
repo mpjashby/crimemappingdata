@@ -17,5 +17,9 @@
 #'
 #' Licence: NYC Open Data Law
 #'
+#' @section Map:
+#' \if{html}{\figure{nyc_homicides-map.png}{options: width="400" alt="Homicides in New York City, 2016 to 2018"}}
+#' \if{latex}{\figure{nyc_homicides-map.png}{options: width=4in}}
+#'
 #' @source City of New York
 "nyc_homicides"

@@ -15,6 +15,10 @@
 #'
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/3.0/au/>
 #'
+#' @section Map:
+#' \if{html}{\figure{nyc_precincts-map.png}{options: width="400" alt="New York City Police precinct boundaries"}}
+#' \if{latex}{\figure{nyc_precincts-map.png}{options: width=4in}}
+#'
 #' @source City of New York
 #' <https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz>
 "nyc_precincts"

@@ -30,4 +30,10 @@ northumbria_asb
 Dataset of incidents of anti-social behaviour reported to police in
 Northumbria, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{northumbria_asb-map.png}{options: width="400" alt="Anti-social behaviour in Northumbria"}}
+\if{latex}{\figure{northumbria_asb-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

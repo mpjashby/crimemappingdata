@@ -14,5 +14,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{northumbria_wards-map.png}{options: width="400" alt="Local government wards of Northumbria"}}
+#' \if{latex}{\figure{northumbria_wards-map.png}{options: width=4in}}
+#'
 #' @source Office for National Statistics
 "northumbria_wards"

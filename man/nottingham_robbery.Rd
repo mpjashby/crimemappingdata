@@ -30,4 +30,10 @@ nottingham_robbery
 Dataset of robberies (both personal and commercial) recorded by police in
 Nottingham, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{nottingham_robbery-map.png}{options: width="400" alt="Robberies in Nottingham"}}
+\if{latex}{\figure{nottingham_robbery-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

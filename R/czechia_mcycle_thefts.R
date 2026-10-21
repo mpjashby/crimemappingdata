@@ -15,5 +15,9 @@
 #'
 #' Licence: Bespoke licence, see <https://kriminalita.policie.cz/>
 #'
+#' @section Map:
+#' \if{html}{\figure{czechia_mcycle_thefts-map.png}{options: width="400" alt="Map of motorcycle thefts in Czechia"}}
+#' \if{latex}{\figure{czechia_mcycle_thefts-map.png}{options: width=4in}}
+#'
 #' @source Police of the Czech Republic <https://kriminalita.policie.cz/>
 "czechia_mcycle_thefts"

@@ -27,4 +27,10 @@ qld_police_divisions
 Dataset of the boundaries of each division of the Queensland Police Service,
 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{qld_police_divisions-map.png}{options: width="400" alt="Queensland Police Service division boundaries"}}
+\if{latex}{\figure{qld_police_divisions-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

@@ -30,4 +30,10 @@ cincinnati_burglary
 Dataset of aggravated assaults recorded by police in Cincinnati between
 January 2016 and December 2018.
 }
+\section{Map}{
+
+\if{html}{\figure{cincinnati_burglary-map.png}{options: width="400" alt="Map of burglaries in Cincinnati, 2016 to 2018"}}
+\if{latex}{\figure{cincinnati_burglary-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

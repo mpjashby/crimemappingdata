@@ -26,4 +26,10 @@ cdmx_alcaldias
 \description{
 Spatial dataset of the boundaries of the alcaldías (boroughs) of Mexico City.
 }
+\section{Map}{
+
+\if{html}{\figure{cdmx_alcaldias-map.png}{options: width="400" alt="Map of alcaldías (boroughs) of Mexico City"}}
+\if{latex}{\figure{cdmx_alcaldias-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

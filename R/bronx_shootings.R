@@ -17,6 +17,10 @@
 #'
 #' Licence: NYC Open Data Law
 #'
+#' @section Map:
+#' \if{html}{\figure{bronx_shootings-map.png}{options: width="400" alt="Map of shootings in the Bronx in 2019"}}
+#' \if{latex}{\figure{bronx_shootings-map.png}{options: width=4in}}
+#'
 #' @source New York City Police Department
 #' <https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8>
 "bronx_shootings"

@@ -22,5 +22,9 @@
 #'
 #' Licence: public domain
 #'
+#' @section Map:
+#' \if{html}{\figure{sao_paulo_homicides-map.png}{options: width="400" alt="Homicides in the region of Sao Paulo"}}
+#' \if{latex}{\figure{sao_paulo_homicides-map.png}{options: width=4in}}
+#'
 #' @source State of Sao Paulo Public Security Secretariat
 "sao_paulo_homicides"

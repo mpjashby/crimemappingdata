@@ -34,4 +34,10 @@ tempe_opioid_calls
 Dataset of calls to emergency medical services in Tempe for suspected opioid
 overdoses.
 }
+\section{Map}{
+
+\if{html}{\figure{tempe_opioid_calls-map.png}{options: width="400" alt="Calls to opioid overdoses in Tempe, Arizona"}}
+\if{latex}{\figure{tempe_opioid_calls-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

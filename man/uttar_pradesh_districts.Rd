@@ -28,4 +28,10 @@ uttar_pradesh_districts
 Spatial dataset of the boundaries of administrative districts in the Indian
 state of uttar Pradesh.
 }
+\section{Map}{
+
+\if{html}{\figure{uttar_pradesh_districts-map.png}{options: width="400" alt="Districts of Uttar Pradesh"}}
+\if{latex}{\figure{uttar_pradesh_districts-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

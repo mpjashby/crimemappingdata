@@ -30,4 +30,10 @@ japan_prefectures
 \description{
 Dataset of boundaries of Japanese prefectures.
 }
+\section{Map}{
+
+\if{html}{\figure{japan_prefectures-map.png}{options: width="400" alt="Map of japanese prefecture boundaries, 2019"}}
+\if{latex}{\figure{japan_prefectures-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

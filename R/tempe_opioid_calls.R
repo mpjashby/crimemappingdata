@@ -22,5 +22,9 @@
 #'
 #' Licence: Creative Commons Attribution (CC-BY)
 #'
+#' @section Map:
+#' \if{html}{\figure{tempe_opioid_calls-map.png}{options: width="400" alt="Calls to opioid overdoses in Tempe, Arizona"}}
+#' \if{latex}{\figure{tempe_opioid_calls-map.png}{options: width=4in}}
+#'
 #' @source Open Tempe
 "tempe_opioid_calls"

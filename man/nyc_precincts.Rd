@@ -28,4 +28,10 @@ nyc_precincts
 Dataset of the boundaries of each precinct of the New York City Police
 Department (NYPD), 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{nyc_precincts-map.png}{options: width="400" alt="New York City Police precinct boundaries"}}
+\if{latex}{\figure{nyc_precincts-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

@@ -33,4 +33,10 @@ aggravated_assaults
 \description{
 Dataset of aggravated assaults in Austin, TX, in 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Austin in 2019"}}
+\if{latex}{\figure{aggravated_assaults-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

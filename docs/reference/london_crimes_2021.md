@@ -1,0 +1,55 @@
+# Crimes in London in 2021
+
+Dataset of crimes recorded by police in London in 2021. Includes some
+crimes that occurred outside London but were recorded by police forces
+in London, to provide an opportunity to remove rows from datasets based
+on location.
+
+## Usage
+
+``` r
+london_crimes_2021
+```
+
+## Format
+
+A data frame containing 1,076,832 rows and 7 columns:
+
+- month:
+
+  Month in which crime occurred
+
+- type:
+
+  Offence type
+
+- location:
+
+  Name of street or other location
+
+- lsoa:
+
+  Lower-layer super output area code
+
+- borough:
+
+  Borough name
+
+- longitude:
+
+  Longitude
+
+- latitude:
+
+  Latitude
+
+This dataset is also available as a stand-alone file in gzipped CSV
+format at
+<https://mpjashby.github.io/crimemappingdata/london_crimes_2021.csv.gz>.
+
+Licence: Open Government Licence
+<https://www.nationalarchives.gov.uk/doc/open-government-licence/>
+
+## Source
+
+Home Office <https://data.police.uk/>

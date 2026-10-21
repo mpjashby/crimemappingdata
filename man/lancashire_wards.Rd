@@ -26,4 +26,10 @@ lancashire_wards
 \description{
 Dataset of ward boundaries in Lancashire, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{lancashire_wards-map.png}{options: width="400" alt="Map of local government wards of Lancashire"}}
+\if{latex}{\figure{lancashire_wards-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

@@ -15,5 +15,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{northumbria_districts-map.png}{options: width="400" alt="Local authority districts of Northumbria"}}
+#' \if{latex}{\figure{northumbria_districts-map.png}{options: width=4in}}
+#'
 #' @source Office for National Statistics
 "northumbria_districts"

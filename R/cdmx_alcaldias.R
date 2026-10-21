@@ -14,6 +14,10 @@
 #'
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/4.0/>
 #'
+#' @section Map:
+#' \if{html}{\figure{cdmx_alcaldias-map.png}{options: width="400" alt="Map of alcaldías (boroughs) of Mexico City"}}
+#' \if{latex}{\figure{cdmx_alcaldias-map.png}{options: width=4in}}
+#'
 #' @source Government of Mexico City
 "cdmx_alcaldias"
 

@@ -30,4 +30,10 @@ bronx_shootings
 Dataset of shootings in the Bronx borough of New York City recorded by the
 New York City Police Department (NYPD) in 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{bronx_shootings-map.png}{options: width="400" alt="Map of shootings in the Bronx in 2019"}}
+\if{latex}{\figure{bronx_shootings-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

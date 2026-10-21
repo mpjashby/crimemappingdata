@@ -30,4 +30,10 @@ nyc_shootings
 Dataset of shootings in New York City recorded by the New York City Police
 Department (NYPD) in 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{nyc_shootings-map.png}{options: width="400" alt="Shootings in New York City in 2019"}}
+\if{latex}{\figure{nyc_shootings-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

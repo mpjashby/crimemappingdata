@@ -28,4 +28,10 @@ san_francisco_robbery
 \description{
 Dataset of personal robberies in San Francisco in 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{san_francisco_robbery-map.png}{options: width="400" alt="Personal robberies in San Francisco in 2019"}}
+\if{latex}{\figure{san_francisco_robbery-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

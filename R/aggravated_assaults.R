@@ -21,5 +21,9 @@
 #'
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/4.0/>
 #'
+#' @section Map:
+#' \if{html}{\figure{aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Austin in 2019"}}
+#' \if{latex}{\figure{aggravated_assaults-map.png}{options: width=4in}}
+#'
 #' @source `crimedata` package <http://pkgs.lesscrime.info/crimedata/>
 "aggravated_assaults"

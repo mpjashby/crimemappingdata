@@ -4,6 +4,7 @@
 # crimemappingdata
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The crimemappingdata package contains a variety of datasets that are
@@ -37,10 +38,16 @@ non-spatial formats) to give the opportunity for students to practice
 loading files of different types (e.g. using `readr::read_csv()` or
 `readxl::read_excel()`).
 
+![](man/figures/dataset_coords.png)
+
 | Dataset | Description | Format |
 |:---|:---|:---|
 | [`aggravated_assaults`](https://pkgs.lesscrime.info/crimemappingdata/reference/aggravated_assaults.html) | Aggravated assaults in Austin in 2019 | `.xlsx` |
 | [`bronx_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/bronx_shootings.html) | Shootings in the Bronx in 2019 | `.csv` |
+| [`buenos_aires_barrios`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_barrios.html) | Buenos Aires barrio boundaries | `.gpkg` |
+| [`buenos_aires_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_robbery.html) | Buenos Aires robberies in 2023 | `.csv` |
+| [`buenos_aires_subte_lines`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_lines.html) | Buenos Aires Subte (metro) lines | `.gpkg` |
+| [`buenos_aires_subte_stations`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_stations.html) | Buenos Aires Subte (metro) stations | `.gpkg` |
 | [`cdmx_alcaldias`](https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_alcaldias.html) | Alcaldías (boroughs) of Mexico City | `.gpkg` |
 | [`cdmx_car_jacking`](https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_car_jacking.html) | Car jackings in Mexico City | `.gpkg` |
 | [`chicago_aggravated_assaults`](https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_aggravated_assaults.html) | Aggravated assaults in Chicago, 2010 to 2019 | `.csv.gz` |
@@ -48,10 +55,10 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`cincinnati_burglary`](https://pkgs.lesscrime.info/crimemappingdata/reference/cincinnati_burglary.html) | Burglaries in Cincinnati, 2016 to 2018 | `.csv.gz` |
 | [`czechia_collisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_collisions.html) | Drink/drug-related traffic collisions in Czechia | `.gpkg` |
 | [`czechia_mcycle_thefts`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.html) | Motorcycle thefts in Czechia | `.gpkg` |
-| [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.gpkg` |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.csv` |
-| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.gpkg` |
+| [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.gpkg` |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.csv` |
+| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.gpkg` |
 | [`hungerford_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html) | Shootings in the Hungerford Massacre | `.csv` |
 | [`japan_prefectures`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_prefectures.html) | Japanese prefecture boundaries, 2019 | `.gpkg` |
 | [`japan_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.html) | Counts of violent crime in Japan, 2012 | `.rds` |
@@ -65,6 +72,7 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`medellin_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_homicides.html) | Medellin homicides | `.csv` |
 | [`medellin_metro_lines`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_lines.html) | Metro and cable-car lines in Medellin | `.zip` |
 | [`medellin_metro_stns`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_stns.html) | Metro and cable-car stations in Medellin | `.csv` |
+| [`montreal_mefait`](https://pkgs.lesscrime.info/crimemappingdata/reference/montreal_mefait.html) | Damage to property in Montreal, 2016 to 2025 | `.csv.gz` |
 | [`northants_burglary_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/northants_burglary_counts.html) | Counts of burglary in Northamptonshire in 2020 | `.rds` |
 | [`northumbria_asb`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_asb.html) | Anti-social behaviour in Northumbria | `.tab` |
 | [`northumbria_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_districts.html) | Local authority districts of Northumbria | `.geojson` |
@@ -79,6 +87,7 @@ loading files of different types (e.g. using `readr::read_csv()` or
 | [`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.html) | Queensland Police Service division boundaries | `.gpkg` |
 | [`qld_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.html) | Population of Queensland Police Service divisions | `.csv.gz` |
 | [`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.html) | Stalking in Queensland from 2001 to 2022 | `.xlsx` |
+| [`retiro_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/retiro_homicides.html) | Retiro homicides in 2023 | `.csv` |
 | [`san_francisco_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/san_francisco_robbery.html) | Personal robberies in San Francisco in 2019 | `.csv` |
 | [`sao_paulo_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_homicides.html) | Homicides in the region of Sao Paulo | `.xlsx` |
 | [`sao_paulo_muni`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.html) | Sao Paolo municipality boundaries | `.geojson` |

@@ -7,10 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Data For Learning Crime Mapping • crimemappingdata</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Data For Learning Crime Mapping">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
+<meta property="og:title" content="Data For Learning Crime Mapping">
 <meta name="description" content="Package containing datasets for use in teaching crime analysis and crime mapping.">
 <meta property="og:description" content="Package containing datasets for use in teaching crime analysis and crime mapping.">
 </head>
@@ -22,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">crimemappingdata</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,254 +76,285 @@
 <li>stand-alone files that can be downloaded in the formats shown below.</li>
 </ul>
 <p>See the manual page for each dataset (e.g. <code><a href="reference/aggravated_assaults.html">?aggravated_assaults</a></code>) for the corresponding stand-alone file URL. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using <code><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">readr::read_csv()</a></code> or <code><a href="https://readxl.tidyverse.org/reference/read_excel.html" class="external-link">readxl::read_excel()</a></code>).</p>
+<p><img src="reference/figures/dataset_coords.png"></p>
 <table class="table">
 <colgroup>
 <col width="33%">
 <col width="33%">
 <col width="33%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th align="left">Dataset</th>
 <th align="left">Description</th>
 <th align="left">Format</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/aggravated_assaults.html"><code>aggravated_assaults</code></a></td>
 <td align="left">Aggravated assaults in Austin in 2019</td>
 <td align="left"><code>.xlsx</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/bronx_shootings.html"><code>bronx_shootings</code></a></td>
 <td align="left">Shootings in the Bronx in 2019</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="odd">
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_barrios.html"><code>buenos_aires_barrios</code></a></td>
+<td align="left">Buenos Aires barrio boundaries</td>
+<td align="left"><code>.gpkg</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_robbery.html"><code>buenos_aires_robbery</code></a></td>
+<td align="left">Buenos Aires robberies in 2023</td>
+<td align="left"><code>.csv</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_lines.html"><code>buenos_aires_subte_lines</code></a></td>
+<td align="left">Buenos Aires Subte (metro) lines</td>
+<td align="left"><code>.gpkg</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_stations.html"><code>buenos_aires_subte_stations</code></a></td>
+<td align="left">Buenos Aires Subte (metro) stations</td>
+<td align="left"><code>.gpkg</code></td>
+</tr>
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_alcaldias.html"><code>cdmx_alcaldias</code></a></td>
 <td align="left">Alcaldías (boroughs) of Mexico City</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_car_jacking.html"><code>cdmx_car_jacking</code></a></td>
 <td align="left">Car jackings in Mexico City</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_aggravated_assaults.html"><code>chicago_aggravated_assaults</code></a></td>
 <td align="left">Aggravated assaults in Chicago, 2010 to 2019</td>
 <td align="left"><code>.csv.gz</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_police_districts.html"><code>chicago_police_districts</code></a></td>
 <td align="left">Chicago Police Department Districts</td>
 <td align="left"><code>.kml</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/cincinnati_burglary.html"><code>cincinnati_burglary</code></a></td>
 <td align="left">Burglaries in Cincinnati, 2016 to 2018</td>
 <td align="left"><code>.csv.gz</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_collisions.html"><code>czechia_collisions</code></a></td>
 <td align="left">Drink/drug-related traffic collisions in Czechia</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.html"><code>czechia_mcycle_thefts</code></a></td>
 <td align="left">Motorcycle thefts in Czechia</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="even">
-<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html"><code>downtown_homicides</code></a></td>
-<td align="left">Homicides in downtown Atlanta in 2019</td>
-<td align="left"><code>.gpkg</code></td>
-</tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html"><code>downtown_homicides</code></a></td>
 <td align="left">Homicides in downtown Atlanta in 2019</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
-<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html"><code>glenrose_heights_homicides</code></a></td>
-<td align="left">Homicides in Glenrose Heights in 2019</td>
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html"><code>downtown_homicides</code></a></td>
+<td align="left">Homicides in downtown Atlanta in 2019</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html"><code>glenrose_heights_homicides</code></a></td>
 <td align="left">Homicides in Glenrose Heights in 2019</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html"><code>glenrose_heights_homicides</code></a></td>
+<td align="left">Homicides in Glenrose Heights in 2019</td>
+<td align="left"><code>.gpkg</code></td>
+</tr>
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html"><code>hungerford_shootings</code></a></td>
 <td align="left">Shootings in the Hungerford Massacre</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/japan_prefectures.html"><code>japan_prefectures</code></a></td>
 <td align="left">Japanese prefecture boundaries, 2019</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.html"><code>japan_violence_counts</code></a></td>
 <td align="left">Counts of violent crime in Japan, 2012</td>
 <td align="left"><code>.rds</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_asb.html"><code>lancashire_asb</code></a></td>
 <td align="left">Anti-social behaviour in Lancashire</td>
 <td align="left"><code>.tab</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_districts.html"><code>lancashire_districts</code></a></td>
 <td align="left">Local authority districts of Lancashire</td>
 <td align="left"><code>.geojson</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_ward_pop.html"><code>lancashire_ward_pop</code></a></td>
 <td align="left">Lancashire ward population</td>
 <td align="left"><code>.xlsx</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_wards.html"><code>lancashire_wards</code></a></td>
 <td align="left">Local government wards of Lancashire</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/london_attacks.html"><code>london_attacks</code></a></td>
 <td align="left">Fatal terrorist attacks in London</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/london_crimes.html"><code>london_crimes</code></a></td>
 <td align="left">Crimes in London</td>
 <td align="left"><code>.zip</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/malaysia_violence_counts.html"><code>malaysia_violence_counts</code></a></td>
 <td align="left">Violent crime counts in Malaysia, 2006 to 2017</td>
 <td align="left"><code>.rds</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_homicides.html"><code>medellin_homicides</code></a></td>
 <td align="left">Medellin homicides</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_lines.html"><code>medellin_metro_lines</code></a></td>
 <td align="left">Metro and cable-car lines in Medellin</td>
 <td align="left"><code>.zip</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_stns.html"><code>medellin_metro_stns</code></a></td>
 <td align="left">Metro and cable-car stations in Medellin</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="odd">
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/montreal_mefait.html"><code>montreal_mefait</code></a></td>
+<td align="left">Damage to property in Montreal, 2016 to 2025</td>
+<td align="left"><code>.csv.gz</code></td>
+</tr>
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/northants_burglary_counts.html"><code>northants_burglary_counts</code></a></td>
 <td align="left">Counts of burglary in Northamptonshire in 2020</td>
 <td align="left"><code>.rds</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_asb.html"><code>northumbria_asb</code></a></td>
 <td align="left">Anti-social behaviour in Northumbria</td>
 <td align="left"><code>.tab</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_districts.html"><code>northumbria_districts</code></a></td>
 <td align="left">Local authority districts of Northumbria</td>
 <td align="left"><code>.geojson</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_ward_pop.html"><code>northumbria_ward_pop</code></a></td>
 <td align="left">Northumbria ward population</td>
 <td align="left"><code>.xlsx</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_wards.html"><code>northumbria_wards</code></a></td>
 <td align="left">Local government wards of Northumbria</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_burglary.html"><code>nottingham_burglary</code></a></td>
 <td align="left">Burglaries in Nottingham</td>
 <td align="left"><code>.csv.gz</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_robbery.html"><code>nottingham_robbery</code></a></td>
 <td align="left">Robberies in Nottingham</td>
 <td align="left"><code>.csv.gz</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_wards.html"><code>nottingham_wards</code></a></td>
 <td align="left">Local government wards of Nottingham</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_homicides.html"><code>nyc_homicides</code></a></td>
 <td align="left">Homicides in New York City, 2016 to 2018</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_precincts.html"><code>nyc_precincts</code></a></td>
 <td align="left">New York City Police precinct boundaries</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_shootings.html"><code>nyc_shootings</code></a></td>
 <td align="left">Shootings in New York City in 2019</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.html"><code>qld_police_divisions</code></a></td>
 <td align="left">Queensland Police Service division boundaries</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.html"><code>qld_population</code></a></td>
 <td align="left">Population of Queensland Police Service divisions</td>
 <td align="left"><code>.csv.gz</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.html"><code>qld_stalking</code></a></td>
 <td align="left">Stalking in Queensland from 2001 to 2022</td>
 <td align="left"><code>.xlsx</code></td>
 </tr>
-<tr class="odd">
+<tr>
+<td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/retiro_homicides.html"><code>retiro_homicides</code></a></td>
+<td align="left">Retiro homicides in 2023</td>
+<td align="left"><code>.csv</code></td>
+</tr>
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/san_francisco_robbery.html"><code>san_francisco_robbery</code></a></td>
 <td align="left">Personal robberies in San Francisco in 2019</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_homicides.html"><code>sao_paulo_homicides</code></a></td>
 <td align="left">Homicides in the region of Sao Paulo</td>
 <td align="left"><code>.xlsx</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.html"><code>sao_paulo_muni</code></a></td>
 <td align="left">Sao Paolo municipality boundaries</td>
 <td align="left"><code>.geojson</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/tempe_opioid_calls.html"><code>tempe_opioid_calls</code></a></td>
 <td align="left">Calls to opioid overdoses in Tempe, Arizona</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.html"><code>uttar_pradesh_districts</code></a></td>
 <td align="left">Districts of Uttar Pradesh</td>
 <td align="left"><code>.gpkg</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.html"><code>uttar_pradesh_murders</code></a></td>
 <td align="left">Murders in Uttar Pradesh</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_population.html"><code>uttar_pradesh_population</code></a></td>
 <td align="left">Population of districts in Uttar Pradesh</td>
 <td align="left"><code>.csv</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left"><a href="https://pkgs.lesscrime.info/crimemappingdata/reference/vancouver_thefts.html"><code>vancouver_thefts</code></a></td>
 <td align="left">Thefts in Vancouver in 2020</td>
 <td align="left"><code>.csv.gz</code></td>
@@ -362,7 +394,7 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Matt Ashby <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4201-9239" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Matt Ashby <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4201-9239" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 </ul>
 </div>
 
@@ -377,7 +409,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>

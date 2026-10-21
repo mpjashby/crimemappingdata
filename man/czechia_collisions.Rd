@@ -27,4 +27,10 @@ czechia_collisions
 Dataset of 5,020 vehicle collisions that were related to alcohol or drug use
 in Czechia between 2020 and 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{czechia_collisions-map.png}{options: width="400" alt="Map of drink/drug-related traffic collisions in Czechia"}}
+\if{latex}{\figure{czechia_collisions-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

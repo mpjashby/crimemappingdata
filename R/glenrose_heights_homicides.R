@@ -19,5 +19,9 @@
 #'
 #' Licence: public domain
 #'
+#' @section Map:
+#' \if{html}{\figure{glenrose_heights_homicides-map.png}{options: width="400" alt="Map of homicides in Glenrose Heights in 2019"}}
+#' \if{latex}{\figure{glenrose_heights_homicides-map.png}{options: width=4in}}
+#'
 #' @source Atlanta Police Department
 "glenrose_heights_homicides"

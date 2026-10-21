@@ -35,4 +35,10 @@ chicago_police_districts
 Boundaries of the geographic districts of the Chicago Police Department, as
 of 2018.
 }
+\section{Map}{
+
+\if{html}{\figure{chicago_police_districts-map.png}{options: width="400" alt="Map of chicago Police Department Districts"}}
+\if{latex}{\figure{chicago_police_districts-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

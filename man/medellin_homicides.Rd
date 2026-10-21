@@ -19,7 +19,7 @@ This dataset is also available as a stand-alone file in CSV format at
 \url{https://mpjashby.github.io/crimemappingdata/medellin_homicides.csv}. Note
 that the CSV file uses semi colons as column delimiters and commas as decimal
 separators in numbers. This file can be read with functions such as
-\code{\link[readr:read_delim]{readr::read_csv2()}}.
+\code{\link[readr:read_csv2]{readr::read_csv2()}}.
 
 Licence: Creative Commons Attribution Share-Alike \url{https://opendefinition.org/licenses/cc-by-sa/}
 }
@@ -29,4 +29,10 @@ medellin_homicides
 \description{
 Dataset of homicides in Medellin, Colombia, from 2010 to 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{medellin_homicides-map.png}{options: width="400" alt="Medellin homicides"}}
+\if{latex}{\figure{medellin_homicides-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

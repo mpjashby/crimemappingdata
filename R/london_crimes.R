@@ -19,5 +19,9 @@
 #' Licence: Open Government Licence
 #' <https://www.nationalarchives.gov.uk/doc/open-government-licence/>
 #'
+#' @section Map:
+#' \if{html}{\figure{london_crimes-map.png}{options: width="400" alt="Map of crimes in London"}}
+#' \if{latex}{\figure{london_crimes-map.png}{options: width=4in}}
+#'
 #' @source Home Office <https://data.police.uk/>
 "london_crimes"

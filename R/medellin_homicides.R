@@ -20,4 +20,8 @@
 #'
 #' Licence: Creative Commons Attribution Share-Alike <https://opendefinition.org/licenses/cc-by-sa/>
 #'
+#' @section Map:
+#' \if{html}{\figure{medellin_homicides-map.png}{options: width="400" alt="Medellin homicides"}}
+#' \if{latex}{\figure{medellin_homicides-map.png}{options: width=4in}}
+#'
 "medellin_homicides"

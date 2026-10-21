@@ -30,4 +30,10 @@ nottingham_burglary
 Dataset of burglaries (both residential and non-residential) recorded by
 police in Nottingham, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{nottingham_burglary-map.png}{options: width="400" alt="Burglaries in Nottingham"}}
+\if{latex}{\figure{nottingham_burglary-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

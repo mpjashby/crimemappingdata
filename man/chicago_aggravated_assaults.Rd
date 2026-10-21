@@ -38,4 +38,10 @@ chicago_aggravated_assaults
 Dataset of aggravated assaults recorded by police in Chicago between 2010 and
 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{chicago_aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Chicago, 2010 to 2019"}}
+\if{latex}{\figure{chicago_aggravated_assaults-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

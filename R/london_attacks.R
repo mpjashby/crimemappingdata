@@ -16,5 +16,9 @@
 #'
 #' Licence: public domain
 #'
+#' @section Map:
+#' \if{html}{\figure{london_attacks-map.png}{options: width="400" alt="Map of fatal terrorist attacks in London"}}
+#' \if{latex}{\figure{london_attacks-map.png}{options: width=4in}}
+#'
 #' @source Compiled by package author
 "london_attacks"

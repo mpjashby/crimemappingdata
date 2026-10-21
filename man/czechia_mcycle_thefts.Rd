@@ -27,4 +27,10 @@ czechia_mcycle_thefts
 Dataset of 9,464 thefts of two-wheeled motor vehicles in Czechia between 2020
 and 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{czechia_mcycle_thefts-map.png}{options: width="400" alt="Map of motorcycle thefts in Czechia"}}
+\if{latex}{\figure{czechia_mcycle_thefts-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

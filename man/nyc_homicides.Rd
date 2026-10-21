@@ -29,4 +29,10 @@ nyc_homicides
 Dataset of homicides recorded by police in New York City between 2016 and
 2018.
 }
+\section{Map}{
+
+\if{html}{\figure{nyc_homicides-map.png}{options: width="400" alt="Homicides in New York City, 2016 to 2018"}}
+\if{latex}{\figure{nyc_homicides-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

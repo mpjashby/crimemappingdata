@@ -27,4 +27,10 @@ lancashire_districts
 Dataset of the boundaries of the local authority districts in Lancashire,
 England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{lancashire_districts-map.png}{options: width="400" alt="Map of local authority districts of Lancashire"}}
+\if{latex}{\figure{lancashire_districts-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

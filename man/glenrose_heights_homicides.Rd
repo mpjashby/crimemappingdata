@@ -31,4 +31,10 @@ glenrose_heights_homicides
 Dataset of the four homicides that occurred in the Glenrose Heights
 neighbourhood of Atlanta, GA, in 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{glenrose_heights_homicides-map.png}{options: width="400" alt="Map of homicides in Glenrose Heights in 2019"}}
+\if{latex}{\figure{glenrose_heights_homicides-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

@@ -31,4 +31,10 @@ vancouver_thefts
 \description{
 Dataset of 21,918 thefts in the City of Vancouver in 2020.
 }
+\section{Map}{
+
+\if{html}{\figure{vancouver_thefts-map.png}{options: width="400" alt="Thefts in Vancouver in 2020"}}
+\if{latex}{\figure{vancouver_thefts-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

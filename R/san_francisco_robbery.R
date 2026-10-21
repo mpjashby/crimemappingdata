@@ -16,5 +16,9 @@
 #'
 #' Licence: Open Data Commons Public Domain Dedication and License <https://opendatacommons.org/licenses/pddl/1.0/>
 #'
+#' @section Map:
+#' \if{html}{\figure{san_francisco_robbery-map.png}{options: width="400" alt="Personal robberies in San Francisco in 2019"}}
+#' \if{latex}{\figure{san_francisco_robbery-map.png}{options: width=4in}}
+#'
 #' @source San Francisco Police Department
 "san_francisco_robbery"

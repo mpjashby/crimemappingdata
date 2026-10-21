@@ -26,4 +26,10 @@ nottingham_wards
 \description{
 Dataset of ward boundaries in Nottingham, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{nottingham_wards-map.png}{options: width="400" alt="Local government wards of Nottingham"}}
+\if{latex}{\figure{nottingham_wards-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

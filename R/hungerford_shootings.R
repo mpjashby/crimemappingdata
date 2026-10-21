@@ -18,5 +18,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{hungerford_shootings-map.png}{options: width="400" alt="Map of shootings in the Hungerford Massacre"}}
+#' \if{latex}{\figure{hungerford_shootings-map.png}{options: width=4in}}
+#'
 #' @source Official report into the massacre
 "hungerford_shootings"

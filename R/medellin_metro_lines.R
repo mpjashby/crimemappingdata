@@ -14,5 +14,9 @@
 #' at <https://mpjashby.github.io/crimemappingdata/medellin_metro_lines.zip>.
 #' Note the components of the shape file are contained in a zip archive.
 #'
+#' @section Map:
+#' \if{html}{\figure{medellin_metro_lines-map.png}{options: width="400" alt="Metro and cable-car lines in Medellin"}}
+#' \if{latex}{\figure{medellin_metro_lines-map.png}{options: width=4in}}
+#'
 #' @source Metro de Medellin
 "medellin_metro_lines"

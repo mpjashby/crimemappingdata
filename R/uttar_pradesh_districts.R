@@ -15,6 +15,10 @@
 #'
 #' Licence: MIT
 #'
+#' @section Map:
+#' \if{html}{\figure{uttar_pradesh_districts-map.png}{options: width="400" alt="Districts of Uttar Pradesh"}}
+#' \if{latex}{\figure{uttar_pradesh_districts-map.png}{options: width=4in}}
+#'
 #' @source Hindustan Times
 #' <https://github.com/HindustanTimesLabs/shapefiles>
 "uttar_pradesh_districts"

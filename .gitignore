@@ -3,3 +3,15 @@ inst/doc
 /doc/
 /Meta/
 rosm.cache/
+/data-raw/raw/new_sources/
+
+# Temporarily exclude the unfinished Latvia violence dataset.
+/data-raw/latvia_violence.R
+/data/latvia_violence*
+/R/latvia_violence*
+/man/latvia_violence*
+/inst/extdata/latvia_violence*
+/outputs/latvia-2025-english/
+
+/.quarto/
+**/*.quarto_ipynb

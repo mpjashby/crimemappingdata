@@ -30,4 +30,10 @@ lancashire_asb
 Dataset of incidents of anti-social behaviour reported to police in
 Lancashire, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{lancashire_asb-map.png}{options: width="400" alt="Map of anti-social behaviour in Lancashire"}}
+\if{latex}{\figure{lancashire_asb-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

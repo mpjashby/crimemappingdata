@@ -1,3 +1,12 @@
+# crimemappingdata 0.4.0
+
+* Added new `buenos_aires_robbery` point-level dataset and supporting
+  `buenos_aires_barrios`, `buenos_aires_subte_lines` and 
+  `buenos_aires_subte_stations` datasets.
+* Added new point-level `montreal_mefait` dataset.
+* Added new point-level `retiro_homicides` dataset.
+
+
 # crimemappingdata 0.3.1
 
 * Added new `london_attacks` dataset.

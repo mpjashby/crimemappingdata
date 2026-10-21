@@ -10,6 +10,10 @@
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/news/index.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/aggravated_assaults.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/bronx_shootings.html</loc></url>
+<url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_barrios.html</loc></url>
+<url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_robbery.html</loc></url>
+<url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_lines.html</loc></url>
+<url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_stations.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_alcaldias.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_car_jacking.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_aggravated_assaults.html</loc></url>
@@ -36,6 +40,7 @@
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_homicides.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_lines.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_stns.html</loc></url>
+<url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/montreal_mefait.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/northants_burglary_counts.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_asb.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_districts.html</loc></url>
@@ -50,6 +55,7 @@
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.html</loc></url>
+<url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/retiro_homicides.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/san_francisco_robbery.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_homicides.html</loc></url>
 <url><loc>https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.html</loc></url>

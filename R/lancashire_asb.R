@@ -18,5 +18,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{lancashire_asb-map.png}{options: width="400" alt="Map of anti-social behaviour in Lancashire"}}
+#' \if{latex}{\figure{lancashire_asb-map.png}{options: width=4in}}
+#'
 #' @source Home Office
 "lancashire_asb"

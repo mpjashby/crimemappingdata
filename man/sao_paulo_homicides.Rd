@@ -34,4 +34,10 @@ sao_paulo_homicides
 Dataset of homicides recorded by police in the immediate region of Sao Paulo
 from 2017 to 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{sao_paulo_homicides-map.png}{options: width="400" alt="Homicides in the region of Sao Paulo"}}
+\if{latex}{\figure{sao_paulo_homicides-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

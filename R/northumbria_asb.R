@@ -18,5 +18,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{northumbria_asb-map.png}{options: width="400" alt="Anti-social behaviour in Northumbria"}}
+#' \if{latex}{\figure{northumbria_asb-map.png}{options: width=4in}}
+#'
 #' @source Home Office
 "northumbria_asb"

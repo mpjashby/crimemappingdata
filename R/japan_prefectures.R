@@ -18,5 +18,9 @@
 #'
 #' Licence: Creative Commons Attribution for Intergovernmental Organisations
 #'
+#' @section Map:
+#' \if{html}{\figure{japan_prefectures-map.png}{options: width="400" alt="Map of japanese prefecture boundaries, 2019"}}
+#' \if{latex}{\figure{japan_prefectures-map.png}{options: width=4in}}
+#'
 #' @source United Nations Office for the Coordination of Humanitarian Affairs
 "japan_prefectures"

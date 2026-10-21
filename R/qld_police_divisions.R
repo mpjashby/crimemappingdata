@@ -14,6 +14,10 @@
 #'
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/3.0/au/>
 #'
+#' @section Map:
+#' \if{html}{\figure{qld_police_divisions-map.png}{options: width="400" alt="Queensland Police Service division boundaries"}}
+#' \if{latex}{\figure{qld_police_divisions-map.png}{options: width=4in}}
+#'
 #' @source Queensland Government
 #' <https://www.data.qld.gov.au/dataset/qps-divisions/resource/fa6a7917-43de-4036-a704-25f545c24093>
 "qld_police_divisions"

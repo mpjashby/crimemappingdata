@@ -31,4 +31,10 @@ Dataset of crimes recorded by police in London in 2022. Includes a small
 number of crimes that occurred outside London, to provide an opportunity to
 remove rows from datasets based on location.
 }
+\section{Map}{
+
+\if{html}{\figure{london_crimes-map.png}{options: width="400" alt="Map of crimes in London"}}
+\if{latex}{\figure{london_crimes-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

@@ -1,0 +1,41 @@
+# Using crime data for teaching
+
+The datasets in this package can be used for teaching a variety of
+skills for crime mapping and other types of crime analysis. This
+includes point and area-level crime data that can be used to teach
+different skills, such as hotspot mapping, choropleth mapping, mapping
+crime series and mapping change over time. The package includes datasets
+from 10 different countries across five continents so that students can
+learn to handle a variety of data from different places.
+
+All the datasets in this package come in two formats: first as a
+conventional R package dataset that can be loaded using the
+[`data()`](https://rdrr.io/r/utils/data.html) function from the base
+package, and secondly as a stand-alone file hosted on GitHub Pages.
+These stand-alone files are in a variety of different file formats to
+give students the opportunity to learn how to load files of different
+types. In most cases the contents of the two versions of the dataset are
+identical, but where they differ that is noted on the relevant manual
+page.
+
+If you only want to teach students about manipulating existing data, you
+can get students to install the `crimemappingdata` package from GitHub
+and load the data using the
+[`data()`](https://rdrr.io/r/utils/data.html) function from the base
+package. However, loading data is an important part of any analytical
+workflow, and one students frequently struggle with. For that reason I
+suggest loading the datasets from the stand-alone file URL listed on the
+help page (included in the package itself and on the package website)
+associated with each dataset. This will be particularly useful for
+students for datasets that must be separately downloaded and/or unzipped
+before being loaded (such as shapefiles), since this gives students
+practice in interacting with the file system, creating temporary files,
+etc.
+
+These datasets are used in the used for teaching crime mapping to [BSc
+Crime and Security
+Science](https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/crime-and-security-science-bsc)
+students at University College London. The teaching materials are
+available on the [Learn crime mapping with
+R](http://books.lesscrime.info/learncrimemapping/) website for free
+re-use.

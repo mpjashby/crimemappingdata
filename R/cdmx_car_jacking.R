@@ -15,5 +15,9 @@
 #'
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/4.0/>
 #'
+#' @section Map:
+#' \if{html}{\figure{cdmx_car_jacking-map.png}{options: width="400" alt="Map of car jackings in Mexico City"}}
+#' \if{latex}{\figure{cdmx_car_jacking-map.png}{options: width=4in}}
+#'
 #' @source Mexico City Attorney General’s Office
 "cdmx_car_jacking"

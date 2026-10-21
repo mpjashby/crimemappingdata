@@ -9,6 +9,7 @@ reference:
   contents:
   - aggravated_assaults
   - bronx_shootings
+  - buenos_aires_robbery
   - cdmx_car_jacking
   - chicago_aggravated_assaults
   - cincinnati_burglary
@@ -21,11 +22,13 @@ reference:
   - london_attacks
   - london_crimes
   - medellin_homicides
+  - montreal_mefait
   - northumbria_asb
   - nottingham_burglary
   - nottingham_robbery
   - nyc_homicides
   - nyc_shootings
+  - retiro_homicides
   - san_francisco_robbery
   - sao_paulo_homicides
   - tempe_opioid_calls
@@ -47,6 +50,9 @@ reference:
     enable teaching of specific techniques. Suggestions for combinations of
     crime and supporting datasets are included in the relevant pages below.
   contents:
+  - buenos_aires_barrios
+  - buenos_aires_subte_lines
+  - buenos_aires_subte_stations
   - cdmx_alcaldias
   - chicago_police_districts
   - japan_prefectures

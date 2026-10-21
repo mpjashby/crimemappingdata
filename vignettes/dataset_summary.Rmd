@@ -60,6 +60,23 @@ nyc_shootings |>
 The stand-alone version of these datasets are CSV files.
 
 
+### `buenos_aires_robbery`
+
+```{r}
+data("buenos_aires_robbery", package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(buenos_aires_robbery), big.mark = ",")` robberies in Buenos Aires, Argentina, in 2023.
+
+```{r}
+buenos_aires_robbery |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
+
+
 ### `cdmx_car_jacking`
 
 ```{r}
@@ -269,6 +286,23 @@ The stand-alone version of this dataset is a CSV file. Note that the CSV file us
 This dataset can be used together with the `medellin_metro_lines` and `medellin_metro_stns` datasets to teach topics such as finding or counting crimes within a certain distance of a facility (e.g. a metro station).
 
 
+### `montreal_mefait`
+
+```{r}
+data(montreal_mefait, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(montreal_mefait), big.mark = ",")` mefait incidents in Montreal, Canada, from 2016 to 2025.
+
+```{r}
+montreal_mefait |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a gzipped CSV file.
+
+
 ### `nottingham_burglary` and `nottingham_robbery`
 
 ```{r}
@@ -310,6 +344,23 @@ nyc_shootings |>
 The stand-alone version of this dataset is a CSV file.
 
 This dataset can be used together with the `nyc_precincts` dataset to teach topics such as counting the number of crimes in particular areas.
+
+
+### `retiro_homicides`
+
+```{r}
+data(retiro_homicides, package = "crimemappingdata")
+```
+
+Dataset of `r format(nrow(retiro_homicides), big.mark = ",")` homicides in the Retiro neighbourhood of Buenos Aires, Argentina, in 2023.
+
+```{r}
+retiro_homicides |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a CSV file.
 
 
 ### `san_francisco_robbery`
@@ -481,6 +532,35 @@ The stand-alone version of this dataset is a CSV file.
 
 
 ## Supporting data
+
+
+### `buenos_aires_subte_lines` and `buenos_aires_subte_stations`
+
+```{r}
+data(buenos_aires_subte_lines, package = "crimemappingdata")
+data(buenos_aires_subte_stations, package = "crimemappingdata")
+```
+
+Simple features (SF) objects containing the locations of metro lines and stations in Buenos Aires, Argentina.
+
+```{r}
+buenos_aires_subte_lines_head <- sf::st_drop_geometry(buenos_aires_subte_lines)
+buenos_aires_subte_lines_head$geometry <- "&lt;SF polyline&gt;"
+
+buenos_aires_subte_lines_head |>
+  head(10) |>
+  knitr::kable(caption = "`buenos_aires_subte_lines`")
+```
+
+```{r}
+buenos_aires_subte_stations |>
+  head(10) |>
+  knitr::kable(caption = "`buenos_aires_subte_stations`")
+```
+
+The stand-alone version of the `buenos_aires_subte_lines` dataset is a geopackage. The `buenos_aires_subte_stations` dataset is a geoJSON file. 
+
+These datasets can be used together with the `buenos_aires_robbery` dataset to teach topics such as finding or counting crimes within a certain distance of a facility (e.g. a metro station).
 
 
 ### `cdmx_alcaldias`

@@ -19,5 +19,9 @@
 #' This dataset is also available as a stand-alone file in gzipped CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/vancouver_thefts.csv.gz>.
 #'
+#' @section Map:
+#' \if{html}{\figure{vancouver_thefts-map.png}{options: width="400" alt="Thefts in Vancouver in 2020"}}
+#' \if{latex}{\figure{vancouver_thefts-map.png}{options: width=4in}}
+#'
 #' @source Vancouver Police Department <https://geodash.vpd.ca/opendata/>
 "vancouver_thefts"

@@ -1,9 +1,10 @@
 # Load packages
-library(lubridate)
 library(tidyverse)
 
 # Source: https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8
-nyc_shootings <- read_csv("https://data.cityofnewyork.us/api/views/833y-fsy8/rows.csv?accessType=DOWNLOAD") |>
+nyc_shootings <- read_csv(
+  "https://data.cityofnewyork.us/api/views/833y-fsy8/rows.csv?accessType=DOWNLOAD"
+) |>
   janitor::clean_names() |>
   mutate(occur_date = mdy(occur_date)) |>
   filter(year(occur_date) == 2019) |>

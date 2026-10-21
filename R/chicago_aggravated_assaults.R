@@ -26,5 +26,9 @@
 #' It is understood that the data provided at this site is being used at one’s
 #' own risk.
 #'
+#' @section Map:
+#' \if{html}{\figure{chicago_aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Chicago, 2010 to 2019"}}
+#' \if{latex}{\figure{chicago_aggravated_assaults-map.png}{options: width=4in}}
+#'
 #' @source City of Chicago
 "chicago_aggravated_assaults"

@@ -26,4 +26,10 @@ northumbria_wards
 \description{
 Dataset of ward boundaries in Northumbria, England, in 2022.
 }
+\section{Map}{
+
+\if{html}{\figure{northumbria_wards-map.png}{options: width="400" alt="Local government wards of Northumbria"}}
+\if{latex}{\figure{northumbria_wards-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

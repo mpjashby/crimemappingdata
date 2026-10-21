@@ -14,5 +14,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{lancashire_wards-map.png}{options: width="400" alt="Map of local government wards of Lancashire"}}
+#' \if{latex}{\figure{lancashire_wards-map.png}{options: width=4in}}
+#'
 #' @source Office for National Statistics
 "lancashire_wards"

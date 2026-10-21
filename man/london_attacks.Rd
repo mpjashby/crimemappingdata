@@ -28,4 +28,10 @@ london_attacks
 Dataset of fatal terrorist attacks in London, United Kingdom, from 2010 to
 2018.
 }
+\section{Map}{
+
+\if{html}{\figure{london_attacks-map.png}{options: width="400" alt="Map of fatal terrorist attacks in London"}}
+\if{latex}{\figure{london_attacks-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

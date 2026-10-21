@@ -18,5 +18,9 @@
 #'
 #' Licence: Open Government Licence
 #'
+#' @section Map:
+#' \if{html}{\figure{nottingham_burglary-map.png}{options: width="400" alt="Burglaries in Nottingham"}}
+#' \if{latex}{\figure{nottingham_burglary-map.png}{options: width=4in}}
+#'
 #' @source Home Office
 "nottingham_burglary"

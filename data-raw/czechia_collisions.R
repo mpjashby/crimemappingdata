@@ -3,7 +3,6 @@
 #   * theft of powered two wheelers
 
 library(httr)
-library(lubridate)
 library(sf)
 library(tidyverse)
 
@@ -26,7 +25,8 @@ walk(
       progress(),
       timeout(600)
     )
-  })
+  }
+)
 
 cz_data <- cz_data_dir |>
   dir(pattern = ".geojson$", full.names = TRUE) |>
@@ -61,7 +61,6 @@ czechia_mcycle_thefts <- cz_data |>
 usethis::use_data(czechia_collisions, czechia_mcycle_thefts, overwrite = TRUE)
 
 
-
 # Load type codes ---
 # Type codes are published in JSON format, in which the top level contains a
 # list that contains another list for each type, containing (among other
@@ -84,7 +83,7 @@ if (FALSE) {
           category = pluck(x, "nazev", "cs"),
           type = pluck(x, "popis", "cs")
         )
-      }) |>
+      }
+    ) |>
     bind_rows()
 }
-

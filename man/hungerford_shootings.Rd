@@ -30,4 +30,10 @@ Dataset of the locations of each shooting during the massacre that took place
 in Hungerford, England, on 19 August 1987. Each row represents a location at
 which one or more people were shot by the gun-man.
 }
+\section{Map}{
+
+\if{html}{\figure{hungerford_shootings-map.png}{options: width="400" alt="Map of shootings in the Hungerford Massacre"}}
+\if{latex}{\figure{hungerford_shootings-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}

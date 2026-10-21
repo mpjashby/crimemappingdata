@@ -14,5 +14,9 @@
 #'
 #' Licence: public domain
 #'
+#' @section Map:
+#' \if{html}{\figure{sao_paulo_muni-map.png}{options: width="400" alt="Sao Paolo municipality boundaries"}}
+#' \if{latex}{\figure{sao_paulo_muni-map.png}{options: width=4in}}
+#'
 #' @source Institute for Applied Economic Research
 "sao_paulo_muni"

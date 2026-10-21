@@ -19,5 +19,9 @@
 #'
 #' Licence: public domain
 #'
+#' @section Map:
+#' \if{html}{\figure{downtown_homicides-map.png}{options: width="400" alt="Map of homicides in downtown Atlanta in 2019"}}
+#' \if{latex}{\figure{downtown_homicides-map.png}{options: width=4in}}
+#'
 #' @source Atlanta Police Department
 "downtown_homicides"

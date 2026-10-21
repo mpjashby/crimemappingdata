@@ -1,10 +1,10 @@
-pandoc: '3.2'
-pkgdown: 2.1.1
+pandoc: '3.10'
+pkgdown: 2.2.1
 pkgdown_sha: ~
 articles:
   dataset_summary: dataset_summary.html
   teaching: teaching.html
-last_built: 2025-03-09T14:44Z
+last_built: 2026-10-21T17:05Z
 urls:
   reference: https://pkgs.lesscrime.info/crimemappingdata/reference
   article: https://pkgs.lesscrime.info/crimemappingdata/articles

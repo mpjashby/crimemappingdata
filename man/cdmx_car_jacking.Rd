@@ -27,4 +27,10 @@ cdmx_car_jacking
 \description{
 Dataset of car jackings (\emph{"robo de vehiculo de servicio particular con violencia"}) in Mexico City in 2019.
 }
+\section{Map}{
+
+\if{html}{\figure{cdmx_car_jacking-map.png}{options: width="400" alt="Map of car jackings in Mexico City"}}
+\if{latex}{\figure{cdmx_car_jacking-map.png}{options: width=4in}}
+}
+
 \keyword{datasets}
