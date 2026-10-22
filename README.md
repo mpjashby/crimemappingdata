@@ -39,7 +39,12 @@ non-spatial formats) to give the opportunity for students to practice
 loading files of different types (e.g. using `readr::read_csv()` or
 `readxl::read_excel()`).
 
-![](man/figures/dataset_coords.png)
+<figure>
+<img src="man/figures/dataset_coords.png"
+alt="World map showing the locations of the datasets included in the package." />
+<figcaption aria-hidden="true">World map showing the locations of the
+datasets included in the package.</figcaption>
+</figure>
 
 | Dataset | Description | Format |
 |:---|:---|:---|

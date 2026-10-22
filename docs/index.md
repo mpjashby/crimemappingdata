@@ -1,19 +1,20 @@
 # crimemappingdata
 
 The crimemappingdata package contains a variety of datasets that are
-useful in learning crime mapping. These datasets are used in the
-[crimemapping package](https://github.com/mpjashby/crimemapping/) but
-are also available for use by anyone else in accordance with the licence
-shown in the documentation for each dataset.
+useful in learning crime mapping. These datasets are used in the book
+[*Learn Crime Mapping with
+R*](https://books.lesscrime.info/learncrimemapping/) but are also
+available for use by anyone else in accordance with the licence shown in
+the documentation for each dataset.
 
 ## Installation
 
-You can install the development version of crimemappingdata from
+You can install crimemappingdata from
 [GitHub](https://github.com/mpjashby/crimemappingdata/) with:
 
 ``` r
 
-# install.packages("remotes")
+if (!requireNamespace("remotes")) install.packages("remotes")
 remotes::install_github("mpjashby/crimemappingdata")
 ```
 
@@ -36,7 +37,10 @@ loading files of different types (e.g. using
 or
 [`readxl::read_excel()`](https://readxl.tidyverse.org/reference/read_excel.html)).
 
-![](reference/figures/dataset_coords.png)
+![World map showing the locations of the datasets included in the
+package.](reference/figures/dataset_coords.png)
+
+World map showing the locations of the datasets included in the package.
 
 | Dataset | Description | Format |
 |:---|:---|:---|

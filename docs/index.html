@@ -58,13 +58,13 @@
 </h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The crimemappingdata package contains a variety of datasets that are useful in learning crime mapping. These datasets are used in the <a href="https://github.com/mpjashby/crimemapping/" class="external-link">crimemapping package</a> but are also available for use by anyone else in accordance with the licence shown in the documentation for each dataset.</p>
+<p>The crimemappingdata package contains a variety of datasets that are useful in learning crime mapping. These datasets are used in the book <a href="https://books.lesscrime.info/learncrimemapping/" class="external-link"><em>Learn Crime Mapping with R</em></a> but are also available for use by anyone else in accordance with the licence shown in the documentation for each dataset.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of crimemappingdata from <a href="https://github.com/mpjashby/crimemappingdata/" class="external-link">GitHub</a> with:</p>
+<p>You can install crimemappingdata from <a href="https://github.com/mpjashby/crimemappingdata/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html" class="external-link">requireNamespace</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"mpjashby/crimemappingdata"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
@@ -76,8 +76,9 @@
 <li>stand-alone files that can be downloaded in the formats shown below.</li>
 </ul>
 <p>See the manual page for each dataset (e.g. <code><a href="reference/aggravated_assaults.html">?aggravated_assaults</a></code>) for the corresponding stand-alone file URL. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using <code><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">readr::read_csv()</a></code> or <code><a href="https://readxl.tidyverse.org/reference/read_excel.html" class="external-link">readxl::read_excel()</a></code>).</p>
-<p><img src="reference/figures/dataset_coords.png"></p>
-<table class="table">
+<figure><img src="reference/figures/dataset_coords.png" alt="World map showing the locations of the datasets included in the package."><figcaption aria-hidden="true">
+World map showing the locations of the datasets included in the package.
+</figcaption></figure><table class="table">
 <colgroup>
 <col width="33%">
 <col width="33%">

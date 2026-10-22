@@ -43,7 +43,7 @@ The following datasets are available, both as:
   
 See the manual page for each dataset (e.g. `?aggravated_assaults`) for the corresponding stand-alone file URL. Different stand-alone datasets are provided in different file formats (including spatial and non-spatial formats) to give the opportunity for students to practice loading files of different types (e.g. using `readr::read_csv()` or `readxl::read_excel()`). 
 
-![](man/figures/dataset_coords.png)
+![World map showing the locations of the datasets included in the package.](man/figures/dataset_coords.png)
 
 ```{r, echo=FALSE}
 # Extract data frame of datasets
