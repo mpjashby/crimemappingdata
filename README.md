@@ -8,18 +8,19 @@
 <!-- badges: end -->
 
 The crimemappingdata package contains a variety of datasets that are
-useful in learning crime mapping. These datasets are used in the
-[crimemapping package](https://github.com/mpjashby/crimemapping/) but
-are also available for use by anyone else in accordance with the licence
-shown in the documentation for each dataset.
+useful in learning crime mapping. These datasets are used in the book
+[*Learn Crime Mapping with
+R*](https://books.lesscrime.info/learncrimemapping/) but are also
+available for use by anyone else in accordance with the licence shown in
+the documentation for each dataset.
 
 ## Installation
 
-You can install the development version of crimemappingdata from
+You can install crimemappingdata from
 [GitHub](https://github.com/mpjashby/crimemappingdata/) with:
 
 ``` r
-# install.packages("remotes")
+if (!requireNamespace("remotes")) install.packages("remotes")
 remotes::install_github("mpjashby/crimemappingdata")
 ```
 
