@@ -1,0 +1,68 @@
+name: Deploy pkgdown website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-pkgdown-website
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Check out committed website
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check deployment files and credentials
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          test -n "$FTP_USERNAME" || { echo 'Add the FTP_USERNAME repository secret before deploying.'; exit 1; }
+          test -n "$LFTP_PASSWORD" || { echo 'Add the FTP_PASSWORD repository secret before deploying.'; exit 1; }
+          test -s docs/index.html || { echo 'Build and commit the pkgdown site in docs/ before deploying.'; exit 1; }
+
+      - name: Install FTP client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes lftp ca-certificates
+
+      - name: Upload website using explicit FTPS
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp --norc --user "$FTP_USERNAME" --env-password -p 21 ftp://ftp.lesscrime.info <<'LFTP'
+          set cmd:fail-exit yes
+          set net:timeout 30
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          set ftp:ssl-allow yes
+          set ftp:ssl-force yes
+          set ftp:ssl-protect-data yes
+          set ftp:ssl-protect-list yes
+          set ftp:passive-mode yes
+          set ssl:verify-certificate yes
+          # Provider's certificate does not cover ftp.lesscrime.info.
+          # Restore this to yes once the provider fixes the certificate hostname.
+          set ssl:check-hostname no
+          # Require the existing destination; do not create a potentially incorrect path.
+          cd subdomains/pkgs/crimemappingdata
+          # Mirror the committed site, deleting remote files absent from docs/.
+          # Keep any required server configuration (e.g. .htaccess) in docs/ too.
+          mirror --reverse --delete --verbose --parallel=2 docs/ .
+          bye
+          LFTP
