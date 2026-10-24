@@ -587,20 +587,20 @@ The stand-alone version of this dataset is a `.rds` file.
 ### `poland_property_crime_counts`
 
 Dataset of counts of property offences ascertained by police in the 380
-powiats (counties) in Poland in 2024.
+powiats (counties) in Poland from 2022 to 2024.
 
-| kod_bdl      | kod_teryt | nazwa                 | przestepstwa_przeciwko_mieniu |
-|:-------------|:----------|:----------------------|------------------------------:|
-| 030210101000 | 0201      | Powiat bolesławiecki  |                          1959 |
-| 030210302000 | 0202      | Powiat dzierżoniowski |                           744 |
-| 030210203000 | 0203      | Powiat głogowski      |                          2138 |
-| 030210204000 | 0204      | Powiat górowski       |                           396 |
-| 030210105000 | 0205      | Powiat jaworski       |                           438 |
-| 030210106000 | 0206      | Powiat karkonoski     |                           895 |
-| 030210107000 | 0207      | Powiat kamiennogórski |                           349 |
-| 030210308000 | 0208      | Powiat kłodzki        |                          1302 |
-| 030210209000 | 0209      | Powiat legnicki       |                           771 |
-| 030210110000 | 0210      | Powiat lubański       |                           797 |
+| kod_bdl | kod_teryt | nazwa | rok | przestepstwa_przeciwko_mieniu |
+|:---|:---|:---|---:|---:|
+| 030210101000 | 0201 | Powiat bolesławiecki | 2022 | 1761 |
+| 030210101000 | 0201 | Powiat bolesławiecki | 2023 | 1566 |
+| 030210101000 | 0201 | Powiat bolesławiecki | 2024 | 1959 |
+| 030210302000 | 0202 | Powiat dzierżoniowski | 2022 | 852 |
+| 030210302000 | 0202 | Powiat dzierżoniowski | 2023 | 864 |
+| 030210302000 | 0202 | Powiat dzierżoniowski | 2024 | 744 |
+| 030210203000 | 0203 | Powiat głogowski | 2022 | 1383 |
+| 030210203000 | 0203 | Powiat głogowski | 2023 | 1525 |
+| 030210203000 | 0203 | Powiat głogowski | 2024 | 2138 |
+| 030210204000 | 0204 | Powiat górowski | 2022 | 514 |
 
 The stand-alone version of this dataset is an Excel (`.xlsx`) file.
 
@@ -936,23 +936,24 @@ teach topics such as counting the number of crimes in particular areas.
 
 ### `poland_population`
 
-Dataset of resident population on 31 December 2024 in each powiat
-(county) in Poland. This can be used together with the
-`poland_powiat_boundaries` and `poland_property_crime_counts` datasets
-for teaching non-spatial joining and calculation of area crime rates.
+Dataset of resident population on 31 December in each year from 2022 to
+2024 in each powiat (county) in Poland. This can be used together with
+the `poland_powiat_boundaries` and `poland_property_crime_counts`
+datasets for teaching non-spatial joining and calculation of area crime
+rates.
 
-| kod_bdl      | kod_teryt | nazwa                 | ludnosc |
-|:-------------|:----------|:----------------------|--------:|
-| 030210101000 | 0201      | Powiat bolesławiecki  |   87255 |
-| 030210302000 | 0202      | Powiat dzierżoniowski |   93863 |
-| 030210203000 | 0203      | Powiat głogowski      |   84387 |
-| 030210204000 | 0204      | Powiat górowski       |   32054 |
-| 030210105000 | 0205      | Powiat jaworski       |   46822 |
-| 030210106000 | 0206      | Powiat karkonoski     |   59864 |
-| 030210107000 | 0207      | Powiat kamiennogórski |   39875 |
-| 030210308000 | 0208      | Powiat kłodzki        |  145243 |
-| 030210209000 | 0209      | Powiat legnicki       |   54967 |
-| 030210110000 | 0210      | Powiat lubański       |   50909 |
+| kod_bdl      | kod_teryt | nazwa                 |  rok | ludnosc |
+|:-------------|:----------|:----------------------|-----:|--------:|
+| 030210101000 | 0201      | Powiat bolesławiecki  | 2022 |   87922 |
+| 030210101000 | 0201      | Powiat bolesławiecki  | 2023 |   87642 |
+| 030210101000 | 0201      | Powiat bolesławiecki  | 2024 |   87255 |
+| 030210302000 | 0202      | Powiat dzierżoniowski | 2022 |   95863 |
+| 030210302000 | 0202      | Powiat dzierżoniowski | 2023 |   94740 |
+| 030210302000 | 0202      | Powiat dzierżoniowski | 2024 |   93863 |
+| 030210203000 | 0203      | Powiat głogowski      | 2022 |   85689 |
+| 030210203000 | 0203      | Powiat głogowski      | 2023 |   85043 |
+| 030210203000 | 0203      | Powiat głogowski      | 2024 |   84387 |
+| 030210204000 | 0204      | Powiat górowski       | 2022 |   32738 |
 
 The stand-alone version of this dataset is a tab-separated values (TSV)
 file.

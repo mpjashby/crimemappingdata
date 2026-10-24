@@ -1,18 +1,21 @@
-#' Property offences in Polish powiats, 2024
+#' Property offences in Polish powiats, 2022–2024
 #'
 #' Counts of property offences ascertained by the police in completed
-#' preparatory proceedings in each powiat (county) in Poland during 2024.
+#' preparatory proceedings in each powiat (county) in Poland from 2022 to 2024.
 #'
-#' @format Data frame containing 380 rows and 4 columns:
+#' @format Data frame containing 1,140 rows and 5 columns:
 #' \describe{
 #'   \item{kod_bdl}{Twelve-character BDL territorial unit identifier.}
 #'   \item{kod_teryt}{Four-character TERYT powiat code, stored as text to
 #'     preserve leading zeroes.}
 #'   \item{nazwa}{Powiat name in Polish, including cities with powiat status.}
+#'   \item{rok}{Year of observation: 2022, 2023 or 2024.}
 #'   \item{przestepstwa_przeciwko_mieniu}{Number of property offences.}
 #' }
 #'
 #' @details
+#' Each row represents one powiat in one year.
+#'
 #' This dataset is also available as a stand-alone file in Excel format at
 #' <https://mpjashby.github.io/crimemappingdata/poland_property_crime_counts.xlsx>.
 #'

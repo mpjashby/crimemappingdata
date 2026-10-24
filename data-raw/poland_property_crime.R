@@ -6,16 +6,14 @@ library(writexl)
 library(tidyverse)
 
 # Polish powiats, including cities with powiat status, for a crime-rate exercise.
-# Draft only: this script has not been run or its downloads inspected.
 #
 # Crime: police-ascertained property offences in completed preparatory
-# proceedings, calendar year 2024 (BDL variable 58564, not the published rate).
-# Population: total population on 31 December 2024 (BDL variable 72305).
+# proceedings, calendar years 2022–2024 (BDL variable 58564, not the published rate).
+# Population: total population on 31 December in each of 2022–2024 (BDL variable 72305).
 # This is an end-of-year denominator, not an annual average population.
-# Boundaries: archived PRG 2025 release (administrative geography at 1 January
-# 2025, immediately following the population reference date). Before release,
-# review the archive metadata and any 2024/2025 boundary changes; matching
-# identifiers alone does not prove that geographic extents are identical.
+# Boundaries: archived PRG 2025 release. The same polygons are supplied for
+# all three years; matching codes alone does not establish unchanged geographic
+# extents. Consider boundary changes when comparing annual rates.
 #
 # Sources and redistribution terms:
 # - Statistics Poland, Bank Danych Lokalnych (BDL): CC BY 4.0.
@@ -48,7 +46,7 @@ read_bdl <- function(variable_id, value_name) {
 
   # Fetch successive pages until all reported records have been downloaded.
   repeat {
-    # Request 2024 powiat-level data, with Polish names, in batches of 100.
+    # Request 2022–2024 powiat-level data, with Polish names, in batches of 100.
     response <- request(str_c(
       "https://bdl.stat.gov.pl/api/v1/data/by-variable/",
       variable_id
@@ -56,7 +54,8 @@ read_bdl <- function(variable_id, value_name) {
       req_url_query(
         format = "json",
         lang = "pl",
-        year = 2024L,
+        year = 2022:2024,
+        .multi = "explode",
         `unit-level` = 5L,
         `page-size` = 100L,
         page = page
@@ -111,7 +110,7 @@ read_bdl <- function(variable_id, value_name) {
     # Give the numeric field its Polish snake_case measure name.
     rename_with(~value_name, wartosc) |>
     # Put records in geographic-code order for easier interactive review.
-    arrange(kod_teryt)
+    arrange(kod_teryt, rok)
 }
 
 # Download the number of property offences, retaining the source value flags.
@@ -119,14 +118,14 @@ poland_property_crime_counts <- read_bdl(
   variable_id = 58564L,
   value_name = "przestepstwa_przeciwko_mieniu"
 ) |>
-  select(-id_atrybutu, -rok)
+  select(-id_atrybutu)
 
 # Download total resident population for the same year and geographic level.
 poland_population <- read_bdl(
   variable_id = 72305L,
   value_name = "ludnosc"
 ) |>
-  select(-id_atrybutu, -rok)
+  select(-id_atrybutu)
 
 
 # Download archived boundaries -------------------------------------------------

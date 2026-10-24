@@ -502,7 +502,7 @@ The stand-alone version of this dataset is a `.rds` file.
 data(poland_property_crime_counts, package = "crimemappingdata")
 ```
 
-Dataset of counts of property offences ascertained by police in the `r format(nrow(poland_property_crime_counts), big.mark = ",")` powiats (counties) in Poland in 2024.
+Dataset of counts of property offences ascertained by police in the `r format(length(unique(poland_property_crime_counts$kod_teryt)), big.mark = ",")` powiats (counties) in Poland from 2022 to 2024.
 
 ```{r}
 poland_property_crime_counts |>
@@ -791,7 +791,7 @@ This dataset can be used together with the `nyc_shootings` dataset to teach topi
 data(poland_population, package = "crimemappingdata")
 ```
 
-Dataset of resident population on 31 December 2024 in each powiat (county) in Poland. This can be used together with the `poland_powiat_boundaries` and `poland_property_crime_counts` datasets for teaching non-spatial joining and calculation of area crime rates.
+Dataset of resident population on 31 December in each year from 2022 to 2024 in each powiat (county) in Poland. This can be used together with the `poland_powiat_boundaries` and `poland_property_crime_counts` datasets for teaching non-spatial joining and calculation of area crime rates.
 
 ```{r}
 poland_population |>

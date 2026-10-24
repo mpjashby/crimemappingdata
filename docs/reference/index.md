@@ -73,7 +73,7 @@ boundaries.
 - [`northants_burglary_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/northants_burglary_counts.md)
   : Counts of burglary in Northamptonshire in 2020
 - [`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.md)
-  : Property offences in Polish powiats, 2024
+  : Property offences in Polish powiats, 2022–2024
 - [`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.md)
   : Stalking in Queensland from 2001 to 2022
 - [`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.md)
@@ -119,7 +119,7 @@ below.
 - [`nyc_precincts`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_precincts.md)
   : New York City Police precinct boundaries
 - [`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.md)
-  : Population of Polish powiats, 2024
+  : Population of Polish powiats, 2022–2024
 - [`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.md)
   : Polish powiat boundaries
 - [`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.md)

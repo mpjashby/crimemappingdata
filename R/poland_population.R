@@ -1,14 +1,15 @@
-#' Population of Polish powiats, 2024
+#' Population of Polish powiats, 2022–2024
 #'
 #' Total resident population of each powiat (county) in Poland on
-#' 31 December 2024, including cities with powiat status.
+#' 31 December in each year from 2022 to 2024, including cities with powiat status.
 #'
-#' @format Data frame containing 380 rows and 4 columns:
+#' @format Data frame containing 1,140 rows and 5 columns:
 #' \describe{
 #'   \item{kod_bdl}{Twelve-character BDL territorial unit identifier.}
 #'   \item{kod_teryt}{Four-character TERYT powiat code, stored as text to
 #'     preserve leading zeroes.}
 #'   \item{nazwa}{Powiat name in Polish, including cities with powiat status.}
+#'   \item{rok}{Year of observation: 2022, 2023 or 2024.}
 #'   \item{ludnosc}{Number of residents.}
 #' }
 #'

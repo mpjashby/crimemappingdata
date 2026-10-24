@@ -1,5 +1,9 @@
 # Changelog
 
+## crimemappingdata 0.4.2
+
+- Extended the Polish crime and population datasets to cover 2022–24.
+
 ## crimemappingdata 0.4.1
 
 - Added new area-level `poland_property_crime_counts` dataset and

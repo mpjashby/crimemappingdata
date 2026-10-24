@@ -86,9 +86,9 @@ World map showing the locations of the datasets included in the package.
 | [`nyc_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_homicides.html) | Homicides in New York City, 2016 to 2018 | `.csv` |
 | [`nyc_precincts`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_precincts.html) | New York City Police precinct boundaries | `.gpkg` |
 | [`nyc_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_shootings.html) | Shootings in New York City in 2019 | `.csv` |
-| [`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.html) | Population of Polish powiats, 2024 | `.tsv` |
+| [`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.html) | Population of Polish powiats, 2022–2024 | `.tsv` |
 | [`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.html) | Polish powiat boundaries | `.gpkg` |
-| [`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.html) | Property offences in Polish powiats, 2024 | `.xlsx` |
+| [`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.html) | Property offences in Polish powiats, 2022–2024 | `.xlsx` |
 | [`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.html) | Queensland Police Service division boundaries | `.gpkg` |
 | [`qld_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.html) | Population of Queensland Police Service divisions | `.csv.gz` |
 | [`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.html) | Stalking in Queensland from 2001 to 2022 | `.xlsx` |
@@ -199,7 +199,7 @@ boundaries.
 - [`northants_burglary_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/northants_burglary_counts.md)
   : Counts of burglary in Northamptonshire in 2020
 - [`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.md)
-  : Property offences in Polish powiats, 2024
+  : Property offences in Polish powiats, 2022–2024
 - [`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.md)
   : Stalking in Queensland from 2001 to 2022
 - [`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.md)
@@ -245,7 +245,7 @@ below.
 - [`nyc_precincts`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_precincts.md)
   : New York City Police precinct boundaries
 - [`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.md)
-  : Population of Polish powiats, 2024
+  : Population of Polish powiats, 2022–2024
 - [`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.md)
   : Polish powiat boundaries
 - [`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.md)
