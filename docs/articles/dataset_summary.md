@@ -1,6 +1,6 @@
 # Summary of available datasets
 
-The `crimemappindata` package contains 53 datasets that are designed to
+The `crimemappindata` package contains 56 datasets that are designed to
 be used in teaching crime mapping and crime analysis more generally.
 There are several different types of data available:
 
@@ -584,6 +584,26 @@ Northamptonshire, England, in 2020.
 
 The stand-alone version of this dataset is a `.rds` file.
 
+### `poland_property_crime_counts`
+
+Dataset of counts of property offences ascertained by police in the 380
+powiats (counties) in Poland in 2024.
+
+| kod_bdl      | kod_teryt | nazwa                 | przestepstwa_przeciwko_mieniu |
+|:-------------|:----------|:----------------------|------------------------------:|
+| 030210101000 | 0201      | Powiat bolesławiecki  |                          1959 |
+| 030210302000 | 0202      | Powiat dzierżoniowski |                           744 |
+| 030210203000 | 0203      | Powiat głogowski      |                          2138 |
+| 030210204000 | 0204      | Powiat górowski       |                           396 |
+| 030210105000 | 0205      | Powiat jaworski       |                           438 |
+| 030210106000 | 0206      | Powiat karkonoski     |                           895 |
+| 030210107000 | 0207      | Powiat kamiennogórski |                           349 |
+| 030210308000 | 0208      | Powiat kłodzki        |                          1302 |
+| 030210209000 | 0209      | Powiat legnicki       |                           771 |
+| 030210110000 | 0210      | Powiat lubański       |                           797 |
+
+The stand-alone version of this dataset is an Excel (`.xlsx`) file.
+
 ### `qld_stalking`
 
 Dataset of 7,304 annual counts of stalking offences recorded by the
@@ -913,6 +933,50 @@ The stand-alone version of this dataset is a geopackage file.
 
 This dataset can be used together with the `nyc_shootings` dataset to
 teach topics such as counting the number of crimes in particular areas.
+
+### `poland_population`
+
+Dataset of resident population on 31 December 2024 in each powiat
+(county) in Poland. This can be used together with the
+`poland_powiat_boundaries` and `poland_property_crime_counts` datasets
+for teaching non-spatial joining and calculation of area crime rates.
+
+| kod_bdl      | kod_teryt | nazwa                 | ludnosc |
+|:-------------|:----------|:----------------------|--------:|
+| 030210101000 | 0201      | Powiat bolesławiecki  |   87255 |
+| 030210302000 | 0202      | Powiat dzierżoniowski |   93863 |
+| 030210203000 | 0203      | Powiat głogowski      |   84387 |
+| 030210204000 | 0204      | Powiat górowski       |   32054 |
+| 030210105000 | 0205      | Powiat jaworski       |   46822 |
+| 030210106000 | 0206      | Powiat karkonoski     |   59864 |
+| 030210107000 | 0207      | Powiat kamiennogórski |   39875 |
+| 030210308000 | 0208      | Powiat kłodzki        |  145243 |
+| 030210209000 | 0209      | Powiat legnicki       |   54967 |
+| 030210110000 | 0210      | Powiat lubański       |   50909 |
+
+The stand-alone version of this dataset is a tab-separated values (TSV)
+file.
+
+### `poland_powiat_boundaries`
+
+Simple features (SF) object containing the boundaries of powiats
+(counties) in Poland, from the 2025 archive of the National Register of
+Boundaries.
+
+| jpt_kod_je | jpt_nazwa             | regon          | geometry       |
+|:-----------|:----------------------|:---------------|:---------------|
+| 0201       | powiat bolesławiecki  | 23082162900000 | \<SF polygon\> |
+| 0202       | powiat dzierżoniowski | 89071781700000 | \<SF polygon\> |
+| 0203       | powiat głogowski      | 39064721600000 | \<SF polygon\> |
+| 0204       | powiat górowski       | 41105046800000 | \<SF polygon\> |
+| 0205       | powiat jaworski       | 39064716200000 | \<SF polygon\> |
+| 0206       | powiat karkonoski     | 23082149200000 | \<SF polygon\> |
+| 0207       | powiat kamiennogórski | 23082130000000 | \<SF polygon\> |
+| 0208       | powiat kłodzki        | 89071789800000 | \<SF polygon\> |
+| 0209       | powiat legnicki       | 39064720000000 | \<SF polygon\> |
+| 0210       | powiat lubański       | 23082137400000 | \<SF polygon\> |
+
+The stand-alone version of this dataset is a geopackage file.
 
 ### `qld_police_divisions`
 

@@ -42,6 +42,7 @@ reference:
   - japan_violence_counts
   - malaysia_violence_counts
   - northants_burglary_counts
+  - poland_property_crime_counts
   - qld_stalking
   - uttar_pradesh_murders
 - title: "Supporting data"
@@ -66,6 +67,8 @@ reference:
   - northumbria_ward_pop
   - nottingham_wards
   - nyc_precincts
+  - poland_population
+  - poland_powiat_boundaries
   - qld_police_divisions
   - qld_population
   - sao_paulo_muni

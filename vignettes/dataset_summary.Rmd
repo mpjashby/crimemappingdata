@@ -496,6 +496,23 @@ northants_burglary_counts |>
 The stand-alone version of this dataset is a `.rds` file.
 
 
+### `poland_property_crime_counts`
+
+```{r}
+data(poland_property_crime_counts, package = "crimemappingdata")
+```
+
+Dataset of counts of property offences ascertained by police in the `r format(nrow(poland_property_crime_counts), big.mark = ",")` powiats (counties) in Poland in 2024.
+
+```{r}
+poland_property_crime_counts |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is an Excel (`.xlsx`) file.
+
+
 ### `qld_stalking`
 
 ```{r}
@@ -766,6 +783,43 @@ nyc_precincts |>
 The stand-alone version of this dataset is a geopackage file.
 
 This dataset can be used together with the `nyc_shootings` dataset to teach topics such as counting the number of crimes in particular areas.
+
+
+### `poland_population`
+
+```{r}
+data(poland_population, package = "crimemappingdata")
+```
+
+Dataset of resident population on 31 December 2024 in each powiat (county) in Poland. This can be used together with the `poland_powiat_boundaries` and `poland_property_crime_counts` datasets for teaching non-spatial joining and calculation of area crime rates.
+
+```{r}
+poland_population |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a tab-separated values (TSV) file.
+
+
+### `poland_powiat_boundaries`
+
+```{r}
+data(poland_powiat_boundaries, package = "crimemappingdata")
+```
+
+Simple features (SF) object containing the boundaries of powiats (counties) in Poland, from the 2025 archive of the National Register of Boundaries.
+
+```{r}
+poland_powiat_boundaries_head <- sf::st_drop_geometry(poland_powiat_boundaries)
+poland_powiat_boundaries_head$geometry <- "&lt;SF polygon&gt;"
+
+poland_powiat_boundaries_head |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a geopackage file.
 
 
 ### `qld_police_divisions`

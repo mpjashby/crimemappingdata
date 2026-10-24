@@ -1,3 +1,9 @@
+# crimemappingdata 0.4.1
+
+* Added new area-level `poland_property_crime_counts` dataset and
+  supporting `poland_population` and `poland_powiat_boundaries` datasets.
+
+
 # crimemappingdata 0.4.0
 
 * Added new `buenos_aires_robbery` point-level dataset and supporting

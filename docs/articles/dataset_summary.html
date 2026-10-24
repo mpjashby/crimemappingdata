@@ -21,7 +21,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">crimemappingdata</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
 
     
     
-<p>The <code>crimemappindata</code> package contains 53 datasets that
+<p>The <code>crimemappindata</code> package contains 56 datasets that
 are designed to be used in teaching crime mapping and crime analysis
 more generally. There are several different types of data available:</p>
 <ul>
@@ -2559,6 +2559,91 @@ in Northamptonshire, England, in 2020.</p>
 file.</p>
 </div>
 <div class="section level3">
+<h3 id="poland_property_crime_counts">
+<code>poland_property_crime_counts</code><a class="anchor" aria-label="anchor" href="#poland_property_crime_counts"></a>
+</h3>
+<p>Dataset of counts of property offences ascertained by police in the
+380 powiats (counties) in Poland in 2024.</p>
+<table class="table">
+<colgroup>
+<col width="17%">
+<col width="13%">
+<col width="29%">
+<col width="40%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">kod_bdl</th>
+<th align="left">kod_teryt</th>
+<th align="left">nazwa</th>
+<th align="right">przestepstwa_przeciwko_mieniu</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">030210101000</td>
+<td align="left">0201</td>
+<td align="left">Powiat bolesławiecki</td>
+<td align="right">1959</td>
+</tr>
+<tr class="even">
+<td align="left">030210302000</td>
+<td align="left">0202</td>
+<td align="left">Powiat dzierżoniowski</td>
+<td align="right">744</td>
+</tr>
+<tr class="odd">
+<td align="left">030210203000</td>
+<td align="left">0203</td>
+<td align="left">Powiat głogowski</td>
+<td align="right">2138</td>
+</tr>
+<tr class="even">
+<td align="left">030210204000</td>
+<td align="left">0204</td>
+<td align="left">Powiat górowski</td>
+<td align="right">396</td>
+</tr>
+<tr class="odd">
+<td align="left">030210105000</td>
+<td align="left">0205</td>
+<td align="left">Powiat jaworski</td>
+<td align="right">438</td>
+</tr>
+<tr class="even">
+<td align="left">030210106000</td>
+<td align="left">0206</td>
+<td align="left">Powiat karkonoski</td>
+<td align="right">895</td>
+</tr>
+<tr class="odd">
+<td align="left">030210107000</td>
+<td align="left">0207</td>
+<td align="left">Powiat kamiennogórski</td>
+<td align="right">349</td>
+</tr>
+<tr class="even">
+<td align="left">030210308000</td>
+<td align="left">0208</td>
+<td align="left">Powiat kłodzki</td>
+<td align="right">1302</td>
+</tr>
+<tr class="odd">
+<td align="left">030210209000</td>
+<td align="left">0209</td>
+<td align="left">Powiat legnicki</td>
+<td align="right">771</td>
+</tr>
+<tr class="even">
+<td align="left">030210110000</td>
+<td align="left">0210</td>
+<td align="left">Powiat lubański</td>
+<td align="right">797</td>
+</tr>
+</tbody>
+</table>
+<p>The stand-alone version of this dataset is an Excel
+(<code>.xlsx</code>) file.</p>
+</div>
+<div class="section level3">
 <h3 id="qld_stalking">
 <code>qld_stalking</code><a class="anchor" aria-label="anchor" href="#qld_stalking"></a>
 </h3>
@@ -3748,6 +3833,167 @@ incidents in areas and related topics.</p>
 <p>This dataset can be used together with the <code>nyc_shootings</code>
 dataset to teach topics such as counting the number of crimes in
 particular areas.</p>
+</div>
+<div class="section level3">
+<h3 id="poland_population">
+<code>poland_population</code><a class="anchor" aria-label="anchor" href="#poland_population"></a>
+</h3>
+<p>Dataset of resident population on 31 December 2024 in each powiat
+(county) in Poland. This can be used together with the
+<code>poland_powiat_boundaries</code> and
+<code>poland_property_crime_counts</code> datasets for teaching
+non-spatial joining and calculation of area crime rates.</p>
+<table class="table">
+<thead><tr class="header">
+<th align="left">kod_bdl</th>
+<th align="left">kod_teryt</th>
+<th align="left">nazwa</th>
+<th align="right">ludnosc</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">030210101000</td>
+<td align="left">0201</td>
+<td align="left">Powiat bolesławiecki</td>
+<td align="right">87255</td>
+</tr>
+<tr class="even">
+<td align="left">030210302000</td>
+<td align="left">0202</td>
+<td align="left">Powiat dzierżoniowski</td>
+<td align="right">93863</td>
+</tr>
+<tr class="odd">
+<td align="left">030210203000</td>
+<td align="left">0203</td>
+<td align="left">Powiat głogowski</td>
+<td align="right">84387</td>
+</tr>
+<tr class="even">
+<td align="left">030210204000</td>
+<td align="left">0204</td>
+<td align="left">Powiat górowski</td>
+<td align="right">32054</td>
+</tr>
+<tr class="odd">
+<td align="left">030210105000</td>
+<td align="left">0205</td>
+<td align="left">Powiat jaworski</td>
+<td align="right">46822</td>
+</tr>
+<tr class="even">
+<td align="left">030210106000</td>
+<td align="left">0206</td>
+<td align="left">Powiat karkonoski</td>
+<td align="right">59864</td>
+</tr>
+<tr class="odd">
+<td align="left">030210107000</td>
+<td align="left">0207</td>
+<td align="left">Powiat kamiennogórski</td>
+<td align="right">39875</td>
+</tr>
+<tr class="even">
+<td align="left">030210308000</td>
+<td align="left">0208</td>
+<td align="left">Powiat kłodzki</td>
+<td align="right">145243</td>
+</tr>
+<tr class="odd">
+<td align="left">030210209000</td>
+<td align="left">0209</td>
+<td align="left">Powiat legnicki</td>
+<td align="right">54967</td>
+</tr>
+<tr class="even">
+<td align="left">030210110000</td>
+<td align="left">0210</td>
+<td align="left">Powiat lubański</td>
+<td align="right">50909</td>
+</tr>
+</tbody>
+</table>
+<p>The stand-alone version of this dataset is a tab-separated values
+(TSV) file.</p>
+</div>
+<div class="section level3">
+<h3 id="poland_powiat_boundaries">
+<code>poland_powiat_boundaries</code><a class="anchor" aria-label="anchor" href="#poland_powiat_boundaries"></a>
+</h3>
+<p>Simple features (SF) object containing the boundaries of powiats
+(counties) in Poland, from the 2025 archive of the National Register of
+Boundaries.</p>
+<table class="table">
+<thead><tr class="header">
+<th align="left">jpt_kod_je</th>
+<th align="left">jpt_nazwa</th>
+<th align="left">regon</th>
+<th align="left">geometry</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">0201</td>
+<td align="left">powiat bolesławiecki</td>
+<td align="left">23082162900000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="even">
+<td align="left">0202</td>
+<td align="left">powiat dzierżoniowski</td>
+<td align="left">89071781700000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="odd">
+<td align="left">0203</td>
+<td align="left">powiat głogowski</td>
+<td align="left">39064721600000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="even">
+<td align="left">0204</td>
+<td align="left">powiat górowski</td>
+<td align="left">41105046800000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="odd">
+<td align="left">0205</td>
+<td align="left">powiat jaworski</td>
+<td align="left">39064716200000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="even">
+<td align="left">0206</td>
+<td align="left">powiat karkonoski</td>
+<td align="left">23082149200000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="odd">
+<td align="left">0207</td>
+<td align="left">powiat kamiennogórski</td>
+<td align="left">23082130000000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="even">
+<td align="left">0208</td>
+<td align="left">powiat kłodzki</td>
+<td align="left">89071789800000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="odd">
+<td align="left">0209</td>
+<td align="left">powiat legnicki</td>
+<td align="left">39064720000000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+<tr class="even">
+<td align="left">0210</td>
+<td align="left">powiat lubański</td>
+<td align="left">23082137400000</td>
+<td align="left">&lt;SF polygon&gt;</td>
+</tr>
+</tbody>
+</table>
+<p>The stand-alone version of this dataset is a geopackage file.</p>
 </div>
 <div class="section level3">
 <h3 id="qld_police_divisions">

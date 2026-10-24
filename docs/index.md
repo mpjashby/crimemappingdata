@@ -59,8 +59,8 @@ World map showing the locations of the datasets included in the package.
 | [`czechia_mcycle_thefts`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.html) | Motorcycle thefts in Czechia | `.gpkg` |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.csv` |
 | [`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.html) | Homicides in downtown Atlanta in 2019 | `.gpkg` |
-| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.csv` |
 | [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.gpkg` |
+| [`glenrose_heights_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/glenrose_heights_homicides.html) | Homicides in Glenrose Heights in 2019 | `.csv` |
 | [`hungerford_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/hungerford_shootings.html) | Shootings in the Hungerford Massacre | `.csv` |
 | [`japan_prefectures`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_prefectures.html) | Japanese prefecture boundaries, 2019 | `.gpkg` |
 | [`japan_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.html) | Counts of violent crime in Japan, 2012 | `.rds` |
@@ -86,6 +86,9 @@ World map showing the locations of the datasets included in the package.
 | [`nyc_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_homicides.html) | Homicides in New York City, 2016 to 2018 | `.csv` |
 | [`nyc_precincts`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_precincts.html) | New York City Police precinct boundaries | `.gpkg` |
 | [`nyc_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_shootings.html) | Shootings in New York City in 2019 | `.csv` |
+| [`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.html) | Population of Polish powiats, 2024 | `.tsv` |
+| [`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.html) | Polish powiat boundaries | `.gpkg` |
+| [`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.html) | Property offences in Polish powiats, 2024 | `.xlsx` |
 | [`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.html) | Queensland Police Service division boundaries | `.gpkg` |
 | [`qld_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.html) | Population of Queensland Police Service divisions | `.csv.gz` |
 | [`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.html) | Stalking in Queensland from 2001 to 2022 | `.xlsx` |
