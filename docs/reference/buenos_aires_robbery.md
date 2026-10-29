@@ -48,7 +48,33 @@ Licence: Creative Commons Attribution
 Direccion General de Estadistica Criminal y Mapa del Delito, City of
 Buenos Aires <https://data.buenosaires.gob.ar/dataset/delitos>.
 
-## Map
+## See also
 
-![Map of buenos Aires robberies in
-2023](figures/buenos_aires_robbery-map.png)
+[`buenos_aires_barrios`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_barrios.md):
+Buenos Aires barrio boundaries.
+[`buenos_aires_subte_lines`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_lines.md):
+Buenos Aires Subte (metro) lines.
+[`buenos_aires_subte_stations`](https://pkgs.lesscrime.info/crimemappingdata/reference/buenos_aires_subte_stations.md):
+Buenos Aires Subte (metro) stations.
+[`retiro_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/retiro_homicides.md):
+Retiro homicides in 2023.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    buenos_aires_robbery,
+    coords = c("longitud", "latitud"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

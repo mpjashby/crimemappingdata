@@ -23,6 +23,7 @@
 #'
 #' @source Statistics Poland, Bank Danych Lokalnych (Local Data Bank).
 #' <https://api.stat.gov.pl/home/bdlapi>.
-#' @seealso \code{\link{poland_property_crime_counts}},
-#'   \code{\link{poland_powiat_boundaries}}
+#' @seealso
+#' \code{\link{poland_powiat_boundaries}}: Polish powiat boundaries.
+#' \code{\link{poland_property_crime_counts}}: Property offences in Polish powiats, 2022–2024.
 "poland_population"

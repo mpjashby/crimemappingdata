@@ -28,10 +28,21 @@ san_francisco_robbery
 \description{
 Dataset of personal robberies in San Francisco in 2019.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    san_francisco_robbery,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{san_francisco_robbery-map.png}{options: width="400" alt="Personal robberies in San Francisco in 2019"}}
-\if{latex}{\figure{san_francisco_robbery-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
 \keyword{datasets}

@@ -51,5 +51,7 @@ Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ## See also
 
-[`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.md),
-[`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.md)
+[`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.md):
+Polish powiat boundaries.
+[`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.md):
+Property offences in Polish powiats, 2022–2024.

@@ -46,11 +46,24 @@ Head Office of Geodesy and Cartography (GUGiK), National Register of
 Boundaries (PRG), 2025 archive.
 <https://www.geoportal.gov.pl/pl/dane/panstwowy-rejestr-granic-prg/>.
 
-## Map
-
-![Map of Polish powiat boundaries](figures/poland_powiat_boundaries.png)
-
 ## See also
 
-[`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.md),
-[`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.md)
+[`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.md):
+Population of Polish powiats, 2022–2024.
+[`poland_property_crime_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_property_crime_counts.md):
+Property offences in Polish powiats, 2022–2024.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    poland_powiat_boundaries,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

@@ -40,7 +40,22 @@ Licence: Open Government Licence
 
 Official report into the massacre
 
-## Map
+## Examples
 
-![Map of shootings in the Hungerford
-Massacre](figures/hungerford_shootings-map.png)
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    hungerford_shootings,
+    coords = c("easting", "northing"),
+    crs = "EPSG:27700"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

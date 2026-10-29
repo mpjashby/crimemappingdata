@@ -44,6 +44,29 @@ Licence: Open Government Licence
 
 Home Office
 
-## Map
+## See also
 
-![Burglaries in Nottingham](figures/nottingham_burglary-map.png)
+[`nottingham_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_robbery.md):
+Robberies in Nottingham.
+[`nottingham_wards`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_wards.md):
+Local government wards of Nottingham.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    nottingham_burglary,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

@@ -27,10 +27,21 @@ cdmx_car_jacking
 \description{
 Dataset of car jackings (\emph{"robo de vehiculo de servicio particular con violencia"}) in Mexico City in 2019.
 }
-\section{Map}{
-
-\if{html}{\figure{cdmx_car_jacking-map.png}{options: width="400" alt="Map of car jackings in Mexico City"}}
-\if{latex}{\figure{cdmx_car_jacking-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  # Exclude the known zero-coordinate placeholders.
+  xy <- sf::st_coordinates(cdmx_car_jacking)
+  map_data <- cdmx_car_jacking[xy[, 1] != 0 | xy[, 2] != 0, ]
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{cdmx_alcaldias}}: Alcaldías (boroughs) of Mexico City.
+}
 \keyword{datasets}

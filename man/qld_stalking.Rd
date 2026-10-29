@@ -28,4 +28,8 @@ qld_stalking
 Dataset of annual counts of stalking offences in each police division in
 Queensland, Australia, from 2001 to 2022.
 }
+\seealso{
+\code{\link{qld_police_divisions}}: Queensland Police Service division boundaries.
+\code{\link{qld_population}}: Population of Queensland Police Service divisions.
+}
 \keyword{datasets}

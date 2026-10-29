@@ -18,9 +18,20 @@
 #'
 #' Licence: Creative Commons Attribution for Intergovernmental Organisations
 #'
-#' @section Map:
-#' \if{html}{\figure{japan_prefectures-map.png}{options: width="400" alt="Map of japanese prefecture boundaries, 2019"}}
-#' \if{latex}{\figure{japan_prefectures-map.png}{options: width=4in}}
 #'
 #' @source United Nations Office for the Coordination of Humanitarian Affairs
+#' @seealso
+#' \code{\link{japan_violence_counts}}: Counts of violent crime in Japan, 2012.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   sfhotspot::hotspot_map(
+#'     japan_prefectures,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     fill = NA,
+#'     size = 0.3
+#'   )
+#' }
 "japan_prefectures"

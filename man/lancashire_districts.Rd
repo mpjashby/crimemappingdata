@@ -27,10 +27,21 @@ lancashire_districts
 Dataset of the boundaries of the local authority districts in Lancashire,
 England, in 2022.
 }
-\section{Map}{
-
-\if{html}{\figure{lancashire_districts-map.png}{options: width="400" alt="Map of local authority districts of Lancashire"}}
-\if{latex}{\figure{lancashire_districts-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    lancashire_districts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{lancashire_asb}}: Anti-social behaviour in Lancashire.
+\code{\link{lancashire_ward_pop}}: Lancashire ward population.
+\code{\link{lancashire_wards}}: Local government wards of Lancashire.
+}
 \keyword{datasets}

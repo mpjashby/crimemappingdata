@@ -31,3 +31,10 @@ Licence: Government Open Data License
 
 Government of India
 <https://data.gov.in/resources/district-wise-crime-under-various-sections-indian-penal-code-ipc-crimes-during-2014>
+
+## See also
+
+[`uttar_pradesh_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.md):
+Districts of Uttar Pradesh.
+[`uttar_pradesh_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_population.md):
+Population of districts in Uttar Pradesh.

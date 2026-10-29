@@ -14,4 +14,8 @@
 #' at <https://mpjashby.github.io/crimemappingdata/northumbria_ward_pop.xlsx>.
 #'
 #' @source Office for National Statistics
+#' @seealso
+#' \code{\link{northumbria_asb}}: Anti-social behaviour in Northumbria.
+#' \code{\link{northumbria_districts}}: Local authority districts of Northumbria.
+#' \code{\link{northumbria_wards}}: Local government wards of Northumbria.
 "northumbria_ward_pop"

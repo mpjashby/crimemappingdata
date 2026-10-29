@@ -1,0 +1,10 @@
+# Keep downloads and development assets out of GitHub installation archives.
+/inst/extdata export-ignore
+/data-raw export-ignore
+/docs export-ignore
+/pkgdown export-ignore
+/outputs export-ignore
+/rosm.cache export-ignore
+/.github export-ignore
+/README.Rmd export-ignore
+/_pkgdown.yml export-ignore

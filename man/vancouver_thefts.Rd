@@ -31,10 +31,21 @@ vancouver_thefts
 \description{
 Dataset of 21,918 thefts in the City of Vancouver in 2020.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    vancouver_thefts,
+    coords = c("X", "Y"),
+    crs = "EPSG:32610"
+  )
 
-\if{html}{\figure{vancouver_thefts-map.png}{options: width="400" alt="Thefts in Vancouver in 2020"}}
-\if{latex}{\figure{vancouver_thefts-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
 \keyword{datasets}

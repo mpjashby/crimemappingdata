@@ -52,5 +52,7 @@ Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ## See also
 
-[`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.md),
-[`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.md)
+[`poland_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_population.md):
+Population of Polish powiats, 2022–2024.
+[`poland_powiat_boundaries`](https://pkgs.lesscrime.info/crimemappingdata/reference/poland_powiat_boundaries.md):
+Polish powiat boundaries.

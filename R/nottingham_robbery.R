@@ -18,9 +18,26 @@
 #'
 #' Licence: Open Government Licence
 #'
-#' @section Map:
-#' \if{html}{\figure{nottingham_robbery-map.png}{options: width="400" alt="Robberies in Nottingham"}}
-#' \if{latex}{\figure{nottingham_robbery-map.png}{options: width=4in}}
 #'
 #' @source Home Office
+#' @seealso
+#' \code{\link{nottingham_burglary}}: Burglaries in Nottingham.
+#' \code{\link{nottingham_wards}}: Local government wards of Nottingham.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     nottingham_robbery,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "nottingham_robbery"

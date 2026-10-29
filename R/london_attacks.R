@@ -16,9 +16,25 @@
 #'
 #' Licence: public domain
 #'
-#' @section Map:
-#' \if{html}{\figure{london_attacks-map.png}{options: width="400" alt="Map of fatal terrorist attacks in London"}}
-#' \if{latex}{\figure{london_attacks-map.png}{options: width=4in}}
 #'
 #' @source Compiled by package author
+#' @seealso
+#' \code{\link{london_crimes}}: Crimes in London.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     london_attacks,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "london_attacks"

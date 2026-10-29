@@ -21,9 +21,23 @@
 #'
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/4.0/>
 #'
-#' @section Map:
-#' \if{html}{\figure{aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Austin in 2019"}}
-#' \if{latex}{\figure{aggravated_assaults-map.png}{options: width=4in}}
 #'
 #' @source `crimedata` package <http://pkgs.lesscrime.info/crimedata/>
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     aggravated_assaults,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "aggravated_assaults"

@@ -41,7 +41,27 @@ Licence: public domain
 
 Atlanta Police Department
 
-## Map
+## See also
 
-![Map of homicides in Glenrose Heights in
-2019](figures/glenrose_heights_homicides-map.png)
+[`downtown_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/downtown_homicides.md):
+Homicides in downtown Atlanta in 2019.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    glenrose_heights_homicides,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

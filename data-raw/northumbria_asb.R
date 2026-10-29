@@ -146,5 +146,6 @@ usethis::use_data(
   northumbria_districts,
   northumbria_wards,
   northumbria_ward_pop,
-  overwrite = TRUE
+  overwrite = TRUE,
+  compress = "xz"
 )

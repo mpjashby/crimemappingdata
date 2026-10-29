@@ -22,5 +22,5 @@ japan_prefectures <- str_glue("{temp_dir}/jpn_admbnda_adm1_2019.shp") |>
   st_transform("EPSG:6690") |>
   write_sf(here::here("inst/extdata/japan_prefectures.gpkg"))
 
-usethis::use_data(japan_prefectures, overwrite = TRUE)
+usethis::use_data(japan_prefectures, overwrite = TRUE, compress = "xz")
 

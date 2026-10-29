@@ -20,4 +20,7 @@
 #' Licence: Creative Commons Attribution <https://creativecommons.org/licenses/by/3.0/>
 #'
 #' @source Registrar General and Census Commissioner of India
+#' @seealso
+#' \code{\link{uttar_pradesh_districts}}: Districts of Uttar Pradesh.
+#' \code{\link{uttar_pradesh_murders}}: Murders in Uttar Pradesh.
 "uttar_pradesh_population"

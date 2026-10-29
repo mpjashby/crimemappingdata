@@ -43,7 +43,22 @@ at this site is being used at one’s own risk.
 
 City of Chicago
 
-## Map
+## See also
 
-![Map of chicago Police Department
-Districts](figures/chicago_police_districts-map.png)
+[`chicago_aggravated_assaults`](https://pkgs.lesscrime.info/crimemappingdata/reference/chicago_aggravated_assaults.md):
+Aggravated assaults in Chicago, 2010 to 2019.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    chicago_police_districts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

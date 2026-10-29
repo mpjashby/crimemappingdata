@@ -22,9 +22,25 @@
 #'
 #' Licence: public domain
 #'
-#' @section Map:
-#' \if{html}{\figure{sao_paulo_homicides-map.png}{options: width="400" alt="Homicides in the region of Sao Paulo"}}
-#' \if{latex}{\figure{sao_paulo_homicides-map.png}{options: width=4in}}
 #'
 #' @source State of Sao Paulo Public Security Secretariat
+#' @seealso
+#' \code{\link{sao_paulo_muni}}: Municipality boundaries in São Paulo.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     sao_paulo_homicides,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "sao_paulo_homicides"

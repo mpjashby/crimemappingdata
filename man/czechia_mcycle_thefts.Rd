@@ -27,10 +27,18 @@ czechia_mcycle_thefts
 Dataset of 9,464 thefts of two-wheeled motor vehicles in Czechia between 2020
 and 2022.
 }
-\section{Map}{
-
-\if{html}{\figure{czechia_mcycle_thefts-map.png}{options: width="400" alt="Map of motorcycle thefts in Czechia"}}
-\if{latex}{\figure{czechia_mcycle_thefts-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    czechia_mcycle_thefts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{czechia_collisions}}: Drink/drug-related traffic collisions in Czechia.
+}
 \keyword{datasets}

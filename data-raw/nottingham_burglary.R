@@ -111,5 +111,6 @@ usethis::use_data(
   nottingham_burglary,
   nottingham_robbery,
   nottingham_wards,
-  overwrite = TRUE
+  overwrite = TRUE,
+  compress = "xz"
 )

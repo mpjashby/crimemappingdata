@@ -35,4 +35,4 @@ chicago_aggravated_assaults <- assaults |>
   glimpse()
 
 
-usethis::use_data(chicago_aggravated_assaults, overwrite = TRUE)
+usethis::use_data(chicago_aggravated_assaults, overwrite = TRUE, compress = "xz")

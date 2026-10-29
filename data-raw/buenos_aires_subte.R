@@ -15,10 +15,10 @@ request(
 buenos_aires_subte_stations <- read_sf(data_file) |>
   st_transform("EPSG:5348") |>
   # Write version for access via URL
-  write_sf("inst/extdata/buenos_aires_subte_stations.geojson")
+  write_sf("inst/extdata/buenos_aires_subte_stations.gpkg")
 
 # Save version for package
-usethis::use_data(buenos_aires_subte_stations)
+usethis::use_data(buenos_aires_subte_stations, compress = "xz")
 
 
 # LINES ------------------------------------------------------------------------
@@ -35,4 +35,4 @@ buenos_aires_subte_lines <- read_sf(data_file) |>
   write_sf("inst/extdata/buenos_aires_subte_lines.gpkg")
 
 # Save version for package
-usethis::use_data(buenos_aires_subte_lines)
+usethis::use_data(buenos_aires_subte_lines, compress = "xz")

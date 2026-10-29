@@ -31,10 +31,21 @@ Recorded incidents of damage to property (French: méfait) in the City of
 Montreal, Quebec, Canada. The source data are displaced in space and time to
 protect privacy.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    montreal_mefait,
+    coords = c("x", "y"),
+    crs = "EPSG:2950"
+  )
 
-\if{html}{\figure{montreal_mefait-map.png}{options: width="400" alt="Damage to property in Montreal, 2016 to 2025"}}
-\if{latex}{\figure{montreal_mefait-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
 \keyword{datasets}

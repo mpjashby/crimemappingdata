@@ -35,10 +35,19 @@ chicago_police_districts
 Boundaries of the geographic districts of the Chicago Police Department, as
 of 2018.
 }
-\section{Map}{
-
-\if{html}{\figure{chicago_police_districts-map.png}{options: width="400" alt="Map of chicago Police Department Districts"}}
-\if{latex}{\figure{chicago_police_districts-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    chicago_police_districts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{chicago_aggravated_assaults}}: Aggravated assaults in Chicago, 2010 to 2019.
+}
 \keyword{datasets}

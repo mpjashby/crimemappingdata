@@ -14,7 +14,7 @@
 #' "population".
 #'
 #' This dataset is also available as a stand-alone file in \code{.rds} format at
-#' <https://mpjashby.github.io/crimemappingdata/germany_violence_counts.rds>.
+#' <https://mpjashby.github.io/crimemappingdata/german_violence_counts.rds>.
 #'
 #' Licence: Datenlizenz Deutschland - Namensnennung (Data Licence Germany -
 #' Attribution)

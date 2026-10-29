@@ -14,9 +14,22 @@
 #'
 #' Licence: Open Government Licence
 #'
-#' @section Map:
-#' \if{html}{\figure{northumbria_wards-map.png}{options: width="400" alt="Local government wards of Northumbria"}}
-#' \if{latex}{\figure{northumbria_wards-map.png}{options: width=4in}}
 #'
 #' @source Office for National Statistics
+#' @seealso
+#' \code{\link{northumbria_asb}}: Anti-social behaviour in Northumbria.
+#' \code{\link{northumbria_districts}}: Local authority districts of Northumbria.
+#' \code{\link{northumbria_ward_pop}}: Northumbria ward population.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   sfhotspot::hotspot_map(
+#'     northumbria_wards,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     fill = NA,
+#'     size = 0.3
+#'   )
+#' }
 "northumbria_wards"

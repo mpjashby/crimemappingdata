@@ -42,7 +42,22 @@ Licence: Open Data Commons Public Domain Dedication and License
 
 San Francisco Police Department
 
-## Map
+## Examples
 
-![Personal robberies in San Francisco in
-2019](figures/san_francisco_robbery-map.png)
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    san_francisco_robbery,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

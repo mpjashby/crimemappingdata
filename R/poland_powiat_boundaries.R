@@ -21,13 +21,23 @@
 #' purpose. See the source page for the reuse statement. Credit GUGiK/PRG
 #' when redistributing this processed extract.
 #'
-#' @section Map:
-#' \if{html}{\figure{poland_powiat_boundaries.png}{options: width="400" alt="Map of Polish powiat boundaries"}}
-#' \if{latex}{\figure{poland_powiat_boundaries.png}{options: width=4in}}
 #'
 #' @source Head Office of Geodesy and Cartography (GUGiK), National Register
 #' of Boundaries (PRG), 2025 archive.
 #' <https://www.geoportal.gov.pl/pl/dane/panstwowy-rejestr-granic-prg/>.
-#' @seealso \code{\link{poland_property_crime_counts}},
-#'   \code{\link{poland_population}}
+#' @seealso
+#' \code{\link{poland_population}}: Population of Polish powiats, 2022–2024.
+#' \code{\link{poland_property_crime_counts}}: Property offences in Polish powiats, 2022–2024.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   sfhotspot::hotspot_map(
+#'     poland_powiat_boundaries,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     fill = NA,
+#'     size = 0.3
+#'   )
+#' }
 "poland_powiat_boundaries"

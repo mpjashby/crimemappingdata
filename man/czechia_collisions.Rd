@@ -27,10 +27,18 @@ czechia_collisions
 Dataset of 5,020 vehicle collisions that were related to alcohol or drug use
 in Czechia between 2020 and 2022.
 }
-\section{Map}{
-
-\if{html}{\figure{czechia_collisions-map.png}{options: width="400" alt="Map of drink/drug-related traffic collisions in Czechia"}}
-\if{latex}{\figure{czechia_collisions-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    czechia_collisions,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{czechia_mcycle_thefts}}: Motorcycle thefts in Czechia.
+}
 \keyword{datasets}

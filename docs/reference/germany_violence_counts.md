@@ -29,7 +29,7 @@ The values of `measure` are "number of homicides", "number of rapes",
 "number of robberies", "GDP per capita (€1000)" and "population".
 
 This dataset is also available as a stand-alone file in `.rds` format at
-<https://mpjashby.github.io/crimemappingdata/germany_violence_counts.rds>.
+<https://mpjashby.github.io/crimemappingdata/german_violence_counts.rds>.
 
 Licence: Datenlizenz Deutschland - Namensnennung (Data Licence Germany -
 Attribution)

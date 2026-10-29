@@ -51,4 +51,4 @@ malaysia_violence_counts <- data_file |>
   ) |>
   glimpse()
 
-usethis::use_data(malaysia_violence_counts, overwrite = TRUE)
+usethis::use_data(malaysia_violence_counts, overwrite = TRUE, compress = "xz")

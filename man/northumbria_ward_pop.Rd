@@ -25,4 +25,9 @@ northumbria_ward_pop
 Dataset of 2021 resident population of local authority wards in Northumbria,
 in mid 2020.
 }
+\seealso{
+\code{\link{northumbria_asb}}: Anti-social behaviour in Northumbria.
+\code{\link{northumbria_districts}}: Local authority districts of Northumbria.
+\code{\link{northumbria_wards}}: Local government wards of Northumbria.
+}
 \keyword{datasets}

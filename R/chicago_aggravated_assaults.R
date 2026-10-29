@@ -26,9 +26,25 @@
 #' It is understood that the data provided at this site is being used at one’s
 #' own risk.
 #'
-#' @section Map:
-#' \if{html}{\figure{chicago_aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Chicago, 2010 to 2019"}}
-#' \if{latex}{\figure{chicago_aggravated_assaults-map.png}{options: width=4in}}
 #'
 #' @source City of Chicago
+#' @seealso
+#' \code{\link{chicago_police_districts}}: Chicago Police Department Districts.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     chicago_aggravated_assaults,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "chicago_aggravated_assaults"

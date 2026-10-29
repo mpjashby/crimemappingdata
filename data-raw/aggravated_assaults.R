@@ -35,4 +35,4 @@ write_xlsx(
 # `.Rda` file we choose only the element representing Austin
 aggravated_assaults <- pluck(aggravated_assaults_multi, "Austin")
 
-usethis::use_data(aggravated_assaults, overwrite = TRUE)
+usethis::use_data(aggravated_assaults, overwrite = TRUE, compress = "xz")

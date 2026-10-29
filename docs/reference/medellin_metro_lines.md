@@ -38,7 +38,23 @@ Note the components of the shape file are contained in a zip archive.
 
 Metro de Medellin
 
-## Map
+## See also
 
-![Metro and cable-car lines in
-Medellin](figures/medellin_metro_lines-map.png)
+[`medellin_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_homicides.md):
+Medellin homicides.
+[`medellin_metro_stns`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_stns.md):
+Metro and cable-car stations in Medellin.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    medellin_metro_lines,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.3
+  )
+}
+```

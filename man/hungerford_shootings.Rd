@@ -30,10 +30,21 @@ Dataset of the locations of each shooting during the massacre that took place
 in Hungerford, England, on 19 August 1987. Each row represents a location at
 which one or more people were shot by the gun-man.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    hungerford_shootings,
+    coords = c("easting", "northing"),
+    crs = "EPSG:27700"
+  )
 
-\if{html}{\figure{hungerford_shootings-map.png}{options: width="400" alt="Map of shootings in the Hungerford Massacre"}}
-\if{latex}{\figure{hungerford_shootings-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
 \keyword{datasets}

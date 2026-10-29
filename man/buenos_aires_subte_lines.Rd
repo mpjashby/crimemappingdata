@@ -26,10 +26,21 @@ buenos_aires_subte_lines
 \description{
 Buenos Aires Subte (metro) lines
 }
-\section{Map}{
-
-\if{html}{\figure{buenos_aires_subte_lines-map.png}{options: width="400" alt="Map of buenos Aires Subte (metro) lines"}}
-\if{latex}{\figure{buenos_aires_subte_lines-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    buenos_aires_subte_lines,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{buenos_aires_barrios}}: Buenos Aires barrio boundaries.
+\code{\link{buenos_aires_robbery}}: Buenos Aires robberies in 2023.
+\code{\link{buenos_aires_subte_stations}}: Buenos Aires Subte (metro) stations.
+\code{\link{retiro_homicides}}: Retiro homicides in 2023.
+}
 \keyword{datasets}

@@ -83,5 +83,6 @@ usethis::use_data(
   uttar_pradesh_murders,
   uttar_pradesh_districts,
   uttar_pradesh_population,
-  overwrite = TRUE
+  overwrite = TRUE,
+  compress = "xz"
 )

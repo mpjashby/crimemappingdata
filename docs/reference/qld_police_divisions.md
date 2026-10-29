@@ -33,7 +33,24 @@ Licence: Creative Commons Attribution
 Queensland Government
 <https://www.data.qld.gov.au/dataset/qps-divisions/resource/fa6a7917-43de-4036-a704-25f545c24093>
 
-## Map
+## See also
 
-![Queensland Police Service division
-boundaries](figures/qld_police_divisions-map.png)
+[`qld_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.md):
+Population of Queensland Police Service divisions.
+[`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.md):
+Stalking in Queensland from 2001 to 2022.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    qld_police_divisions,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

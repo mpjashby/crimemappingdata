@@ -18,4 +18,4 @@ tempe_opioid_calls <- read_sf("https://services.arcgis.com/lQySeXwbBg53XWDi/arcg
   drop_na(latitude, longitude) |>
   write_csv(here::here("inst/extdata/tempe_opioid_calls.csv"))
 
-usethis::use_data(tempe_opioid_calls, overwrite = TRUE)
+usethis::use_data(tempe_opioid_calls, overwrite = TRUE, compress = "xz")

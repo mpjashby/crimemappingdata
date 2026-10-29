@@ -35,6 +35,24 @@ Licence: MIT
 
 Hindustan Times <https://github.com/HindustanTimesLabs/shapefiles>
 
-## Map
+## See also
 
-![Districts of Uttar Pradesh](figures/uttar_pradesh_districts-map.png)
+[`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.md):
+Murders in Uttar Pradesh.
+[`uttar_pradesh_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_population.md):
+Population of districts in Uttar Pradesh.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    uttar_pradesh_districts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

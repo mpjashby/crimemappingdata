@@ -13,4 +13,7 @@
 #' at <https://mpjashby.github.io/crimemappingdata/qld_population.csv.gz>.
 #'
 #' @source Queensland Government
+#' @seealso
+#' \code{\link{qld_police_divisions}}: Queensland Police Service division boundaries.
+#' \code{\link{qld_stalking}}: Stalking in Queensland from 2001 to 2022.
 "qld_population"

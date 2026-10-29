@@ -34,7 +34,26 @@ Licence: Open Government Licence
 
 Office for National Statistics
 
-## Map
+## See also
 
-![Map of local government wards of
-Lancashire](figures/lancashire_wards-map.png)
+[`lancashire_asb`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_asb.md):
+Anti-social behaviour in Lancashire.
+[`lancashire_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_districts.md):
+Local authority districts of Lancashire.
+[`lancashire_ward_pop`](https://pkgs.lesscrime.info/crimemappingdata/reference/lancashire_ward_pop.md):
+Lancashire ward population.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    lancashire_wards,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

@@ -15,9 +15,19 @@
 #'
 #' Licence: Bespoke licence, see <https://kriminalita.policie.cz/>
 #'
-#' @section Map:
-#' \if{html}{\figure{czechia_mcycle_thefts-map.png}{options: width="400" alt="Map of motorcycle thefts in Czechia"}}
-#' \if{latex}{\figure{czechia_mcycle_thefts-map.png}{options: width=4in}}
 #'
 #' @source Police of the Czech Republic <https://kriminalita.policie.cz/>
+#' @seealso
+#' \code{\link{czechia_collisions}}: Drink/drug-related traffic collisions in Czechia.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   sfhotspot::hotspot_map(
+#'     czechia_mcycle_thefts,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "czechia_mcycle_thefts"

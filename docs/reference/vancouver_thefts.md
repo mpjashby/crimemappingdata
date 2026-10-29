@@ -60,6 +60,22 @@ format at
 
 Vancouver Police Department <https://geodash.vpd.ca/opendata/>
 
-## Map
+## Examples
 
-![Thefts in Vancouver in 2020](figures/vancouver_thefts-map.png)
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    vancouver_thefts,
+    coords = c("X", "Y"),
+    crs = "EPSG:32610"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

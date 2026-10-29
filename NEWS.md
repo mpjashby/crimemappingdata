@@ -1,3 +1,12 @@
+# crimemappingdata 0.4.3
+
+* Added new boundary data `tempe_character_areas` to be used with the existing
+  `tempe_opioid_calls`.
+* Improved consistency of cross-referencing between datasets in documentation.
+* Added runable examples for mapping each dataset.
+* Reduced package download size be excluding unnecessary objects.
+
+
 # crimemappingdata 0.4.2
 
 * Extended the Polish crime and population datasets to cover 2022–24.

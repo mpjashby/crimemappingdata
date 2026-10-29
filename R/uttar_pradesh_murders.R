@@ -16,4 +16,7 @@
 #'
 #' @source Government of India
 #' <https://data.gov.in/resources/district-wise-crime-under-various-sections-indian-penal-code-ipc-crimes-during-2014>
+#' @seealso
+#' \code{\link{uttar_pradesh_districts}}: Districts of Uttar Pradesh.
+#' \code{\link{uttar_pradesh_population}}: Population of districts in Uttar Pradesh.
 "uttar_pradesh_murders"

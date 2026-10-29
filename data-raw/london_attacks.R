@@ -15,4 +15,4 @@ london_attacks <- tribble(
   write_csv(here::here("inst/extdata/london_attacks.csv"))
 
 # Save RData version
-usethis::use_data(london_attacks, overwrite = TRUE)
+usethis::use_data(london_attacks, overwrite = TRUE, compress = "xz")

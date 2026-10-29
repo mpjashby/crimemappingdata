@@ -26,10 +26,19 @@ cdmx_alcaldias
 \description{
 Spatial dataset of the boundaries of the alcaldías (boroughs) of Mexico City.
 }
-\section{Map}{
-
-\if{html}{\figure{cdmx_alcaldias-map.png}{options: width="400" alt="Map of alcaldías (boroughs) of Mexico City"}}
-\if{latex}{\figure{cdmx_alcaldias-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    cdmx_alcaldias,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{cdmx_car_jacking}}: Car jackings in Mexico City.
+}
 \keyword{datasets}

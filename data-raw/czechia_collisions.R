@@ -58,7 +58,7 @@ czechia_mcycle_thefts <- cz_data |>
   glimpse()
 
 # Write package data
-usethis::use_data(czechia_collisions, czechia_mcycle_thefts, overwrite = TRUE)
+usethis::use_data(czechia_collisions, czechia_mcycle_thefts, overwrite = TRUE, compress = "xz")
 
 
 # Load type codes ---

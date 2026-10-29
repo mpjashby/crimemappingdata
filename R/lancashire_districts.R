@@ -15,9 +15,22 @@
 #'
 #' Licence: Open Government Licence
 #'
-#' @section Map:
-#' \if{html}{\figure{lancashire_districts-map.png}{options: width="400" alt="Map of local authority districts of Lancashire"}}
-#' \if{latex}{\figure{lancashire_districts-map.png}{options: width=4in}}
 #'
 #' @source Office for National Statistics
+#' @seealso
+#' \code{\link{lancashire_asb}}: Anti-social behaviour in Lancashire.
+#' \code{\link{lancashire_ward_pop}}: Lancashire ward population.
+#' \code{\link{lancashire_wards}}: Local government wards of Lancashire.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   sfhotspot::hotspot_map(
+#'     lancashire_districts,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     fill = NA,
+#'     size = 0.3
+#'   )
+#' }
 "lancashire_districts"

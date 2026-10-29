@@ -47,7 +47,22 @@ Organisations
 
 United Nations Office for the Coordination of Humanitarian Affairs
 
-## Map
+## See also
 
-![Map of japanese prefecture boundaries,
-2019](figures/japan_prefectures-map.png)
+[`japan_violence_counts`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_violence_counts.md):
+Counts of violent crime in Japan, 2012.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    japan_prefectures,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

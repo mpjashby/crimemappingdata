@@ -35,7 +35,21 @@ Licence: Bespoke licence, see <https://kriminalita.policie.cz/>
 
 Police of the Czech Republic <https://kriminalita.policie.cz/>
 
-## Map
+## See also
 
-![Map of drink/drug-related traffic collisions in
-Czechia](figures/czechia_collisions-map.png)
+[`czechia_mcycle_thefts`](https://pkgs.lesscrime.info/crimemappingdata/reference/czechia_mcycle_thefts.md):
+Motorcycle thefts in Czechia.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    czechia_collisions,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

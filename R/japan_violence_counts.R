@@ -21,4 +21,6 @@
 #' Licence: Creative Commons Attribution
 #'
 #' @source Statistics Bureau of Japan
+#' @seealso
+#' \code{\link{japan_prefectures}}: Japanese prefecture boundaries, 2019.
 "japan_violence_counts"

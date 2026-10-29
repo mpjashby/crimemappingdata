@@ -15,3 +15,8 @@
 ^data-raw/latvia_violence\.R$
 ^(data|R|man|inst/extdata)/latvia_violence.*$
 ^outputs/latvia-2025-english$
+
+# Stand-alone downloads and development outputs are published separately.
+^inst/extdata$
+^outputs$
+^\.gitattributes$

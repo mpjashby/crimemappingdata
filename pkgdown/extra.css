@@ -1,7 +1,0 @@
-/* Let dataset preview maps fill the reference-page content column. */
-main img[src$="-map.png"] {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}

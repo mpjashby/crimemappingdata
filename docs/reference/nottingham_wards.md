@@ -34,7 +34,24 @@ Licence: Open Government Licence
 
 Office for National Statistics
 
-## Map
+## See also
 
-![Local government wards of
-Nottingham](figures/nottingham_wards-map.png)
+[`nottingham_burglary`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_burglary.md):
+Burglaries in Nottingham.
+[`nottingham_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/nottingham_robbery.md):
+Robberies in Nottingham.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    nottingham_wards,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

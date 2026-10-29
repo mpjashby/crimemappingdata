@@ -16,9 +16,23 @@
 #'
 #' Licence: Open Data Commons Public Domain Dedication and License <https://opendatacommons.org/licenses/pddl/1.0/>
 #'
-#' @section Map:
-#' \if{html}{\figure{san_francisco_robbery-map.png}{options: width="400" alt="Personal robberies in San Francisco in 2019"}}
-#' \if{latex}{\figure{san_francisco_robbery-map.png}{options: width=4in}}
 #'
 #' @source San Francisco Police Department
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     san_francisco_robbery,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "san_francisco_robbery"

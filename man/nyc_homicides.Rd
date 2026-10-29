@@ -29,10 +29,26 @@ nyc_homicides
 Dataset of homicides recorded by police in New York City between 2016 and
 2018.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    nyc_homicides,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{nyc_homicides-map.png}{options: width="400" alt="Homicides in New York City, 2016 to 2018"}}
-\if{latex}{\figure{nyc_homicides-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{bronx_shootings}}: Shootings in the Bronx in 2019.
+\code{\link{nyc_precincts}}: New York City Police precinct boundaries.
+\code{\link{nyc_shootings}}: Shootings in New York City in 2019.
+}
 \keyword{datasets}

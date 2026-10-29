@@ -17,9 +17,25 @@
 #' <https://mpjashby.github.io/crimemappingdata/cincinnati_burglary.csv.gz>
 #'
 #' Licence: Public domain
-#' @section Map:
-#' \if{html}{\figure{cincinnati_burglary-map.png}{options: width="400" alt="Map of burglaries in Cincinnati, 2016 to 2018"}}
-#' \if{latex}{\figure{cincinnati_burglary-map.png}{options: width=4in}}
 #'
 #' @source City of Cincinnati
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   # Some incidents have no recorded coordinates.
+#'   map_data <- subset(cincinnati_burglary, !is.na(longitude) & !is.na(latitude))
+#'   map_data <- sf::st_as_sf(
+#'     map_data,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "cincinnati_burglary"

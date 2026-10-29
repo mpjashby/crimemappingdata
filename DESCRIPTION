@@ -1,6 +1,6 @@
 Package: crimemappingdata
 Title: Data For Learning Crime Mapping
-Version: 0.4.2
+Version: 0.4.3
 Authors@R: 
     person("Matt", "Ashby", , "matthew.ashby@ucl.ac.uk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4201-9239"))
@@ -13,12 +13,13 @@ URL: https://pkgs.lesscrime.info/crimemappingdata
 Depends: 
     R (>= 3.5)
 LazyData: true
-LazyDataCompression: gzip
+LazyDataCompression: xz
 Imports: 
     sf
 Suggests: 
     datasets.load,
     knitr,
-    rmarkdown
+    rmarkdown,
+    sfhotspot (>= 1.1.1)
 VignetteBuilder: knitr
 Config/roxygen2/version: 8.1.0

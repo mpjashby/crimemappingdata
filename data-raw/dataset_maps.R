@@ -1,114 +1,106 @@
-# Generate the static maps embedded in dataset help pages and the pkgdown site.
-# Run from the package root: Rscript data-raw/dataset_maps.R
-# Requires sf, sfhotspot and ggplot2, plus readr for CSV-backed datasets.
-# These are development tools; generating maps is not part of package checking
-# or website building. Base-map tiles require an internet connection.
-# Optional dataset names restrict regeneration, e.g.:
-# Rscript data-raw/dataset_maps.R bronx_shootings nyc_precincts
+# Synchronise dataset-map examples in the roxygen documentation.
+# Run from the package root after adding a spatial dataset:
+# Rscript data-raw/dataset_maps.R [dataset names ...]
+# This writes code only: tiles are fetched when examples run interactively or
+# during pkgdown builds, never during ordinary installation or package checks.
 
-# Read the source-tree data, including data/*.R loaders, without requiring an
-# installed copy of the package. Keep path resolution local to these loaders.
-load_map_data <- function(name) {
-  env <- new.env(parent = globalenv())
-  env$system.file <- function(..., package) {
-    stopifnot(identical(package, "crimemappingdata"))
-    file.path(getwd(), "inst", ...)
-  }
-  rda <- file.path("data", paste0(name, ".rda"))
-  if (file.exists(rda)) {
-    load(rda, envir = env)
+map_example <- function(name, object) {
+  code <- c(
+    '# Basemap tiles require internet access unless already cached.',
+    'if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {'
+  )
+  add <- function(lines) code <<- c(code, ifelse(nzchar(lines), paste0('  ', lines), ''))
+  input <- name
+  if (inherits(object, 'sf')) {
+    # Determine styling while generating documentation, not in each example.
+    types <- as.character(unique(sf::st_geometry_type(object)))
+    size <- if (all(types %in% c('POINT', 'MULTIPOINT'))) 0.6 else 0.3
+    polygons <- any(types %in% c('POLYGON', 'MULTIPOLYGON'))
+    if (name == 'cdmx_car_jacking') {
+      add(c(
+        '# Exclude the known zero-coordinate placeholders.',
+        'xy <- sf::st_coordinates(cdmx_car_jacking)',
+        'map_data <- cdmx_car_jacking[xy[, 1] != 0 | xy[, 2] != 0, ]'
+      ))
+      input <- 'map_data'
+    }
   } else {
-    sys.source(file.path("data", paste0(name, ".R")), envir = env)
+    size <- 0.6
+    polygons <- FALSE
+    if (all(c('longitude', 'latitude') %in% names(object))) {
+      coords <- c('longitude', 'latitude'); crs <- 'EPSG:4326'
+    } else if (all(c('longitud', 'latitud') %in% names(object))) {
+      coords <- c('longitud', 'latitud'); crs <- 'EPSG:4326'
+    } else if (name == 'hungerford_shootings') {
+      coords <- c('easting', 'northing'); crs <- 'EPSG:27700'
+    } else if (name == 'vancouver_thefts') {
+      coords <- c('X', 'Y'); crs <- 'EPSG:32610'
+    } else if (name %in% c('medellin_metro_stns', 'montreal_mefait')) {
+      coords <- c('x', 'y')
+      crs <- if (name == 'montreal_mefait') 'EPSG:2950' else 'EPSG:4326'
+    } else return(NULL)
+    if (name %in% c('cincinnati_burglary', 'medellin_homicides')) {
+      add(c(
+        '# Some incidents have no recorded coordinates.',
+        paste0('map_data <- subset(', name, ', !is.na(', coords[1], ') & !is.na(', coords[2], '))')
+      ))
+      input <- 'map_data'
+    }
+    add(c(
+      'map_data <- sf::st_as_sf(',
+      paste0('  ', input, ','),
+      paste0('  coords = c("', coords[1], '", "', coords[2], '"),'),
+      paste0('  crs = "', crs, '"'),
+      ')',
+      ''
+    ))
+    input <- 'map_data'
   }
-  object <- env[[name]]
-  # The existing Medellin loader refers to a missing GPKG and its RDA contains
-  # a try-error. Use the distributed shapefile for this preview instead.
-  if (name == "medellin_metro_lines" && inherits(object, "try-error")) {
-    object <- sf::read_sf("/vsizip/inst/extdata/medellin_metro_lines.zip")
-  }
-  if (inherits(object, "try-error")) stop(name, ": ", object)
-  object
+  add(c(
+    'sfhotspot::hotspot_map(',
+    paste0('  ', input, ','),
+    '  basemap_type = "cartolight",',
+    '  colour = "red2",',
+    if (polygons) '  fill = NA,',
+    paste0('  size = ', size),
+    ')'
+  ))
+  c(code, '}')
 }
 
-map_features <- function(object, name) {
-  if (!inherits(object, "sf")) {
-    if (all(c("longitude", "latitude") %in% names(object))) {
-      coords <- c("longitude", "latitude")
-      crs <- 4326
-    } else if (all(c("longitud", "latitud") %in% names(object))) {
-      coords <- c("longitud", "latitud")
-      crs <- 4326
-    } else if (name == "hungerford_shootings") {
-      coords <- c("easting", "northing")
-      crs <- 27700
-    } else if (name == "vancouver_thefts") {
-      coords <- c("X", "Y")
-      crs <- 32610
-    } else if (name %in% c("medellin_metro_stns", "montreal_mefait")) {
-      coords <- c("x", "y")
-      crs <- if (name == "montreal_mefait") 2950 else 4326
-    } else {
-      return(NULL) # Counts and population tables have no geometry to plot.
-    }
-    keep <- is.finite(object[[coords[1]]]) & is.finite(object[[coords[2]]])
-    # Vancouver uses (0, 0) for incidents without a mapped location.
-    if (name == "vancouver_thefts") {
-      keep <- keep & object$X != 0 & object$Y != 0
-    }
-    if (any(!keep)) message(name, ": omitting ", sum(!keep), " unmapped rows")
-    object <- sf::st_as_sf(object[keep, ], coords = coords, crs = crs)
-  }
-  object <- object[!sf::st_is_empty(object), ]
-  if (!nrow(object)) stop(name, ": no mapped features")
-  # Mexico City uses POINT (0 0) for incidents without a mapped location.
-  if (name == "cdmx_car_jacking") {
-    xy <- sf::st_coordinates(sf::st_transform(object, 4326))
-    keep <- !(xy[, 1] == 0 & xy[, 2] == 0)
-    if (any(!keep)) message(name, ": omitting ", sum(!keep), " unmapped rows")
-    object <- object[keep, ]
-  }
-  # A common map projection also gives consistent base-map rendering.
-  sf::st_transform(object, 3857)
-}
-
-render_dataset_maps <- function(datasets = character()) {
-  topics <- sub("[.]R$", "", list.files("R", pattern = "[.]R$"))
+update_map_examples <- function(datasets = character()) {
+  topics <- sub('[.]rda$', '', list.files('data', pattern = '[.]rda$'))
   if (length(datasets)) {
     stopifnot(all(datasets %in% topics))
     topics <- datasets
   }
-  dir.create("man/figures", recursive = TRUE, showWarnings = FALSE)
-  mapped <- character()
   for (name in topics) {
-    object <- map_features(load_map_data(name), name)
-    if (is.null(object)) next
-    message("Mapping ", name)
-    points <- all(sf::st_geometry_type(object) %in% c("POINT", "MULTIPOINT"))
-    plot <- sfhotspot::hotspot_map(
-      object, colour = "red2", fill = NA, basemap_type = "cartolight",
-      # Small symbols keep dense incident datasets legible.
-      size = if (points) 0.6 else 0.3
-    )
-    # Render before replacing an existing image, so a failed tile download
-    # cannot leave an incomplete map in the documentation.
-    output <- file.path("man/figures", paste0(name, "-map.png"))
-    temporary <- tempfile(fileext = ".png")
-    # Match the canvas to the mapped extent so portrait maps do not have
-    # large white side margins when displayed at the page width. Allow a
-    # little extra height for attribution, and bound unusually thin extents.
-    bounds <- sf::st_bbox(object)
-    aspect <- unname((bounds["ymax"] - bounds["ymin"]) /
-                       (bounds["xmax"] - bounds["xmin"]))
-    height <- max(3, min(9, 7 * aspect + 0.25))
-    ggplot2::ggsave(
-      temporary,
-      plot = plot, width = 7, height = height, dpi = 150, bg = "white"
-    )
-    file.copy(temporary, output, overwrite = TRUE)
-    unlink(temporary)
-    mapped <- c(mapped, name)
+    env <- new.env(parent = emptyenv())
+    load(file.path('data', paste0(name, '.rda')), envir = env)
+    code <- map_example(name, env[[name]])
+    if (is.null(code)) next
+    path <- file.path('R', paste0(name, '.R'))
+    text <- readLines(path)
+    while (length(text) && !nzchar(trimws(tail(text, 1L)))) text <- head(text, -1L)
+    # Replace just our generated examples on repeated runs.
+    start <- match("#' @examples", text)
+    if (!is.na(start) && start < length(text) &&
+        text[start + 1L] == "#' # Basemap tiles require internet access unless already cached.") {
+      text <- text[seq_len(start - 1L)]
+      text <- c(text, paste0('"', name, '"'))
+    }
+    # Remove the old embedded-map section without touching other sections.
+    text <- text[!grepl("^#' (@section Map:|\\\\if\\{(html|latex)\\}\\{\\\\figure\\{.*-map[.]png)", text)]
+    # Keep exactly one blank roxygen line before the generated block.
+    marker <- tail(text, 1L)
+    text <- head(text, -1L)
+    while (length(text) && tail(text, 1L) %in% c("#'", "#' ")) text <- head(text, -1L)
+    text <- c(text, marker)
+    last <- length(text)
+    stopifnot(text[last] %in% c(paste0('"', name, '"'), paste0("'", name, "'")))
+    text <- append(text, c("#'", "#' @examples", ifelse(nzchar(code), paste0("#' ", code), "#'")), after = last - 1L)
+    writeLines(text, path)
   }
-  invisible(mapped)
 }
 
-if (sys.nframe() == 0L) render_dataset_maps(commandArgs(trailingOnly = TRUE))
+if (sys.nframe() == 0L) update_map_examples(commandArgs(trailingOnly = TRUE))

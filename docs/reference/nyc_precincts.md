@@ -37,7 +37,26 @@ Licence: Creative Commons Attribution
 City of New York
 <https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz>
 
-## Map
+## See also
 
-![New York City Police precinct
-boundaries](figures/nyc_precincts-map.png)
+[`bronx_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/bronx_shootings.md):
+Shootings in the Bronx in 2019.
+[`nyc_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_homicides.md):
+Homicides in New York City, 2016 to 2018.
+[`nyc_shootings`](https://pkgs.lesscrime.info/crimemappingdata/reference/nyc_shootings.md):
+Shootings in New York City in 2019.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    nyc_precincts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

@@ -129,5 +129,6 @@ usethis::use_data(
   qld_stalking,
   qld_police_divisions,
   qld_population,
-  overwrite = TRUE
+  overwrite = TRUE,
+  compress = "xz"
 )

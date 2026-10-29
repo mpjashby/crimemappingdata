@@ -43,7 +43,24 @@ Licence: Public domain
 
 City of Cincinnati
 
-## Map
+## Examples
 
-![Map of burglaries in Cincinnati, 2016 to
-2018](figures/cincinnati_burglary-map.png)
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  # Some incidents have no recorded coordinates.
+  map_data <- subset(cincinnati_burglary, !is.na(longitude) & !is.na(latitude))
+  map_data <- sf::st_as_sf(
+    map_data,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

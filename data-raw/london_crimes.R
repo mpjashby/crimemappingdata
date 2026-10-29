@@ -111,4 +111,4 @@ file.remove("london_crimes.csv")
 setwd(here::here())
 
 # Write R data
-usethis::use_data(london_crimes, overwrite = TRUE)
+usethis::use_data(london_crimes, overwrite = TRUE, compress = "xz")

@@ -11,4 +11,4 @@ nyc_homicides <- crimedata::get_crime_data(
   write_csv(here::here("inst/extdata/nyc_homicides.csv")) |>
   glimpse()
 
-usethis::use_data(nyc_homicides)
+usethis::use_data(nyc_homicides, compress = "xz")

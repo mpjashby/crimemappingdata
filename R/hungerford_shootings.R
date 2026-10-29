@@ -18,9 +18,23 @@
 #'
 #' Licence: Open Government Licence
 #'
-#' @section Map:
-#' \if{html}{\figure{hungerford_shootings-map.png}{options: width="400" alt="Map of shootings in the Hungerford Massacre"}}
-#' \if{latex}{\figure{hungerford_shootings-map.png}{options: width=4in}}
 #'
 #' @source Official report into the massacre
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     hungerford_shootings,
+#'     coords = c("easting", "northing"),
+#'     crs = "EPSG:27700"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "hungerford_shootings"

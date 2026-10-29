@@ -37,4 +37,4 @@ northants_burglary_counts <- data_dir |>
   ) |>
   glimpse()
 
-usethis::use_data(northants_burglary_counts, overwrite = TRUE)
+usethis::use_data(northants_burglary_counts, overwrite = TRUE, compress = "xz")

@@ -31,4 +31,8 @@ uttar_pradesh_population
 Dataset of resident population of each administrative district in Uttar
 Pradesh, India, in 2011.
 }
+\seealso{
+\code{\link{uttar_pradesh_districts}}: Districts of Uttar Pradesh.
+\code{\link{uttar_pradesh_murders}}: Murders in Uttar Pradesh.
+}
 \keyword{datasets}

@@ -52,6 +52,8 @@ data_in_package$Description <- data_in_package$Title
 
 # Get vector of data files
 files <- data.frame(file = dir("inst/extdata"))
+# GDAL may create a GML schema cache when a dataset is read. It is not a dataset.
+files <- files[!grepl("[.]gfs$", files$file), , drop = FALSE]
 
 # Extract name of datasets without file extensions
 files$Item <- regmatches(files$file, regexpr("[a-z\\_]+", files$file))

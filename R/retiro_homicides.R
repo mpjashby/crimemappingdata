@@ -17,10 +17,29 @@
 #'
 #' Licence: Creative Commons Attribution
 #'
-#' @section Map:
-#' \if{html}{\figure{retiro_homicides-map.png}{options: width="400" alt="Retiro homicides in 2023"}}
-#' \if{latex}{\figure{retiro_homicides-map.png}{options: width=4in}}
 #'
 #' @source Direccion General de Estadistica Criminal y Mapa del Delito, City of Buenos Aires <https://data.buenosaires.gob.ar/dataset/delitos>.
 #'
+#' @seealso
+#' \code{\link{buenos_aires_barrios}}: Buenos Aires barrio boundaries.
+#' \code{\link{buenos_aires_robbery}}: Buenos Aires robberies in 2023.
+#' \code{\link{buenos_aires_subte_lines}}: Buenos Aires Subte (metro) lines.
+#' \code{\link{buenos_aires_subte_stations}}: Buenos Aires Subte (metro) stations.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     retiro_homicides,
+#'     coords = c("longitud", "latitud"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "retiro_homicides"

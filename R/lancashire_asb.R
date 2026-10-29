@@ -18,9 +18,27 @@
 #'
 #' Licence: Open Government Licence
 #'
-#' @section Map:
-#' \if{html}{\figure{lancashire_asb-map.png}{options: width="400" alt="Map of anti-social behaviour in Lancashire"}}
-#' \if{latex}{\figure{lancashire_asb-map.png}{options: width=4in}}
 #'
 #' @source Home Office
+#' @seealso
+#' \code{\link{lancashire_districts}}: Local authority districts of Lancashire.
+#' \code{\link{lancashire_ward_pop}}: Lancashire ward population.
+#' \code{\link{lancashire_wards}}: Local government wards of Lancashire.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     lancashire_asb,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "lancashire_asb"

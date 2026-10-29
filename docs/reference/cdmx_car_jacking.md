@@ -40,6 +40,24 @@ Licence: Creative Commons Attribution
 
 Mexico City Attorney General’s Office
 
-## Map
+## See also
 
-![Map of car jackings in Mexico City](figures/cdmx_car_jacking-map.png)
+[`cdmx_alcaldias`](https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_alcaldias.md):
+Alcaldías (boroughs) of Mexico City.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  # Exclude the known zero-coordinate placeholders.
+  xy <- sf::st_coordinates(cdmx_car_jacking)
+  map_data <- cdmx_car_jacking[xy[, 1] != 0 | xy[, 2] != 0, ]
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

@@ -26,10 +26,19 @@ sao_paulo_muni
 \description{
 Dataset of municipality boundaries in the immediate region of Sao Paulo, 2010.
 }
-\section{Map}{
-
-\if{html}{\figure{sao_paulo_muni-map.png}{options: width="400" alt="Sao Paolo municipality boundaries"}}
-\if{latex}{\figure{sao_paulo_muni-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    sao_paulo_muni,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{sao_paulo_homicides}}: Homicides in the region of Sao Paulo.
+}
 \keyword{datasets}

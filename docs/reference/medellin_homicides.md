@@ -46,6 +46,31 @@ such as
 Licence: Creative Commons Attribution Share-Alike
 <https://opendefinition.org/licenses/cc-by-sa/>
 
-## Map
+## See also
 
-![Medellin homicides](figures/medellin_homicides-map.png)
+[`medellin_metro_lines`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_lines.md):
+Metro and cable-car lines in Medellin.
+[`medellin_metro_stns`](https://pkgs.lesscrime.info/crimemappingdata/reference/medellin_metro_stns.md):
+Metro and cable-car stations in Medellin.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  # Some incidents have no recorded coordinates.
+  map_data <- subset(medellin_homicides, !is.na(longitud) & !is.na(latitud))
+  map_data <- sf::st_as_sf(
+    map_data,
+    coords = c("longitud", "latitud"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

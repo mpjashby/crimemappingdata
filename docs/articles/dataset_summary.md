@@ -1,6 +1,6 @@
 # Summary of available datasets
 
-The `crimemappindata` package contains 56 datasets that are designed to
+The `crimemappindata` package contains 57 datasets that are designed to
 be used in teaching crime mapping and crime analysis more generally.
 There are several different types of data available:
 
@@ -84,18 +84,18 @@ The stand-alone version of this dataset is a CSV file.
 
 Dataset of 2,811 car jacking offences in Mexico City in 2019.
 
-| fecha_hechos        |  longitud |  latitud | geom                       |
-|:--------------------|----------:|---------:|:---------------------------|
-| 2019-05-17 17:00:00 | -99.10880 | 19.39638 | POINT (-99.1088 19.39638)  |
-| 2019-05-17 23:50:00 | -99.22413 | 19.29605 | POINT (-99.22413 19.29605) |
-| 2019-05-09 22:00:00 | -99.19087 | 19.40981 | POINT (-99.19087 19.40981) |
-| 2019-05-17 17:00:00 | -99.14227 | 19.45565 | POINT (-99.14227 19.45565) |
-| 2019-05-17 21:30:00 | -99.04177 | 19.38836 | POINT (-99.04177 19.38836) |
-| 2019-05-18 09:00:00 | -99.10008 | 19.32609 | POINT (-99.10008 19.32609) |
-| 2019-05-20 08:30:00 | -99.10022 | 19.44002 | POINT (-99.10022 19.44002) |
-| 2019-05-20 21:45:00 | -99.18412 | 19.49114 | POINT (-99.18412 19.49114) |
-| 2019-05-20 23:00:00 | -99.16180 | 19.43733 | POINT (-99.1618 19.43733)  |
-| 2019-05-21 14:30:00 | -99.18892 | 19.38602 | POINT (-99.18892 19.38602) |
+| fecha_hechos        |  longitud |  latitud | geom                |
+|:--------------------|----------:|---------:|:--------------------|
+| 2019-05-17 17:00:00 | -99.10880 | 19.39638 | -99.10880, 19.39638 |
+| 2019-05-17 23:50:00 | -99.22413 | 19.29605 | -99.22413, 19.29605 |
+| 2019-05-09 22:00:00 | -99.19087 | 19.40981 | -99.19087, 19.40981 |
+| 2019-05-17 17:00:00 | -99.14227 | 19.45565 | -99.14227, 19.45565 |
+| 2019-05-17 21:30:00 | -99.04177 | 19.38836 | -99.04177, 19.38836 |
+| 2019-05-18 09:00:00 | -99.10008 | 19.32609 | -99.10008, 19.32609 |
+| 2019-05-20 08:30:00 | -99.10022 | 19.44002 | -99.10022, 19.44002 |
+| 2019-05-20 21:45:00 | -99.18412 | 19.49114 | -99.18412, 19.49114 |
+| 2019-05-20 23:00:00 | -99.16180 | 19.43733 | -99.16180, 19.43733 |
+| 2019-05-21 14:30:00 | -99.18892 | 19.38602 | -99.18892, 19.38602 |
 
 The stand-alone version of this dataset is a geopackage file.
 
@@ -143,33 +143,33 @@ Datasets of 5,020 traffic collisions related to alcohol or drugs and
 separately of 9,464 thefts of two-wheeled motor vehicles in Czechia
 between 2020 and 2022.
 
-|       id | date                | geom                      |
-|---------:|:--------------------|:--------------------------|
-| 13115324 | 2020-01-01 00:20:00 | POINT (13.61072 50.13135) |
-| 13115389 | 2020-01-01 00:50:00 | POINT (17.3977 50.12565)  |
-| 13115431 | 2020-01-01 00:59:00 | POINT (14.51836 48.91475) |
-| 13115509 | 2020-01-01 02:00:00 | POINT (12.72899 49.85815) |
-| 13115524 | 2020-01-01 02:01:00 | POINT (17.08994 49.47261) |
-| 13115595 | 2020-01-01 03:09:00 | POINT (13.89387 50.15709) |
-| 13115660 | 2020-01-01 02:45:00 | POINT (14.479 50.99283)   |
-| 13115688 | 2020-01-01 03:00:00 | POINT (17.04471 49.7781)  |
-| 13115696 | 2020-01-01 01:53:00 | POINT (17.11241 49.58678) |
-| 13115701 | 2020-01-01 04:30:00 | POINT (13.79386 50.66278) |
+|       id | date                | geom               |
+|---------:|:--------------------|:-------------------|
+| 13115324 | 2020-01-01 00:20:00 | 13.61072, 50.13135 |
+| 13115389 | 2020-01-01 00:50:00 | 17.39770, 50.12565 |
+| 13115431 | 2020-01-01 00:59:00 | 14.51836, 48.91475 |
+| 13115509 | 2020-01-01 02:00:00 | 12.72899, 49.85815 |
+| 13115524 | 2020-01-01 02:01:00 | 17.08994, 49.47261 |
+| 13115595 | 2020-01-01 03:09:00 | 13.89387, 50.15709 |
+| 13115660 | 2020-01-01 02:45:00 | 14.47900, 50.99283 |
+| 13115688 | 2020-01-01 03:00:00 | 17.04471, 49.77810 |
+| 13115696 | 2020-01-01 01:53:00 | 17.11241, 49.58678 |
+| 13115701 | 2020-01-01 04:30:00 | 13.79386, 50.66278 |
 
 `czechia_collisions` {.table}
 
-|       id | date                | geom                      |
-|---------:|:--------------------|:--------------------------|
-| 13115077 | 2020-01-01 02:00:00 | POINT (16.63238 49.18592) |
-| 13115659 | 2020-01-01 04:21:00 | POINT (15.43107 50.68324) |
-| 13115857 | 2020-01-01 10:45:00 | POINT (14.54159 50.0986)  |
-| 13117263 | 2020-01-01 22:58:00 | POINT (13.38625 49.72525) |
-| 13117417 | 2020-01-02 04:28:00 | POINT (14.50531 50.12157) |
-| 13117582 | 2020-01-02 08:24:00 | POINT (16.53362 49.26413) |
-| 13117630 | 2020-01-02 08:29:00 | POINT (17.64119 49.22275) |
-| 13118598 | 2020-01-02 04:30:00 | POINT (14.51453 50.13658) |
-| 13119320 | 2020-01-03 09:24:00 | POINT (14.29876 50.06083) |
-| 13119872 | 2020-01-02 14:35:00 | POINT (14.5243 50.09214)  |
+|       id | date                | geom               |
+|---------:|:--------------------|:-------------------|
+| 13115077 | 2020-01-01 02:00:00 | 16.63238, 49.18592 |
+| 13115659 | 2020-01-01 04:21:00 | 15.43107, 50.68324 |
+| 13115857 | 2020-01-01 10:45:00 | 14.54159, 50.09860 |
+| 13117263 | 2020-01-01 22:58:00 | 13.38625, 49.72525 |
+| 13117417 | 2020-01-02 04:28:00 | 14.50531, 50.12157 |
+| 13117582 | 2020-01-02 08:24:00 | 16.53362, 49.26413 |
+| 13117630 | 2020-01-02 08:29:00 | 17.64119, 49.22275 |
+| 13118598 | 2020-01-02 04:30:00 | 14.51453, 50.13658 |
+| 13119320 | 2020-01-03 09:24:00 | 14.29876, 50.06083 |
+| 13119872 | 2020-01-02 14:35:00 | 14.52431, 50.09214 |
 
 `czechia_mcycle_thefts` {.table}
 
@@ -479,6 +479,11 @@ in Tempe, Arizona, from 2017 to 2024.
 | 2017 | 2017-01-18    | NA           |  33.3656 | -111.8734 |
 
 The stand-alone version of this dataset is a CSV file.
+
+This dataset can be used together with the `tempe_character_areas`
+dataset to teach spatial joins and counting incidents within areas.
+Incident co-ordinates have been rounded for privacy (to approximately
+0.25 miles), so assignments near area boundaries are approximate.
 
 ### `vancouver_thefts`
 
@@ -860,12 +865,19 @@ The stand-alone versions of these dataset are Excel (`.xlsx`) files.
 Simple features (SF) objects containing the locations of metro lines and
 stations in Medellin, Colombia.
 
-    #> Warning in medellin_metro_lines_head$geometry <- "&lt;SF polyline&gt;":
-    #> Coercing LHS to a list
+| linea | itinerario                             | sistema | geometry        |
+|:------|:---------------------------------------|:--------|:----------------|
+| A     | Niquia-La Estrella-Niquia              | Metro   | \<SF polyline\> |
+| B     | San Antonio - San Javier - San Antonio | Metro   | \<SF polyline\> |
+| C     | Servicio                               | Metro   | \<SF polyline\> |
+| H     | Oriente - Villa Sierra                 | Cable   | \<SF polyline\> |
+| J     | San Javier - La Aurora                 | Cable   | \<SF polyline\> |
+| K     | Acevedo - Santo Domingo                | Cable   | \<SF polyline\> |
+| L     | Santo Domingo - Arví                   | Cable   | \<SF polyline\> |
+| M     | Miraflores -13 de Noviembre            | Cable   | \<SF polyline\> |
+| P     | Acevedo - Picacho                      | Cable   | \<SF polyline\> |
 
-[TABLE]
-
-`medellin_metro_lines` {.table .kable_wrapper}
+`medellin_metro_lines` {.table}
 
 | linea | nombre                           | municipio | sistema |         x |        y |
 |:------|:---------------------------------|:----------|:--------|----------:|---------:|
@@ -1040,6 +1052,31 @@ boundaries in the immediate region of Sao Paulo, Brazil, 2010.
 | 110 |   3509601 | Campo Limpo Paulista | \<SF polygon\> |
 
 The stand-alone version of this dataset is a geoJSON file.
+
+### `tempe_character_areas`
+
+Simple features (SF) object containing the boundaries of 8 character
+areas in Tempe, Arizona. These areas group neighbourhoods with common
+design, land use and commercial characteristics.
+
+| area_number | area_name | geometry |
+|---:|:---|:---|
+| 1 | Papago/North Tempe | \<SF polygon\> |
+| 7 | Kiwanis/The Lakes | \<SF polygon\> |
+| 6 | Southwest Tempe | \<SF polygon\> |
+| 8 | Corona/South Tempe | \<SF polygon\> |
+| 4 | Apache | \<SF polygon\> |
+| 5 | Alameda | \<SF polygon\> |
+| 3 | Downtown Tempe / Rio Salado /ASU/ NW Neighborhoods | \<SF polygon\> |
+| 2 | Diablo/Double Butte | \<SF polygon\> |
+
+The stand-alone version of this dataset is a Geography Markup Language
+(GML) file.
+
+This dataset can be used together with `tempe_opioid_calls` to teach
+spatial joins and counting incidents within areas. Incident co-ordinates
+are approximate, so some calls may fall outside the boundaries or be
+assigned to a neighbouring area.
 
 ### `uttar_pradesh_districts`
 

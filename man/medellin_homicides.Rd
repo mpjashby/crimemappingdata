@@ -29,10 +29,27 @@ medellin_homicides
 \description{
 Dataset of homicides in Medellin, Colombia, from 2010 to 2019.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  # Some incidents have no recorded coordinates.
+  map_data <- subset(medellin_homicides, !is.na(longitud) & !is.na(latitud))
+  map_data <- sf::st_as_sf(
+    map_data,
+    coords = c("longitud", "latitud"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{medellin_homicides-map.png}{options: width="400" alt="Medellin homicides"}}
-\if{latex}{\figure{medellin_homicides-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{medellin_metro_lines}}: Metro and cable-car lines in Medellin.
+\code{\link{medellin_metro_stns}}: Metro and cable-car stations in Medellin.
+}
 \keyword{datasets}

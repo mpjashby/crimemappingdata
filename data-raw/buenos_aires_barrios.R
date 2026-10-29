@@ -15,7 +15,7 @@ buenos_aires_barrios <- data_file |>
   select(id, nombre, comuna, area_metro, geometry) |>
   sf::st_make_valid() |>
   # Save version for access via URL
-  sf::write_sf("inst/extdata/buenos_aires_neighbourhoods.gpkg")
+  sf::write_sf("inst/extdata/buenos_aires_barrios.gpkg")
 
 # Save version for package
 usethis::use_data(buenos_aires_barrios, overwrite = TRUE, compress = "xz")

@@ -28,10 +28,25 @@ medellin_metro_stns
 Locations of metro and cable-car stations in Medellin, Colombia, as of early
 2023.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    medellin_metro_stns,
+    coords = c("x", "y"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{medellin_metro_stns-map.png}{options: width="400" alt="Metro and cable-car stations in Medellin"}}
-\if{latex}{\figure{medellin_metro_stns-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{medellin_homicides}}: Medellin homicides.
+\code{\link{medellin_metro_lines}}: Metro and cable-car lines in Medellin.
+}
 \keyword{datasets}

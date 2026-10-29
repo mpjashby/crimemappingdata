@@ -22,4 +22,4 @@ retiro_homicides <- read_csv(data_file, na = c("", "NA", "NULL")) |>
   write_csv("inst/extdata/retiro_homicides.csv")
 
 # Save version for package
-usethis::use_data(retiro_homicides)
+usethis::use_data(retiro_homicides, compress = "xz")

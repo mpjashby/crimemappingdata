@@ -15,10 +15,22 @@
 #'
 #' Licence: MIT
 #'
-#' @section Map:
-#' \if{html}{\figure{uttar_pradesh_districts-map.png}{options: width="400" alt="Districts of Uttar Pradesh"}}
-#' \if{latex}{\figure{uttar_pradesh_districts-map.png}{options: width=4in}}
 #'
 #' @source Hindustan Times
 #' <https://github.com/HindustanTimesLabs/shapefiles>
+#' @seealso
+#' \code{\link{uttar_pradesh_murders}}: Murders in Uttar Pradesh.
+#' \code{\link{uttar_pradesh_population}}: Population of districts in Uttar Pradesh.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   sfhotspot::hotspot_map(
+#'     uttar_pradesh_districts,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     fill = NA,
+#'     size = 0.3
+#'   )
+#' }
 "uttar_pradesh_districts"

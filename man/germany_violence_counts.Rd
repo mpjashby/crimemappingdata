@@ -16,7 +16,7 @@ The values of \code{measure} are "number of homicides",
 "population".
 
 This dataset is also available as a stand-alone file in \code{.rds} format at
-\url{https://mpjashby.github.io/crimemappingdata/germany_violence_counts.rds}.
+\url{https://mpjashby.github.io/crimemappingdata/german_violence_counts.rds}.
 
 Licence: Datenlizenz Deutschland - Namensnennung (Data Licence Germany -
 Attribution)

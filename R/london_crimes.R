@@ -19,9 +19,25 @@
 #' Licence: Open Government Licence
 #' <https://www.nationalarchives.gov.uk/doc/open-government-licence/>
 #'
-#' @section Map:
-#' \if{html}{\figure{london_crimes-map.png}{options: width="400" alt="Map of crimes in London"}}
-#' \if{latex}{\figure{london_crimes-map.png}{options: width=4in}}
 #'
 #' @source Home Office <https://data.police.uk/>
+#' @seealso
+#' \code{\link{london_attacks}}: Fatal terrorist attacks in London.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     london_crimes,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "london_crimes"

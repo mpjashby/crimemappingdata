@@ -25,4 +25,9 @@ lancashire_ward_pop
 Dataset of 2021 resident population of local authority wards in Lancashire,
 in mid 2020.
 }
+\seealso{
+\code{\link{lancashire_asb}}: Anti-social behaviour in Lancashire.
+\code{\link{lancashire_districts}}: Local authority districts of Lancashire.
+\code{\link{lancashire_wards}}: Local government wards of Lancashire.
+}
 \keyword{datasets}

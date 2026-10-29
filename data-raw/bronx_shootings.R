@@ -24,4 +24,4 @@ bronx_shootings <- shootings_nyc |>
   select(-boro) |>
   write_csv("inst/extdata/bronx_shootings.csv")
 
-usethis::use_data(nyc_shootings, bronx_shootings)
+usethis::use_data(nyc_shootings, bronx_shootings, compress = "xz")

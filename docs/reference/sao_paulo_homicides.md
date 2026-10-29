@@ -53,7 +53,27 @@ Licence: public domain
 
 State of Sao Paulo Public Security Secretariat
 
-## Map
+## See also
 
-![Homicides in the region of Sao
-Paulo](figures/sao_paulo_homicides-map.png)
+[`sao_paulo_muni`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.md):
+Municipality boundaries in São Paulo.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    sao_paulo_homicides,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

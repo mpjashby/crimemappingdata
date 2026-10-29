@@ -36,3 +36,10 @@ Licence: Creative Commons Attribution
 
 Queensland Police Service
 <https://www.police.qld.gov.au/maps-and-statistics>
+
+## See also
+
+[`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.md):
+Queensland Police Service division boundaries.
+[`qld_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_population.md):
+Population of Queensland Police Service divisions.

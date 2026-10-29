@@ -26,4 +26,4 @@ montreal_mefait <- read_csv(source_file) |>
   select(categorie, date, quart, x, y) |>
   write_csv(here::here("inst", "extdata", "montreal_mefait.csv.gz"))
 
-usethis::use_data(montreal_mefait, overwrite = TRUE)
+usethis::use_data(montreal_mefait, overwrite = TRUE, compress = "xz")

@@ -1,0 +1,2 @@
+# Paths are relative to inst/. Also protect direct source installations.
+^extdata$

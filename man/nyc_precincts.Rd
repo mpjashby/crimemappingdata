@@ -28,10 +28,21 @@ nyc_precincts
 Dataset of the boundaries of each precinct of the New York City Police
 Department (NYPD), 2022.
 }
-\section{Map}{
-
-\if{html}{\figure{nyc_precincts-map.png}{options: width="400" alt="New York City Police precinct boundaries"}}
-\if{latex}{\figure{nyc_precincts-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    nyc_precincts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{bronx_shootings}}: Shootings in the Bronx in 2019.
+\code{\link{nyc_homicides}}: Homicides in New York City, 2016 to 2018.
+\code{\link{nyc_shootings}}: Shootings in New York City in 2019.
+}
 \keyword{datasets}

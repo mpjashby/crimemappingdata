@@ -22,9 +22,26 @@
 #'
 #' Licence: Creative Commons Attribution (CC-BY)
 #'
-#' @section Map:
-#' \if{html}{\figure{tempe_opioid_calls-map.png}{options: width="400" alt="Calls to opioid overdoses in Tempe, Arizona"}}
-#' \if{latex}{\figure{tempe_opioid_calls-map.png}{options: width=4in}}
 #'
 #' @source Open Tempe
+#'
+#' @seealso
+#' \code{\link{tempe_character_areas}}: Character Area boundaries in Tempe, Arizona.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     tempe_opioid_calls,
+#'     coords = c("longitude", "latitude"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "tempe_opioid_calls"

@@ -22,3 +22,5 @@ cincinnati_burglary <- read_csv("https://data.cincinnati-oh.gov/api/views/k59e-2
   ) |>
   write_csv("inst/extdata/cincinnati_burglary.csv.gz") |>
   glimpse()
+
+usethis::use_data(cincinnati_burglary, overwrite = TRUE, compress = "xz")

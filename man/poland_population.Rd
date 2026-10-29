@@ -35,7 +35,7 @@ Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
 \url{https://creativecommons.org/licenses/by/4.0/}.
 }
 \seealso{
-\code{\link{poland_property_crime_counts}},
-\code{\link{poland_powiat_boundaries}}
+\code{\link{poland_powiat_boundaries}}: Polish powiat boundaries.
+\code{\link{poland_property_crime_counts}}: Property offences in Polish powiats, 2022–2024.
 }
 \keyword{datasets}

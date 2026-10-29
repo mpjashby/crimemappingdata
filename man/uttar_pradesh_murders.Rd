@@ -27,4 +27,8 @@ uttar_pradesh_murders
 Dataset containing counts of murders in each district in the Indian state of
 Uttar Pradesh in 2014.
 }
+\seealso{
+\code{\link{uttar_pradesh_districts}}: Districts of Uttar Pradesh.
+\code{\link{uttar_pradesh_population}}: Population of districts in Uttar Pradesh.
+}
 \keyword{datasets}

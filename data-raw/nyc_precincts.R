@@ -3,4 +3,4 @@ nyc_precincts <- sf::st_read("https://opendata.arcgis.com/datasets/c35786feb0ac4
   dplyr::select(OBJECTID, Precinct, geometry) |>
   sf::st_write("inst/extdata/nyc_precincts.gpkg")
 
-usethis::use_data(nyc_precincts)
+usethis::use_data(nyc_precincts, compress = "xz")

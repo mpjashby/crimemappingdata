@@ -105,4 +105,4 @@ japan_violence_counts <- crime |>
   ) |>
   glimpse()
 
-usethis::use_data(japan_violence_counts, overwrite = TRUE)
+usethis::use_data(japan_violence_counts, overwrite = TRUE, compress = "xz")

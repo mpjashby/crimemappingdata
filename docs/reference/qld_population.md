@@ -28,3 +28,10 @@ format at
 ## Source
 
 Queensland Government
+
+## See also
+
+[`qld_police_divisions`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_police_divisions.md):
+Queensland Police Service division boundaries.
+[`qld_stalking`](https://pkgs.lesscrime.info/crimemappingdata/reference/qld_stalking.md):
+Stalking in Queensland from 2001 to 2022.

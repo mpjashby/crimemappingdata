@@ -16,9 +16,26 @@
 #' This dataset is also available as a stand-alone file in CSV format at
 #' <https://mpjashby.github.io/crimemappingdata/medellin_metro_stns.csv>.
 #'
-#' @section Map:
-#' \if{html}{\figure{medellin_metro_stns-map.png}{options: width="400" alt="Metro and cable-car stations in Medellin"}}
-#' \if{latex}{\figure{medellin_metro_stns-map.png}{options: width=4in}}
 #'
 #' @source Metro de Medellin
+#' @seealso
+#' \code{\link{medellin_homicides}}: Medellin homicides.
+#' \code{\link{medellin_metro_lines}}: Metro and cable-car lines in Medellin.
+#'
+#' @examples
+#' # Basemap tiles require internet access unless already cached.
+#' if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+#'   map_data <- sf::st_as_sf(
+#'     medellin_metro_stns,
+#'     coords = c("x", "y"),
+#'     crs = "EPSG:4326"
+#'   )
+#'
+#'   sfhotspot::hotspot_map(
+#'     map_data,
+#'     basemap_type = "cartolight",
+#'     colour = "red2",
+#'     size = 0.6
+#'   )
+#' }
 "medellin_metro_stns"

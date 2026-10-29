@@ -30,10 +30,23 @@ cincinnati_burglary
 Dataset of aggravated assaults recorded by police in Cincinnati between
 January 2016 and December 2018.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  # Some incidents have no recorded coordinates.
+  map_data <- subset(cincinnati_burglary, !is.na(longitude) & !is.na(latitude))
+  map_data <- sf::st_as_sf(
+    map_data,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{cincinnati_burglary-map.png}{options: width="400" alt="Map of burglaries in Cincinnati, 2016 to 2018"}}
-\if{latex}{\figure{cincinnati_burglary-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
 \keyword{datasets}

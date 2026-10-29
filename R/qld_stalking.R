@@ -17,4 +17,7 @@
 #'
 #' @source Queensland Police Service
 #' <https://www.police.qld.gov.au/maps-and-statistics>
+#' @seealso
+#' \code{\link{qld_police_divisions}}: Queensland Police Service division boundaries.
+#' \code{\link{qld_population}}: Population of Queensland Police Service divisions.
 "qld_stalking"

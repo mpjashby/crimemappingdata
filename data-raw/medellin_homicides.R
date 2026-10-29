@@ -44,7 +44,7 @@ medellin_stns <- read_sf("https://utility.arcgis.com/usrsvcs/servers/5e0ac28dbec
   select(-objectid, -codigo_mpio, -tipo)
 
 medellin_stn_coord <- medellin_stns |>
-  st_coordinates(medellin_metro_stns) |>
+  st_coordinates() |>
   as_tibble() |>
   clean_names()
 
@@ -62,5 +62,6 @@ usethis::use_data(
   medellin_homicides,
   medellin_metro_lines,
   medellin_metro_stns,
-  overwrite = TRUE
+  overwrite = TRUE,
+  compress = "xz"
 )

@@ -50,3 +50,10 @@ Licence: Creative Commons Attribution
 ## Source
 
 Registrar General and Census Commissioner of India
+
+## See also
+
+[`uttar_pradesh_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.md):
+Districts of Uttar Pradesh.
+[`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.md):
+Murders in Uttar Pradesh.

@@ -30,10 +30,26 @@ northumbria_asb
 Dataset of incidents of anti-social behaviour reported to police in
 Northumbria, England, in 2022.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    northumbria_asb,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{northumbria_asb-map.png}{options: width="400" alt="Anti-social behaviour in Northumbria"}}
-\if{latex}{\figure{northumbria_asb-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{northumbria_districts}}: Local authority districts of Northumbria.
+\code{\link{northumbria_ward_pop}}: Northumbria ward population.
+\code{\link{northumbria_wards}}: Local government wards of Northumbria.
+}
 \keyword{datasets}

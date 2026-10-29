@@ -44,6 +44,31 @@ Licence: Open Government Licence
 
 Home Office
 
-## Map
+## See also
 
-![Anti-social behaviour in Northumbria](figures/northumbria_asb-map.png)
+[`northumbria_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_districts.md):
+Local authority districts of Northumbria.
+[`northumbria_ward_pop`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_ward_pop.md):
+Northumbria ward population.
+[`northumbria_wards`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_wards.md):
+Local government wards of Northumbria.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    northumbria_asb,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

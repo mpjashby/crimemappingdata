@@ -28,10 +28,24 @@ london_attacks
 Dataset of fatal terrorist attacks in London, United Kingdom, from 2010 to
 2018.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    london_attacks,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{london_attacks-map.png}{options: width="400" alt="Map of fatal terrorist attacks in London"}}
-\if{latex}{\figure{london_attacks-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{london_crimes}}: Crimes in London.
+}
 \keyword{datasets}

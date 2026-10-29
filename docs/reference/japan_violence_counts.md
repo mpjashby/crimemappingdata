@@ -38,3 +38,8 @@ Licence: Creative Commons Attribution
 ## Source
 
 Statistics Bureau of Japan
+
+## See also
+
+[`japan_prefectures`](https://pkgs.lesscrime.info/crimemappingdata/reference/japan_prefectures.md):
+Japanese prefecture boundaries, 2019.

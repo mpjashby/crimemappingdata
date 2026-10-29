@@ -34,7 +34,26 @@ Licence: Open Government Licence
 
 Office for National Statistics
 
-## Map
+## See also
 
-![Local government wards of
-Northumbria](figures/northumbria_wards-map.png)
+[`northumbria_asb`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_asb.md):
+Anti-social behaviour in Northumbria.
+[`northumbria_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_districts.md):
+Local authority districts of Northumbria.
+[`northumbria_ward_pop`](https://pkgs.lesscrime.info/crimemappingdata/reference/northumbria_ward_pop.md):
+Northumbria ward population.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    northumbria_wards,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

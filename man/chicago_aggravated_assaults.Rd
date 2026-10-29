@@ -38,10 +38,24 @@ chicago_aggravated_assaults
 Dataset of aggravated assaults recorded by police in Chicago between 2010 and
 2019.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    chicago_aggravated_assaults,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{chicago_aggravated_assaults-map.png}{options: width="400" alt="Map of aggravated assaults in Chicago, 2010 to 2019"}}
-\if{latex}{\figure{chicago_aggravated_assaults-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{chicago_police_districts}}: Chicago Police Department Districts.
+}
 \keyword{datasets}

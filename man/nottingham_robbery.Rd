@@ -30,10 +30,25 @@ nottingham_robbery
 Dataset of robberies (both personal and commercial) recorded by police in
 Nottingham, England, in 2022.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    nottingham_robbery,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{nottingham_robbery-map.png}{options: width="400" alt="Robberies in Nottingham"}}
-\if{latex}{\figure{nottingham_robbery-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{nottingham_burglary}}: Burglaries in Nottingham.
+\code{\link{nottingham_wards}}: Local government wards of Nottingham.
+}
 \keyword{datasets}

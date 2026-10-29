@@ -34,4 +34,4 @@ hungerford_shootings <- tribble(
   write_csv(here::here("inst/extdata/hungerford_shootings.csv")) |>
   glimpse()
 
-usethis::use_data(hungerford_shootings, overwrite = TRUE)
+usethis::use_data(hungerford_shootings, overwrite = TRUE, compress = "xz")

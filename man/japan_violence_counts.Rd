@@ -32,4 +32,7 @@ Dataset of counts of homicides, rapes, robberies and total violent crimes in
 each prefecture in Japan in 2012, together with GDP per capita and
 population.
 }
+\seealso{
+\code{\link{japan_prefectures}}: Japanese prefecture boundaries, 2019.
+}
 \keyword{datasets}

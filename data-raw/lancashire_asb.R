@@ -169,5 +169,6 @@ write_xlsx(
 usethis::use_data(
   lancashire_asb,
   lancashire_ward_pop,
-  overwrite = TRUE
+  overwrite = TRUE,
+  compress = "xz"
 )

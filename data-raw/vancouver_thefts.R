@@ -19,4 +19,4 @@ vancouver_thefts <- crimes |>
   arrange(YEAR, MONTH, DAY, HOUR) |>
   write_csv(here::here("inst/extdata/vancouver_thefts.csv.gz"))
 
-usethis::use_data(vancouver_thefts, overwrite = TRUE)
+usethis::use_data(vancouver_thefts, overwrite = TRUE, compress = "xz")

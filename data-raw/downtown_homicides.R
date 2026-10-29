@@ -32,7 +32,7 @@ downtown_homicides <- crimes |>
   write_sf(here::here("inst/extdata/downtown_homicides.gpkg")) |>
   write_csv(here::here("inst/extdata/downtown_homicides.csv"))
 
-usethis::use_data(downtown_homicides, overwrite = TRUE)
+usethis::use_data(downtown_homicides, overwrite = TRUE, compress = "xz")
 
 # Get Glenrose Heights homicides
 glenrose_heights_homicides <- crimes |>
@@ -51,4 +51,4 @@ glenrose_heights_homicides <- crimes |>
   write_sf(here::here("inst/extdata/glenrose_heights_homicides.gpkg")) |>
   write_csv(here::here("inst/extdata/glenrose_heights_homicides.csv"))
 
-usethis::use_data(glenrose_heights_homicides, overwrite = TRUE)
+usethis::use_data(glenrose_heights_homicides, overwrite = TRUE, compress = "xz")

@@ -70,4 +70,4 @@ germany_violence_counts <- data_file |>
   write_rds(here::here("inst/extdata/german_violence_counts.rds")) |>
   glimpse()
 
-usethis::use_data(germany_violence_counts)
+usethis::use_data(germany_violence_counts, compress = "xz")

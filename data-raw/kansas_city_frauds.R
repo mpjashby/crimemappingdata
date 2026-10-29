@@ -21,4 +21,4 @@ kansas_city_frauds <- crimedata::get_crime_data(
   ) |>
   write_csv("inst/extdata/kansas_city_frauds.csv.gz")
 
-# usethis::use_data(kansas_city_frauds)
+# usethis::use_data(kansas_city_frauds, compress = "xz")

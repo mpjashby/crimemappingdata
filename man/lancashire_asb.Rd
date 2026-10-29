@@ -30,10 +30,26 @@ lancashire_asb
 Dataset of incidents of anti-social behaviour reported to police in
 Lancashire, England, in 2022.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    lancashire_asb,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{lancashire_asb-map.png}{options: width="400" alt="Map of anti-social behaviour in Lancashire"}}
-\if{latex}{\figure{lancashire_asb-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{lancashire_districts}}: Local authority districts of Lancashire.
+\code{\link{lancashire_ward_pop}}: Lancashire ward population.
+\code{\link{lancashire_wards}}: Local government wards of Lancashire.
+}
 \keyword{datasets}

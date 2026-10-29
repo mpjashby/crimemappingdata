@@ -14,4 +14,8 @@
 #' at <https://mpjashby.github.io/crimemappingdata/lancashire_ward_pop.xlsx>.
 #'
 #' @source Office for National Statistics
+#' @seealso
+#' \code{\link{lancashire_asb}}: Anti-social behaviour in Lancashire.
+#' \code{\link{lancashire_districts}}: Local authority districts of Lancashire.
+#' \code{\link{lancashire_wards}}: Local government wards of Lancashire.
 "lancashire_ward_pop"

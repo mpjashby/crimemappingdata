@@ -9,4 +9,4 @@ chicago_police_districts <- read_sf("https://data.cityofchicago.org/api/geospati
   write_sf("inst/extdata/chicago_police_districts.kml") |>
   glimpse()
 
-usethis::use_data(chicago_police_districts, overwrite = TRUE)
+usethis::use_data(chicago_police_districts, overwrite = TRUE, compress = "xz")

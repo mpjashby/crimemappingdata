@@ -47,7 +47,27 @@ Licence: Creative Commons Attribution (CC-BY)
 
 Open Tempe
 
-## Map
+## See also
 
-![Calls to opioid overdoses in Tempe,
-Arizona](figures/tempe_opioid_calls-map.png)
+[`tempe_character_areas`](https://pkgs.lesscrime.info/crimemappingdata/reference/tempe_character_areas.md):
+Character Area boundaries in Tempe, Arizona.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    tempe_opioid_calls,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
+
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
+}
+```

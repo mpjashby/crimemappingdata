@@ -36,7 +36,22 @@ Licence: Creative Commons Attribution
 
 Government of Mexico City
 
-## Map
+## See also
 
-![Map of alcaldías (boroughs) of Mexico
-City](figures/cdmx_alcaldias-map.png)
+[`cdmx_car_jacking`](https://pkgs.lesscrime.info/crimemappingdata/reference/cdmx_car_jacking.md):
+Car jackings in Mexico City.
+
+## Examples
+
+``` r
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    cdmx_alcaldias,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
+}
+```

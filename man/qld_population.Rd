@@ -24,4 +24,8 @@ qld_population
 Dataset of resident population of each Queensland Police Service division,
 2016.
 }
+\seealso{
+\code{\link{qld_police_divisions}}: Queensland Police Service division boundaries.
+\code{\link{qld_stalking}}: Stalking in Queensland from 2001 to 2022.
+}
 \keyword{datasets}

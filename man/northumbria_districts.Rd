@@ -27,10 +27,21 @@ northumbria_districts
 Dataset of the boundaries of the local authority districts in Northumbria,
 England, in 2022.
 }
-\section{Map}{
-
-\if{html}{\figure{northumbria_districts-map.png}{options: width="400" alt="Local authority districts of Northumbria"}}
-\if{latex}{\figure{northumbria_districts-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    northumbria_districts,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{northumbria_asb}}: Anti-social behaviour in Northumbria.
+\code{\link{northumbria_ward_pop}}: Northumbria ward population.
+\code{\link{northumbria_wards}}: Local government wards of Northumbria.
+}
 \keyword{datasets}

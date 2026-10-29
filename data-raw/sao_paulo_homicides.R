@@ -43,4 +43,4 @@ writexl::write_xlsx(
 )
 
 # Save RData version
-usethis::use_data(sao_paulo_homicides, overwrite = TRUE)
+usethis::use_data(sao_paulo_homicides, overwrite = TRUE, compress = "xz")

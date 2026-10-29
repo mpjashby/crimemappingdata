@@ -128,6 +128,8 @@ below.
   : Population of Queensland Police Service divisions
 - [`sao_paulo_muni`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.md)
   : Sao Paolo municipality boundaries
+- [`tempe_character_areas`](https://pkgs.lesscrime.info/crimemappingdata/reference/tempe_character_areas.md)
+  : Character Area boundaries in Tempe, Arizona
 - [`uttar_pradesh_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.md)
   : Districts of Uttar Pradesh
 - [`uttar_pradesh_population`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_population.md)

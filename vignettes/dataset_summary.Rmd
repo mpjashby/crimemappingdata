@@ -413,6 +413,8 @@ tempe_opioid_calls |>
 
 The stand-alone version of this dataset is a CSV file.
 
+This dataset can be used together with the `tempe_character_areas` dataset to teach spatial joins and counting incidents within areas. Incident co-ordinates have been rounded for privacy (to approximately 0.25 miles), so assignments near area boundaries are approximate.
+
 
 ### `vancouver_thefts`
 
@@ -877,6 +879,28 @@ sao_paulo_muni_head |>
 ```
 
 The stand-alone version of this dataset is a geoJSON file.
+
+
+### `tempe_character_areas`
+
+```{r}
+data(tempe_character_areas, package = "crimemappingdata")
+```
+
+Simple features (SF) object containing the boundaries of `r nrow(tempe_character_areas)` character areas in Tempe, Arizona. These areas group neighbourhoods with common design, land use and commercial characteristics.
+
+```{r}
+tempe_character_areas_head <- sf::st_drop_geometry(tempe_character_areas)
+tempe_character_areas_head$geometry <- "&lt;SF polygon&gt;"
+
+tempe_character_areas_head |>
+  head(10) |>
+  knitr::kable()
+```
+
+The stand-alone version of this dataset is a Geography Markup Language (GML) file.
+
+This dataset can be used together with `tempe_opioid_calls` to teach spatial joins and counting incidents within areas. Incident co-ordinates are approximate, so some calls may fall outside the boundaries or be assigned to a neighbouring area.
 
 
 ### `uttar_pradesh_districts`

@@ -22,4 +22,4 @@ buenos_aires_robbery <- data_file |>
   write_csv2("inst/extdata/buenos_aires_robbery.csv")
 
 # Save version for package
-usethis::use_data(buenos_aires_robbery)
+usethis::use_data(buenos_aires_robbery, compress = "xz")

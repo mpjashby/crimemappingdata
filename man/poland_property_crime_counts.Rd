@@ -36,7 +36,7 @@ Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
 \url{https://creativecommons.org/licenses/by/4.0/}.
 }
 \seealso{
-\code{\link{poland_population}},
-\code{\link{poland_powiat_boundaries}}
+\code{\link{poland_population}}: Population of Polish powiats, 2022–2024.
+\code{\link{poland_powiat_boundaries}}: Polish powiat boundaries.
 }
 \keyword{datasets}

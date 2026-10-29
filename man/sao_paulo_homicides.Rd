@@ -34,10 +34,24 @@ sao_paulo_homicides
 Dataset of homicides recorded by police in the immediate region of Sao Paulo
 from 2017 to 2022.
 }
-\section{Map}{
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  map_data <- sf::st_as_sf(
+    sao_paulo_homicides,
+    coords = c("longitude", "latitude"),
+    crs = "EPSG:4326"
+  )
 
-\if{html}{\figure{sao_paulo_homicides-map.png}{options: width="400" alt="Homicides in the region of Sao Paulo"}}
-\if{latex}{\figure{sao_paulo_homicides-map.png}{options: width=4in}}
+  sfhotspot::hotspot_map(
+    map_data,
+    basemap_type = "cartolight",
+    colour = "red2",
+    size = 0.6
+  )
 }
-
+}
+\seealso{
+\code{\link{sao_paulo_muni}}: Municipality boundaries in São Paulo.
+}
 \keyword{datasets}

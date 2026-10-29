@@ -26,10 +26,20 @@ nottingham_wards
 \description{
 Dataset of ward boundaries in Nottingham, England, in 2022.
 }
-\section{Map}{
-
-\if{html}{\figure{nottingham_wards-map.png}{options: width="400" alt="Local government wards of Nottingham"}}
-\if{latex}{\figure{nottingham_wards-map.png}{options: width=4in}}
+\examples{
+# Basemap tiles require internet access unless already cached.
+if (interactive() || identical(Sys.getenv("IN_PKGDOWN"), "true")) {
+  sfhotspot::hotspot_map(
+    nottingham_wards,
+    basemap_type = "cartolight",
+    colour = "red2",
+    fill = NA,
+    size = 0.3
+  )
 }
-
+}
+\seealso{
+\code{\link{nottingham_burglary}}: Burglaries in Nottingham.
+\code{\link{nottingham_robbery}}: Robberies in Nottingham.
+}
 \keyword{datasets}

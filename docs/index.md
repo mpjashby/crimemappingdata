@@ -96,6 +96,7 @@ World map showing the locations of the datasets included in the package.
 | [`san_francisco_robbery`](https://pkgs.lesscrime.info/crimemappingdata/reference/san_francisco_robbery.html) | Personal robberies in San Francisco in 2019 | `.csv` |
 | [`sao_paulo_homicides`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_homicides.html) | Homicides in the region of Sao Paulo | `.xlsx` |
 | [`sao_paulo_muni`](https://pkgs.lesscrime.info/crimemappingdata/reference/sao_paulo_muni.html) | Sao Paolo municipality boundaries | `.geojson` |
+| [`tempe_character_areas`](https://pkgs.lesscrime.info/crimemappingdata/reference/tempe_character_areas.html) | Character Area boundaries in Tempe, Arizona | `.gml` |
 | [`tempe_opioid_calls`](https://pkgs.lesscrime.info/crimemappingdata/reference/tempe_opioid_calls.html) | Calls to opioid overdoses in Tempe, Arizona | `.csv` |
 | [`uttar_pradesh_districts`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_districts.html) | Districts of Uttar Pradesh | `.gpkg` |
 | [`uttar_pradesh_murders`](https://pkgs.lesscrime.info/crimemappingdata/reference/uttar_pradesh_murders.html) | Murders in Uttar Pradesh | `.csv` |
